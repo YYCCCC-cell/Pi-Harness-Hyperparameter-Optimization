@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "review_kind": "conservative_metadata_family_review_not_duplicate_claim",
+  "source": "docs/sources/skillsbench-v1.1-task-manifest.json",
+  "policy": "Union these families with the original split groups. Preserve every exposed validation task. Quarantine every original heldout member of a component touching validation; never promote validation to heldout.",
+  "families": [
+    {"id": "vehicle-routing", "tasks": ["bike-rebalance", "paratransit-routing"], "reason": "Both metadata descriptions identify vehicle routing / operations research; category sublabels alone miss this relation."},
+    {"id": "feedback-control", "tasks": ["adaptive-cruise-control", "hvac-control", "r2r-mpc-control", "drone-planning-control"], "reason": "Shared control, simulation and dynamics family; conservative grouping across vehicle, thermal and robot sublabels."},
+    {"id": "excel-index-match", "tasks": ["powerlifting-coef-calc", "weighted-gdp-calc"], "reason": "Both explicitly share excel-index-match and statistics tags. This is a conservative workflow family, not evidence of identical data."},
+    {"id": "network-intrusion", "tasks": ["dapt-intrusion-detection", "suricata-custom-exfil"], "reason": "PCAP/network intrusion tasks have different subcategory spellings; avoid counting them as independent families."},
+    {"id": "react-performance", "tasks": ["fix-visual-stability", "react-performance-debugging"], "reason": "Shared React/Next.js performance family, already kept together by the original grouping."},
+    {"id": "seismology", "tasks": ["earthquake-phase-association", "seismic-phase-picking"], "reason": "Identical seismology/ai4science metadata tags; both remain heldout and group together."},
+    {"id": "power-system-optimization", "tasks": ["energy-ac-optimal-power-flow", "energy-market-pricing", "energy-unit-commitment", "grid-dispatch-operator"], "reason": "Group grid dispatch with the energy family; all remain heldout."},
+    {"id": "pdf-form-filling", "tasks": ["court-form-filling", "edit-pdf"], "reason": "Both explicitly expose PDF form filling; all remain heldout."}
+  ],
+  "reviewed_generic_matches": [
+    {"tasks": ["exoplanet-detection-period", "econ-detrending-correlation"], "decision": "Do not merge solely on generic python/data-analysis/timeseries tags; different stated task families."},
+    {"tasks": ["latex-formula-extraction", "organize-messy-files"], "decision": "Same author and PDF tool type do not establish a shared task family or common source data."},
+    {"tasks": ["dapt-intrusion-detection", "syzkaller-ppdev-syzlang"], "decision": "Same author and generic security tag do not join network intrusion and kernel fuzzing families."}
+  ],
+  "limits": ["No heldout instructions, verifier bodies, solutions or outcomes were inspected.", "Metadata and whole-task digests cannot certify absence of semantic or partial data duplicates.", "This review creates a versioned proposal; it does not silently replace the frozen runner rosters."]
+}

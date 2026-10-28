@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "parameters": {
+    "defaultThinkingLevel": ["low", "medium", "high"],
+    "compaction.reserveTokens": [16384, 360000, 375000],
+    "compaction.keepRecentTokens": [4000, 10000, 20000]
+  },
+  "default": {"defaultThinkingLevel": "medium", "compaction": {"reserveTokens": 16384, "keepRecentTokens": 20000}},
+  "feasibility": {"provenance": "openrouter_model_metadata", "context_window": 400000, "output_allowance": 128000, "safety_margin": 4096}
+}

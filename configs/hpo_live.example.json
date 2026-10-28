@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "backend": "skillsbench_pi_v1",
+  "configurations_per_search": 2,
+  "bo_initial_configurations": 1,
+  "seeds": {
+    "search": 20261025,
+    "evaluation": 6203,
+    "schedule": 42
+  },
+  "task_timeout_seconds": null,
+  "method_wall_time_seconds": 86400,
+  "method_spend_cap_usd": 5,
+  "method_simulated_cost_cap": 0,
+  "live": {
+    "model": "openrouter/openai/gpt-5.4-mini",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "runtime_image": "sha256:734d8418aed236eaba2e789988770ffb92109ce59bb20ca71148e2ff0e3d5422",
+    "runtime_review": "runs/runtime-ready-20261026-repair/runtime-review.json",
+    "runtime_python": ".venv-runtime/bin/python",
+    "skill_mode": "with-skill",
+    "attempt_spend_reservation_usd": 1,
+    "spend_policy": "reservation_with_inflight_overrun",
+    "setup_timeout_seconds": 300,
+    "cleanup_timeout_seconds": 90
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "backend": "deterministic_mock_v1",
+  "configurations_per_search": 12,
+  "bo_initial_configurations": 3,
+  "seeds": {"search": 20261025, "evaluation": 6203, "schedule": 42},
+  "task_timeout_seconds": 120,
+  "method_wall_time_seconds": 120,
+  "method_spend_cap_usd": 0,
+  "method_simulated_cost_cap": 10
+}

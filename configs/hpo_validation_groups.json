@@ -1,0 +1,121 @@
+{
+  "groups": [
+    {
+      "group_id": "cybersecurity/subcategory:network-intrusion-detection",
+      "tasks": [
+        "dapt-intrusion-detection"
+      ]
+    },
+    {
+      "group_id": "cybersecurity/subcategory:intrusion-detection",
+      "tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:fraud-detection",
+      "tasks": [
+        "invoice-fraud-detection"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:financial-modeling",
+      "tasks": [
+        "financial-modeling-qa",
+        "xlsx-recover-data"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:vehicle-control",
+      "tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:3d-printing-mass-calculation",
+      "tasks": [
+        "3d-scan-calc"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:egomotion-and-dynamic-object-segmentation",
+      "tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:control-systems",
+      "tasks": [
+        "hvac-control",
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:combinatorial-optimization",
+      "tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:operations-research-vehicle-routing",
+      "tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "group_id": "media-content-production/subcategory:video-processing",
+      "tasks": [
+        "mario-coin-counting",
+        "multilingual-video-dubbing",
+        "video-silence-remover"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:crystallography",
+      "tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:astronomy",
+      "tasks": [
+        "exoplanet-detection-period",
+        "gravitational-wave-detection",
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:pdf-formula-extraction",
+      "tasks": [
+        "latex-formula-extraction"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:spreadsheet-workflow",
+      "tasks": [
+        "pdf-excel-diff",
+        "powerlifting-coef-calc",
+        "sales-pivot-analysis"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:performance-optimization",
+      "tasks": [
+        "fix-visual-stability",
+        "llm-prefix-cache-replay",
+        "parallel-tfidf-search",
+        "react-performance-debugging"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:debugging",
+      "tasks": [
+        "debug-trl-grpo"
+      ]
+    }
+  ],
+  "role": "validation",
+  "schema_version": 1,
+  "source_split_sha256": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+  "status": "proposed_metadata_groups_mock_only"
+}

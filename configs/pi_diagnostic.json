@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "campaign_config": "configs/hpo_live.example.json",
+  "primary_task": "llm-prefix-cache-replay",
+  "secondary_task": "bike-rebalance",
+  "selection_reason": "Preselected before live outcomes: code/performance task and operations-research/no-network task; both native environments passed offline integration.",
+  "evaluation_seed": 6203,
+  "max_attempts": 8,
+  "spend_cap_usd": 5,
+  "wall_time_seconds": 10800
+}
