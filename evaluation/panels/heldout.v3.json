@@ -1,0 +1,73 @@
+{
+  "benchmark_commit": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af",
+  "groups": [
+    {
+      "group_id": "family-033446e55ddd",
+      "tasks": [
+        "econ-detrending-correlation"
+      ]
+    },
+    {
+      "group_id": "family-2dc601b6c2c1",
+      "tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "group_id": "family-794b20c946ba",
+      "tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "group_id": "family-72362b87bb4f",
+      "tasks": [
+        "jax-computing-basics"
+      ]
+    },
+    {
+      "group_id": "family-bb1ce454e38c",
+      "tasks": [
+        "pptx-reference-formatting"
+      ]
+    },
+    {
+      "group_id": "family-5ff4af5c6177",
+      "tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "group_id": "family-f4d9491a01d8",
+      "tasks": [
+        "syzkaller-ppdev-syzlang"
+      ]
+    },
+    {
+      "group_id": "family-70d1b0af950e",
+      "tasks": [
+        "python-scala-translation"
+      ]
+    }
+  ],
+  "profile": "compact_v3",
+  "role": "heldout",
+  "schema_version": 3,
+  "selection": {
+    "parent_sha256": "368494f11133fd93217e2c45e5706a7a2984256dbe44f9d42683baed85cccb53",
+    "rule": "Select eight singleton families by SHA256(seed:group_id) ascending; retain whole families, no outcomes or measured costs used.",
+    "seed": "20261028-budget-v7"
+  },
+  "source_family_audit_sha256": "6de456f3cf7aa6f951601510ff28802de2e0a904bc2f48fb3411c338870fcc15",
+  "source_split_sha256": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+  "task_ids": [
+    "econ-detrending-correlation",
+    "fix-erlang-ssh-cve",
+    "jax-computing-basics",
+    "organize-messy-files",
+    "pptx-reference-formatting",
+    "python-scala-translation",
+    "syzkaller-ppdev-syzlang",
+    "travel-planning"
+  ]
+}
