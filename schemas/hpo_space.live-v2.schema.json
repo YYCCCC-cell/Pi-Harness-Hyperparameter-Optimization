@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explicit opt-in live early-compaction profile v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "parameters",
+    "default",
+    "feasibility"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "parameters": {
+      "const": {
+        "defaultThinkingLevel": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "compaction.reserveTokens": [
+          16384,
+          360000,
+          375000
+        ],
+        "compaction.keepRecentTokens": [
+          4000,
+          10000,
+          20000
+        ]
+      }
+    },
+    "default": {
+      "const": {
+        "defaultThinkingLevel": "medium",
+        "compaction": {
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        }
+      }
+    },
+    "feasibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provenance",
+        "context_window",
+        "output_allowance",
+        "safety_margin"
+      ],
+      "properties": {
+        "provenance": {
+          "enum": [
+            "synthetic_mock_metadata_only",
+            "openrouter_model_metadata"
+          ]
+        },
+        "context_window": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "output_allowance": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "safety_margin": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 3 finite Pi settings grid",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["defaultThinkingLevel", "compaction"],
+  "properties": {
+    "defaultThinkingLevel": {"enum": ["low", "medium", "high"]},
+    "compaction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reserveTokens", "keepRecentTokens"],
+      "properties": {
+        "reserveTokens": {"type": "integer", "enum": [8192, 16384, 32768]},
+        "keepRecentTokens": {"type": "integer", "enum": [10000, 20000, 40000]}
+      }
+    }
+  }
+}
