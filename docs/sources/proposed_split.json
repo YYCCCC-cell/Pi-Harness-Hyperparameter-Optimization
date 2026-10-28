@@ -1,0 +1,561 @@
+{
+  "status": "proposed; freeze before experiments; near-duplicate review required before freezing",
+  "seed": "PE6203-SkillsBench-v1.1-split-2026-10-25-v1",
+  "benchmark_commit": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af",
+  "manifest_sha256": "0aa87c4d4f64c33db74b20e770f4b4a77dc21911e81a8ffd50cbb84ac7a4cc6f",
+  "algorithm": "Group by category and subcategory, except five explicit name families. Within category sort groups by sha256(seed + LF + group_id), with group_id as tie-breaker. Choose a nonempty proper prefix minimizing abs(10*validation_count - 3*category_count); ties choose fewer validation tasks. Remainder is test.",
+  "family_prefixes": [
+    "energy-",
+    "earthquake-",
+    "manufacturing-",
+    "pddl-",
+    "fix-build-"
+  ],
+  "validation": [
+    "3d-scan-calc",
+    "adaptive-cruise-control",
+    "bike-rebalance",
+    "civ6-adjacency-optimizer",
+    "crystallographic-wyckoff-position-analysis",
+    "dapt-intrusion-detection",
+    "debug-trl-grpo",
+    "dynamic-object-aware-egomotion",
+    "exoplanet-detection-period",
+    "financial-modeling-qa",
+    "fix-visual-stability",
+    "gravitational-wave-detection",
+    "hvac-control",
+    "invoice-fraud-detection",
+    "latex-formula-extraction",
+    "llm-prefix-cache-replay",
+    "mario-coin-counting",
+    "mars-clouds-clustering",
+    "multilingual-video-dubbing",
+    "parallel-tfidf-search",
+    "pdf-excel-diff",
+    "powerlifting-coef-calc",
+    "r2r-mpc-control",
+    "react-performance-debugging",
+    "sales-pivot-analysis",
+    "suricata-custom-exfil",
+    "video-silence-remover",
+    "xlsx-recover-data"
+  ],
+  "test": [
+    "ada-bathroom-plan-repair",
+    "azure-bgp-oscillation-route-leak",
+    "citation-check",
+    "court-form-filling",
+    "data-to-d3",
+    "dialogue-parser",
+    "drone-planning-control",
+    "earthquake-phase-association",
+    "earthquake-plate-calculation",
+    "econ-detrending-correlation",
+    "edit-pdf",
+    "energy-ac-optimal-power-flow",
+    "energy-market-pricing",
+    "energy-unit-commitment",
+    "enterprise-information-search",
+    "exam-block-sequencing",
+    "exceltable-in-ppt",
+    "fix-build-agentops",
+    "fix-build-google-auto",
+    "fix-druid-loophole-cve",
+    "fix-erlang-ssh-cve",
+    "flink-query",
+    "flood-risk-analysis",
+    "glm-lake-mendota",
+    "grid-dispatch-operator",
+    "jax-computing-basics",
+    "jpg-ocr-stat",
+    "lab-unit-harmonization",
+    "lake-warming-attribution",
+    "lean4-proof",
+    "manufacturing-codebook-normalization",
+    "manufacturing-equipment-maintenance",
+    "manufacturing-fjsp-optimization",
+    "offer-letter-generator",
+    "organize-messy-files",
+    "paper-anonymizer",
+    "paratransit-routing",
+    "pddl-airport-planning",
+    "pddl-tpp-planning",
+    "pptx-reference-formatting",
+    "protein-expression-analysis",
+    "python-scala-translation",
+    "quantum-numerical-simulation",
+    "radar-vital-signs",
+    "reserves-at-risk-calc",
+    "sec-financial-report",
+    "seismic-phase-picking",
+    "setup-fuzzing-py",
+    "shock-analysis-demand",
+    "shock-analysis-supply",
+    "simpo-code-reproduction",
+    "software-dependency-audit",
+    "spring-boot-jakarta-migration",
+    "syzkaller-ppdev-syzlang",
+    "threejs-structure-parser",
+    "threejs-to-obj",
+    "tictoc-unnecessary-abort-detection",
+    "travel-planning",
+    "weighted-gdp-calc"
+  ],
+  "smoke": [
+    "experiments/sanity-tasks/hello-world"
+  ],
+  "excluded": [
+    "cobol-gl-batch-reconcile",
+    "diff-transformer_impl",
+    "find-topk-similiar-chemicals",
+    "gh-repo-analytics",
+    "gpu-cluster-online-scheduling",
+    "mhc-layer-impl",
+    "nda-playbook-review",
+    "pedestrian-traffic-counting",
+    "pg-essay-to-audiobook",
+    "scheduling-email-assistant",
+    "speaker-diarization-subtitles",
+    "taxonomy-tree-merge",
+    "video-filler-word-remover",
+    "video-tutorial-indexer"
+  ],
+  "groups": [
+    {
+      "group_id": "cybersecurity/subcategory:network-intrusion-detection",
+      "split": "validation",
+      "tasks": [
+        "dapt-intrusion-detection"
+      ]
+    },
+    {
+      "group_id": "cybersecurity/subcategory:intrusion-detection",
+      "split": "validation",
+      "tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "group_id": "cybersecurity/subcategory:vulnerability-analysis",
+      "split": "test",
+      "tasks": [
+        "fix-druid-loophole-cve",
+        "fix-erlang-ssh-cve",
+        "software-dependency-audit"
+      ]
+    },
+    {
+      "group_id": "cybersecurity/subcategory:fuzzing",
+      "split": "test",
+      "tasks": [
+        "setup-fuzzing-py",
+        "syzkaller-ppdev-syzlang"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:fraud-detection",
+      "split": "validation",
+      "tasks": [
+        "invoice-fraud-detection"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:financial-modeling",
+      "split": "validation",
+      "tasks": [
+        "financial-modeling-qa",
+        "xlsx-recover-data"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:macroeconomic-analysis",
+      "split": "test",
+      "tasks": [
+        "shock-analysis-demand",
+        "shock-analysis-supply",
+        "weighted-gdp-calc"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:risk-analysis",
+      "split": "test",
+      "tasks": [
+        "reserves-at-risk-calc"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:macroeconomic-time-series",
+      "split": "test",
+      "tasks": [
+        "econ-detrending-correlation"
+      ]
+    },
+    {
+      "group_id": "finance-economics/subcategory:sec-filings-analysis",
+      "split": "test",
+      "tasks": [
+        "sec-financial-report"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:vehicle-control",
+      "split": "validation",
+      "tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:3d-printing-mass-calculation",
+      "split": "validation",
+      "tasks": [
+        "3d-scan-calc"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:egomotion-and-dynamic-object-segmentation",
+      "split": "validation",
+      "tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:control-systems",
+      "split": "validation",
+      "tasks": [
+        "hvac-control",
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:architectural-design",
+      "split": "test",
+      "tasks": [
+        "ada-bathroom-plan-repair"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:grid-dispatch",
+      "split": "test",
+      "tasks": [
+        "grid-dispatch-operator"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/family:manufacturing-",
+      "split": "test",
+      "tasks": [
+        "manufacturing-codebook-normalization",
+        "manufacturing-equipment-maintenance",
+        "manufacturing-fjsp-optimization"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/family:energy-",
+      "split": "test",
+      "tasks": [
+        "energy-ac-optimal-power-flow",
+        "energy-market-pricing",
+        "energy-unit-commitment"
+      ]
+    },
+    {
+      "group_id": "industrial-physical-systems/subcategory:robot-control",
+      "split": "test",
+      "tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:combinatorial-optimization",
+      "split": "validation",
+      "tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:operations-research-vehicle-routing",
+      "split": "validation",
+      "tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:calendar-scheduling",
+      "split": "test",
+      "tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:mathematical-optimization",
+      "split": "test",
+      "tasks": [
+        "exam-block-sequencing",
+        "paratransit-routing"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/subcategory:formal-proof",
+      "split": "test",
+      "tasks": [
+        "lean4-proof"
+      ]
+    },
+    {
+      "group_id": "mathematics-or-formal-reasoning/family:pddl-",
+      "split": "test",
+      "tasks": [
+        "pddl-airport-planning",
+        "pddl-tpp-planning"
+      ]
+    },
+    {
+      "group_id": "media-content-production/subcategory:video-processing",
+      "split": "validation",
+      "tasks": [
+        "mario-coin-counting",
+        "multilingual-video-dubbing",
+        "video-silence-remover"
+      ]
+    },
+    {
+      "group_id": "media-content-production/subcategory:3d-content",
+      "split": "test",
+      "tasks": [
+        "threejs-structure-parser",
+        "threejs-to-obj"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:crystallography",
+      "split": "validation",
+      "tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:astronomy",
+      "split": "validation",
+      "tasks": [
+        "exoplanet-detection-period",
+        "gravitational-wave-detection",
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:seismology",
+      "split": "test",
+      "tasks": [
+        "seismic-phase-picking"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:quantum-simulation",
+      "split": "test",
+      "tasks": [
+        "quantum-numerical-simulation"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:biomedical-analysis",
+      "split": "test",
+      "tasks": [
+        "radar-vital-signs"
+      ]
+    },
+    {
+      "group_id": "natural-science/family:earthquake-",
+      "split": "test",
+      "tasks": [
+        "earthquake-phase-association",
+        "earthquake-plate-calculation"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:hydrology",
+      "split": "test",
+      "tasks": [
+        "flood-risk-analysis",
+        "glm-lake-mendota",
+        "lake-warming-attribution"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:lab-unit-harmonization",
+      "split": "test",
+      "tasks": [
+        "lab-unit-harmonization"
+      ]
+    },
+    {
+      "group_id": "natural-science/subcategory:protein-expression",
+      "split": "test",
+      "tasks": [
+        "protein-expression-analysis"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:pdf-formula-extraction",
+      "split": "validation",
+      "tasks": [
+        "latex-formula-extraction"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:spreadsheet-workflow",
+      "split": "validation",
+      "tasks": [
+        "pdf-excel-diff",
+        "powerlifting-coef-calc",
+        "sales-pivot-analysis"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:pdf-editing",
+      "split": "test",
+      "tasks": [
+        "edit-pdf"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:business-reporting",
+      "split": "test",
+      "tasks": [
+        "enterprise-information-search"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:legal-form-filling",
+      "split": "test",
+      "tasks": [
+        "court-form-filling"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:academic-bibliography-verification",
+      "split": "test",
+      "tasks": [
+        "citation-check"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:document-editing",
+      "split": "test",
+      "tasks": [
+        "offer-letter-generator",
+        "paper-anonymizer"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:document-classification",
+      "split": "test",
+      "tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:ocr",
+      "split": "test",
+      "tasks": [
+        "jpg-ocr-stat"
+      ]
+    },
+    {
+      "group_id": "office-white-collar/subcategory:presentation-editing",
+      "split": "test",
+      "tasks": [
+        "exceltable-in-ppt",
+        "pptx-reference-formatting"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:performance-optimization",
+      "split": "validation",
+      "tasks": [
+        "fix-visual-stability",
+        "llm-prefix-cache-replay",
+        "parallel-tfidf-search",
+        "react-performance-debugging"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:debugging",
+      "split": "validation",
+      "tasks": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:data-visualization-frontend",
+      "split": "test",
+      "tasks": [
+        "data-to-d3"
+      ]
+    },
+    {
+      "group_id": "software-engineering/family:fix-build-",
+      "split": "test",
+      "tasks": [
+        "fix-build-agentops",
+        "fix-build-google-auto"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:network-engineering",
+      "split": "test",
+      "tasks": [
+        "azure-bgp-oscillation-route-leak"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:implementation",
+      "split": "test",
+      "tasks": [
+        "flink-query"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:code-translation",
+      "split": "test",
+      "tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:parser-implementation",
+      "split": "test",
+      "tasks": [
+        "dialogue-parser"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:migration",
+      "split": "test",
+      "tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:concurrency-control",
+      "split": "test",
+      "tasks": [
+        "tictoc-unnecessary-abort-detection"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:library-api-usage",
+      "split": "test",
+      "tasks": [
+        "jax-computing-basics"
+      ]
+    },
+    {
+      "group_id": "software-engineering/subcategory:paper-to-code-reproduction",
+      "split": "test",
+      "tasks": [
+        "simpo-code-reproduction"
+      ]
+    }
+  ]
+}

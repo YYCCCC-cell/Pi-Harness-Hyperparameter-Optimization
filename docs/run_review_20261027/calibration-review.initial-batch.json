@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-27T14:44:51.520804+00:00",
+  "status": "formal_scope_deferred_after_initial_calibration",
+  "historical_proposal_manifest_sha256": "94dba8f6df5d985041f87a6e25feffdec2516898036d1e666995ca6659d97402",
+  "readiness": {
+    "subset_controller_implemented": true,
+    "heldout_entry_implemented": true,
+    "heldout_entry_real_run_verified": false,
+    "initial_calibration_batch_closed": true,
+    "all_eight_default_tasks_calibrated": false,
+    "all_selected_environments_ready": false,
+    "formal_budget_approved": false
+  },
+  "authorized_calibration_cap_usd": 5,
+  "calibration_attempts": 4,
+  "calibration_model_executions": 3,
+  "calibration_cost_usd": "0.24980250",
+  "formal_attempt_count": null,
+  "formal_budget_usd": null,
+  "formal_search_launched": false,
+  "real_heldout_launched": false,
+  "reason": "One native cold build timed out; three complete default-only model tasks do not establish costs across all tasks and search settings.",
+  "evidence": "../../runs/cross-task-calibration-real-20261027/review.json"
+}

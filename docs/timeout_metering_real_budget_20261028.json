@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "execution_enabled": false,
+  "formal_search_launched": false,
+  "heldout_dispatched": false,
+  "budget_approved": false,
+  "final_budget_usd": null,
+  "source_sha256": {
+    "runs/timeout-metering-real-20261028-dispatch/summary.json": "f0b75153caa5a4f92fd7fd2e94b649498d14c5026bdab9f8ee1873a78480a4bf",
+    "runs/timeout-metering-real-20261028-dispatch/receipt-review/review.json": "e99e8c3483226ae90c4cce1adfa7c548bab92ca9b4cf61df8c3bd93e75229ae3",
+    "docs/timeout_metering_budget_review_20261028.json": "de1a062fffb019decc640e351706a15967773454213ada9863d581147c0f3e9c",
+    "docs/run_review_20261027_calibrated/run_manifest.v3.proposal.json": "34f15d02ab1d86471d2545bcc454e89586675b45fb8dbf19f65fcb77111ba8d4"
+  },
+  "postrun_code_sha256": {
+    "evaluation/__init__.py": "ba809e3002aefe73b78d4e4e26bfd6cac86c95501355c7d2940ea9e6def7d6e9",
+    "evaluation/calibrate.py": "022c204023b1decb26f36d65cc51bec60a44e9d3755362625550c18338053678",
+    "evaluation/calibration_continuation.py": "1ae681f2ce692e0466c184b3e0fc5e9334d1259295b0277298ee103e3623b9fc",
+    "evaluation/cleanup_smoke.py": "c5fa16557aebe99ddf74b80df771eda74d4d92a41d9af72f34c1f1bcf2c819e4",
+    "evaluation/compaction_diagnostic.py": "a995e6c7ca25736a343786ea9b340342b81e692c08ddfe3a65389737cd3f8cd9",
+    "evaluation/complete_diagnostic.py": "1709cccf0e677c48edc460befd1e210cdf59802a7b98a8bda31d08fefcdaccd9",
+    "evaluation/diagnostic.py": "8d7a4dd7f804efcec53bbe739d4bcdc0bc4c35e57b08d8382cb31b3bdf781fe2",
+    "evaluation/diagnostic_spend_guard.py": "332cfee783c66f75fdaab9e6cd5a49723204fac614171efdc2eb9638bfeae367",
+    "evaluation/early_compaction_diagnostic.py": "87f5e84ee282590ea5b0e0c21bbc18c3224840b8e634786ebc7331ed715d0637",
+    "evaluation/experiment_design.py": "20966902309400f0dfd10ae74b8ff76d8db8b4e960f688dfdb688b1a207150b1",
+    "evaluation/fixed_panel.py": "2c6a525e924912d578ec6b6d144c6b0ea5f137df31f74f61e9045c7dbcff755a",
+    "evaluation/frozen.py": "dd3b576dabc05efcd1c4180b76ba63a658be8ee5b84865812196b483cbccc529",
+    "evaluation/heldout.py": "11873d0080478643ce4d723dc105a6328e465f26ced5f5a634048008042ee50b",
+    "evaluation/live.py": "14a59c79eb8c26e17c0123c75ac3e12b953cf4f6d0862d16b4535cdc73bf0ada",
+    "evaluation/live_report.py": "91b0eafeadcaed466611498e64ed15d05d8ded57a1d20143c4617764e095e177",
+    "evaluation/live_rpc_audit.py": "fcc492ecf36ca33337841c45fd14aa49ea6edd0a3dbeca270d5f32e5c2b98c99",
+    "evaluation/live_worker.py": "a22fe2f730051c2b96be01ad0c6e507aa24be583b9c43647e491a2c96c297443",
+    "evaluation/panels.py": "7bf7478a5ac309d4e5443f868a12195d4746b96ce3a44099a1de80916a103fbe",
+    "evaluation/provider_callback.py": "8f26cac16230c8858e4de89246785f2cd84adae358bbee1242432b762f84e242",
+    "evaluation/report.py": "7acbeafe053c0e71c0ca474832c652bdb682fc228efcce6cc0379b164d52b266",
+    "evaluation/request_accounting.py": "74df44904b56f537bd0c60d96afcc9a33a7e89a6a78a4adb12750d777a15c376",
+    "evaluation/response_bridge_observer.py": "fd6aa6f230f07d3cbb6b3092265ae5a911d7130c0f3396f75b9cab87fb566ef0",
+    "evaluation/review.py": "82659ab06371e2781dabe3b41a596d8a4ba658b939545608e13982cec727f424",
+    "evaluation/smoke_live.py": "7b66022fc5150355f98a3408d6f226aba00f68f7c627db73d5816a82db913364",
+    "evaluation/task_runtime.py": "495c977189b48fdc2c2c72d0ce039561d403b2674f31fc9961f707a0addfa7bd",
+    "evaluation/telemetry.py": "732bfdb26ab092b69c90d856b1f9ed62d504d3ba310373c4eb7ffc7470b63855",
+    "evaluation/timeout_diagnostic.py": "e0672203374e2a6305bbda9eb20e63377de9140d3a2c8345739d3766b09a9503",
+    "evaluation/warm_environment.py": "2f5db0d715f758280b561a016338e4d5f1b6958bb53be5cb1b0f65ab4d84344e"
+  },
+  "formal_protocol_requires_new_source_snapshot": true,
+  "diagnostic": {
+    "request_count": 21,
+    "receipts_received": 21,
+    "known_provider_receipt_usd": "0.45084345",
+    "full_provider_receipt_usd": "0.45084345",
+    "aggregate_key_delta_usd": "0.45084345",
+    "key_delta_matches_known_receipts": true,
+    "task_wall_seconds": 774.4978239170159,
+    "accounting_wall_seconds": 12.814206750015728,
+    "additional_receipt_review_seconds": 0.6666406249860302,
+    "native_timeout_observed": false,
+    "cleanup_verified": true,
+    "original_automatic_measurement_error": "request_accounting_incomplete",
+    "sidecar_full_accounting": true,
+    "timeout_metering_verified": false
+  },
+  "original_allocation": {
+    "cap_usd": "5",
+    "prior_known_usd": "1.03555110",
+    "historical_unknown_holdback_usd": "1",
+    "historical_full_cost_usd": null,
+    "new_known_usd": "0.45084345",
+    "new_full_cost_usd": "0.45084345",
+    "additional_unknown_request_reserve_usd": "0",
+    "remaining_after_known_cost_and_reserves_usd": "2.51360545",
+    "provider_account_remaining_is_not_project_budget": true
+  },
+  "planning_basis": {
+    "eight_task_cost_usd": "1.00977450",
+    "eight_task_cost_lower_bound_usd": "1.00977450",
+    "eight_task_wall_seconds": 3046.687575790994,
+    "old_bicycle_lower_bound_replaced_only_for_future_planning": true,
+    "original_failed_attempt_not_deleted": true,
+    "historical_unknown_not_resolved": true,
+    "full_8_task_same_policy_calibration": false,
+    "reason": "Seven historical task observations plus one new bicycle diagnostic; transport/accounting version differs. One observation per task is not a confidence bound."
+  },
+  "family_checks": {
+    "validation_tasks": 8,
+    "heldout_tasks": 16,
+    "task_overlap": [],
+    "family_overlap": []
+  },
+  "scenarios_on_known_cost_basis": {
+    "8": {
+      "validation_tasks": 8,
+      "heldout_tasks": 16,
+      "search_configurations_per_method": 13,
+      "validation_attempts": 424,
+      "heldout_attempts": 80,
+      "total_attempts": 504,
+      "same_default_arithmetic_usd": "63.6157935000",
+      "search_2x_heldout_2_5x_usd": "131.2706850000",
+      "all_3x_sensitivity_usd": "190.8473805000",
+      "provisional_caps_usd": {
+        "default": 5,
+        "each_search": 30,
+        "heldout": 30,
+        "total": 155
+      },
+      "serial_hours": 53.31703257634239,
+      "serial_hours_2x": 106.63406515268478,
+      "execution_enabled": false,
+      "frozen_task_manifest_available": true
+    },
+    "4": {
+      "validation_tasks": 4,
+      "heldout_tasks": 8,
+      "search_configurations_per_method": 13,
+      "validation_attempts": 212,
+      "heldout_attempts": 40,
+      "total_attempts": 252,
+      "same_default_arithmetic_usd": "31.8078967500",
+      "search_2x_heldout_2_5x_usd": "65.6353425000",
+      "all_3x_sensitivity_usd": "95.4236902500",
+      "provisional_caps_usd": {
+        "default": 5,
+        "each_search": 15,
+        "heldout": 15,
+        "total": 80
+      },
+      "serial_hours": 26.658516288171196,
+      "serial_hours_2x": 53.31703257634239,
+      "execution_enabled": false,
+      "frozen_task_manifest_available": false
+    }
+  },
+  "unresolved_request_envelope_sensitivity": null,
+  "constraints": [
+    "13 configurations preserve 7 IGBS initial points plus two adaptive three-step cycles.",
+    "A four-validation/eight-heldout scope needs a new outcome-independent family-balanced selection and immutable protocol before execution.",
+    "One search seed only; these scopes cannot establish robustness across seeds.",
+    "Equal method budgets and task conditions; validation search then freeze then independent heldout.",
+    "API planning caps are not provider hard limits; local setup and hardware costs excluded.",
+    "No new paid request, task, or formal launch is authorized by this report."
+  ]
+}

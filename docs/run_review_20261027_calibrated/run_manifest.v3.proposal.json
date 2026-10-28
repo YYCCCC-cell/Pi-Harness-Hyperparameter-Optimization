@@ -1,0 +1,311 @@
+{
+  "calibration": {
+    "all_attempt_wall_seconds": 3810.417920832988,
+    "all_attempts": [
+      {
+        "attempt_id": "default--financial-modeling-qa",
+        "cost_usd": "0.09554805",
+        "failure_reason": "verifier_failure",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 0.0,
+        "phases": {
+          "agent_execution": 129.9,
+          "agent_setup": 3.6,
+          "environment_setup": 209.0,
+          "total": 380.9,
+          "verifier": 29.2
+        },
+        "source": "runs/cross-task-calibration-real-20261027",
+        "task_id": "financial-modeling-qa",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 381.4524083749857
+      },
+      {
+        "attempt_id": "default--powerlifting-coef-calc",
+        "cost_usd": "0E-8",
+        "failure_reason": "timeout",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": null,
+        "phases": {
+          "total": 600.1
+        },
+        "source": "runs/cross-task-calibration-real-20261027",
+        "task_id": "powerlifting-coef-calc",
+        "usage_kind": "not_dispatched",
+        "wall_seconds": 600.7404544590099
+      },
+      {
+        "attempt_id": "default--dapt-intrusion-detection",
+        "cost_usd": "0.11428530",
+        "failure_reason": "verifier_failure",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 0.0,
+        "phases": {
+          "agent_execution": 242.6,
+          "agent_setup": 3.5,
+          "environment_setup": 139.5,
+          "total": 444.8,
+          "verifier": 50.1
+        },
+        "source": "runs/cross-task-calibration-real-20261027",
+        "task_id": "dapt-intrusion-detection",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 445.48772633299814
+      },
+      {
+        "attempt_id": "default--mario-coin-counting",
+        "cost_usd": "0.03996915",
+        "failure_reason": "verifier_failure",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 0.0,
+        "phases": {
+          "agent_execution": 104.6,
+          "agent_setup": 3.4,
+          "environment_setup": 265.2,
+          "total": 470.2,
+          "verifier": 86.5
+        },
+        "source": "runs/cross-task-calibration-real-20261027",
+        "task_id": "mario-coin-counting",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 470.7866757499869
+      },
+      {
+        "attempt_id": "default--powerlifting-coef-calc",
+        "cost_usd": "0.06498255",
+        "failure_reason": null,
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 1.0,
+        "phases": {
+          "agent_execution": 98.7,
+          "agent_setup": 3.0,
+          "environment_setup": 3.3,
+          "total": 136.3,
+          "verifier": 22.3
+        },
+        "source": "runs/cross-task-calibration-continuation-real-20261027",
+        "task_id": "powerlifting-coef-calc",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 136.88301141600823
+      },
+      {
+        "attempt_id": "default--bike-rebalance",
+        "cost_usd": "0.47662005",
+        "failure_reason": "timeout",
+        "full_attempt_cost_confirmed": false,
+        "official_reward": 0.0,
+        "phases": {
+          "agent_execution": 900.0,
+          "agent_setup": 3.6,
+          "environment_setup": 10.7,
+          "total": 936.9,
+          "verifier": 2.8
+        },
+        "source": "runs/cross-task-calibration-continuation-real-20261027",
+        "task_id": "bike-rebalance",
+        "usage_kind": "unavailable",
+        "wall_seconds": 937.4877144999919
+      },
+      {
+        "attempt_id": "default--llm-prefix-cache-replay",
+        "cost_usd": "0.20753460",
+        "failure_reason": "verifier_failure",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 0.0,
+        "phases": {
+          "agent_execution": 357.6,
+          "agent_setup": 3.4,
+          "environment_setup": 5.4,
+          "total": 384.8,
+          "verifier": 9.1
+        },
+        "source": "runs/cross-task-calibration-recovery-real-20261027",
+        "task_id": "llm-prefix-cache-replay",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 385.332491417008
+      },
+      {
+        "attempt_id": "default--3d-scan-calc",
+        "cost_usd": "0.01570395",
+        "failure_reason": null,
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 1.0,
+        "phases": {
+          "agent_execution": 31.9,
+          "agent_setup": 3.3,
+          "environment_setup": 100.6,
+          "total": 153.1,
+          "verifier": 9.0
+        },
+        "source": "runs/cross-task-calibration-recovery-real-20261027",
+        "task_id": "3d-scan-calc",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 153.73044975000084
+      },
+      {
+        "attempt_id": "default--crystallographic-wyckoff-position-analysis",
+        "cost_usd": "0.02090745",
+        "failure_reason": "verifier_failure",
+        "full_attempt_cost_confirmed": true,
+        "official_reward": 0.45,
+        "phases": {
+          "agent_execution": 69.0,
+          "agent_setup": 3.0,
+          "environment_setup": 210.8,
+          "total": 297.9,
+          "verifier": 6.5
+        },
+        "source": "runs/cross-task-calibration-recovery-real-20261027",
+        "task_id": "crystallographic-wyckoff-position-analysis",
+        "usage_kind": "provider_reported",
+        "wall_seconds": 298.5169888329983
+      }
+    ],
+    "api_request_cost_usd": null,
+    "budget_charge_including_holdback_usd": "2.03555110",
+    "default_cost_basis": "known_request_charges_including_partial_timeout",
+    "default_panel_cost_usd": "1.03555110",
+    "default_task_mean_usd": "0.1294438875",
+    "eight_model_task_wall_seconds": 3209.677466373978,
+    "fully_metered_model_executions": 7,
+    "includes_cold_and_warm_environments": true,
+    "known_request_cost_usd": "1.03555110",
+    "max_task_cost_usd": "0.47662005",
+    "min_task_cost_usd": "0.01570395",
+    "model_executions": 8,
+    "not_optimization_evidence": true,
+    "official_pass_count": 2,
+    "total_attempts": 9,
+    "unknown_cost_holdback_usd": "1.00000000",
+    "unspent_original_5usd": "2.96444890"
+  },
+  "cost_scenarios_usd": {
+    "all_3x_sensitivity_not_forecast": "158.4393183000",
+    "basis_is_known_lower_bound_when_timeout_unresolved": true,
+    "same_as_default_arithmetic_only": "52.8131061000",
+    "same_as_default_plus_entire_timeout_holdback_per_panel_sensitivity": "103.8131061000",
+    "search_2x_heldout_2_5x_assumptions": "109.76841660000"
+  },
+  "execution_enabled": false,
+  "formal_search_launched": false,
+  "limits": [
+    "Eight default task executions are not the cost distribution of every configuration or the heldout panel.",
+    "Multipliers are explicit planning assumptions, not statistical upper bounds.",
+    "Earlier single-task parameter diagnostics reached $0.46291185 per attempt; the new default mean does not replace that evidence.",
+    "Family separation was audited from metadata; it is not complete semantic duplicate certification.",
+    "Historical unknown diagnostic fees remain unknown and outside this original $5 allocation."
+  ],
+  "proposed_dispatch_ceilings_usd": {
+    "approval_status": "not_approved",
+    "default_only_one_panel_no_transfer_of_unused_budget": true,
+    "default_validation": 5,
+    "each_search_method": 25,
+    "hard_provider_cap": false,
+    "heldout_all_five_configs": 30,
+    "inflight_overrun_stops_following_dispatch": true,
+    "local_compute_storage_and_network_costs_included": false,
+    "per_attempt_reservation": 1,
+    "planning_rule": "Search: round up to $5 of 2x known default panel x10 + $1 reservation headroom. Default: 2x one panel + $1. Heldout: 2.5x known mean x80 + $1. Unused method budgets are not transferred.",
+    "reprice_before_execution_if_timeout_costs_unresolved": true,
+    "total": 135,
+    "validation_controller_total": 105
+  },
+  "protocol": {
+    "environment_layers_prepared_before_timed_comparison": true,
+    "freeze_all_winners_before_heldout": true,
+    "heldout_feedback_to_search": false,
+    "no_retries_or_score_based_task_replacements": true,
+    "paired_task_outcomes_required": true,
+    "partial_panels_cannot_nominate_winners": true,
+    "preparation_cost_and_time_reported_separately": true,
+    "same_number_of_configurations": 10,
+    "same_usd_ceiling_for_all_search_methods": true,
+    "search_entitlement_equal": true,
+    "seed_robustness_or_causal_quality_gain_not_claimed": true,
+    "selection": "validation full-panel pass rate, accounted cost, wall time, configuration hash",
+    "task_and_seed_conditions_equal": true
+  },
+  "real_heldout_launched": false,
+  "recorded_at": "2026-10-27T15:42:58.440488+00:00",
+  "remaining_gates": [
+    "Approve this concrete scope and API dispatch ceiling; do not infer approval from the calibration budget.",
+    "Resolve timeout request accounting or freeze an explicitly conservative timeout-charge rule, then reprice the proposal before execution. The current cost basis includes known partial timeout charges and is not a complete mean.",
+    "Refresh runtime, model metadata, key availability and native environment readiness before any paid formal dispatch.",
+    "Prepare environments consistently for all methods; retain native timeouts and record provisioning time separately.",
+    "Heldout task costs remain unobserved; do not inspect heldout outcomes before freezing validation winners."
+  ],
+  "schema_version": 3,
+  "scope": {
+    "bo_initial_configurations": 3,
+    "calibration_included_in_formal_attempts": false,
+    "configurations_per_search": 10,
+    "evaluation_seed": 6203,
+    "heldout_attempts": 80,
+    "heldout_panel_sha256": "368494f11133fd93217e2c45e5706a7a2984256dbe44f9d42683baed85cccb53",
+    "heldout_tasks": [
+      "earthquake-plate-calculation",
+      "econ-detrending-correlation",
+      "energy-unit-commitment",
+      "fix-erlang-ssh-cve",
+      "jax-computing-basics",
+      "lake-warming-attribution",
+      "manufacturing-equipment-maintenance",
+      "organize-messy-files",
+      "pddl-airport-planning",
+      "pptx-reference-formatting",
+      "python-scala-translation",
+      "reserves-at-risk-calc",
+      "syzkaller-ppdev-syzlang",
+      "threejs-structure-parser",
+      "threejs-to-obj",
+      "travel-planning"
+    ],
+    "igbs_adaptive_configurations": 3,
+    "igbs_initial_configurations": 7,
+    "methods": [
+      "default",
+      "random",
+      "bo",
+      "igbs",
+      "pair_blind"
+    ],
+    "provider_rng_controlled": false,
+    "reuse_calibration_as_optimizer_observations": false,
+    "schedule_seed": 42,
+    "search_seeds": [
+      20261027
+    ],
+    "single_seed_exploratory": true,
+    "total_attempts": 408,
+    "validation_attempts": 328,
+    "validation_panel_sha256": "32c2070c0f2e218c8bdaedf3351dc3d957ed917d49d9aa590a519cb89d580a5d",
+    "validation_tasks": [
+      "3d-scan-calc",
+      "bike-rebalance",
+      "crystallographic-wyckoff-position-analysis",
+      "dapt-intrusion-detection",
+      "financial-modeling-qa",
+      "llm-prefix-cache-replay",
+      "mario-coin-counting",
+      "powerlifting-coef-calc"
+    ]
+  },
+  "source_sha256": {
+    "configs/hpo_space.live-v2.json": "1888417ac5de2bffffe03e5718636f8e57b7dff8e472a3c30a2e8fe218a1639b",
+    "configs/hpo_validation_panel.v2.json": "32c2070c0f2e218c8bdaedf3351dc3d957ed917d49d9aa590a519cb89d580a5d",
+    "docs/run_review_20261027/split-audit.json": "6de456f3cf7aa6f951601510ff28802de2e0a904bc2f48fb3411c338870fcc15",
+    "evaluation/panels/heldout.v2.json": "368494f11133fd93217e2c45e5706a7a2984256dbe44f9d42683baed85cccb53",
+    "runs/cross-task-calibration-continuation-real-20261027/summary.json": "a74bb646715d6210858a48049f3ea7bb62cf699ad6ad95a8341b94c1c0e88771",
+    "runs/cross-task-calibration-real-20261027/summary.json": "2d15af437222c37a8f2da9bca918f9af9417b6d3201da0c53bc699dcec804550",
+    "runs/cross-task-calibration-recovery-real-20261027/summary.json": "a4f1b30c8430fdc55ca99873cb5deee52cfdbe4863501107698152b63fc404de",
+    "runs/cross-task-calibration-recovery-reconciliation-20261027/reconciliation.json": "2cee135372b6df0a284004d414216c47d2dff62367c7b6c68de95ec7388ebeb4"
+  },
+  "status": "calibrated_proposal_with_open_metering_gate",
+  "time_scenarios": {
+    "at_observed_mixed_cold_warm_mean_hours": 45.47043077363136,
+    "at_twice_observed_mean_hours": 90.94086154726271,
+    "concurrency": 1,
+    "native_phase_allowance_hours": 272.7944444444444,
+    "not_a_runtime_guarantee": true
+  }
+}

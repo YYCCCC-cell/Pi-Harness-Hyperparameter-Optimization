@@ -1,0 +1,22 @@
+{
+  "approval_source": "direct_user_messages_in_current_chat",
+  "formal_tasks_dispatched": 0,
+  "inflight_overrun_accepted_in_prior_approval": true,
+  "inherited_protocol_path": "docs/formal_protocol_20261028_v7/run_manifest.v7.proposal.json",
+  "inherited_protocol_sha256": "b709862d197587c443fa45072fe3cfbb4f3dff0061a56503cd11b5bce97f5422",
+  "latest_budget_instruction": "压缩到60美元",
+  "prior_approval_path": "docs/formal_protocol_20261028_v7/approval.20261028.json",
+  "prior_approval_reply": "批准 $82 缩减方案",
+  "prior_approval_sha256": "66ee92f0b893e5c86110566fe281414d4b554e3bbdb96492abf29fbc04176bfe",
+  "prior_calibration_budget_reallocated": false,
+  "recorded_at": "2026-10-28T09:47:57.250871+00:00",
+  "stage_caps_usd": {
+    "bo": 16,
+    "default": 3,
+    "heldout": 9,
+    "igbs": 16,
+    "random": 16
+  },
+  "total_new_dispatch_budget_usd": 60,
+  "validation_config_sha256": "9c006aaaf9ff361f8e008c453e64d68511004c6b604c011bdcf77e26c863fcb2"
+}

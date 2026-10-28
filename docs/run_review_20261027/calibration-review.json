@@ -1,0 +1,24 @@
+{
+  "additional_timeout_holdback_usd": "1",
+  "formal_proposed_api_dispatch_ceiling_usd": 135,
+  "formal_proposed_attempt_count": 408,
+  "formal_search_launched": false,
+  "known_calibration_request_cost_usd": "1.03555110",
+  "open_gate": "bike-rebalance timeout full cost remains unknown; resolve metering or freeze a conservative accounting rule and reprice before formal execution",
+  "original_calibration_cap_usd": 5,
+  "proposal": "../run_review_20261027_calibrated/run_manifest.v3.proposal.json",
+  "readiness": {
+    "all_attempt_costs_confirmed": false,
+    "all_eight_default_tasks_calibrated": true,
+    "all_selected_validation_environments_executed": true,
+    "formal_budget_approved": false,
+    "heldout_entry_implemented": true,
+    "heldout_entry_real_run_verified": false,
+    "subset_controller_implemented": true
+  },
+  "real_heldout_launched": false,
+  "recorded_at": "2026-10-27T15:46:16.694883+00:00",
+  "remaining_calibration_allocation_usd": "2.96444890",
+  "report": "../cross_task_calibration_completion_20261027.md",
+  "status": "calibrated_proposal_with_open_metering_gate"
+}

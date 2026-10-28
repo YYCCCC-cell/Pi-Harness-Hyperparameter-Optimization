@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-25",
+  "scope": "Static documentation, citation paths/ranges, roster and split integrity; no runtime compatibility test.",
+  "documents": [
+    {
+      "file": "docs/harness_benchmark_feasibility.md",
+      "sha256": "c70a609b3bd3f0dbd21628470a0b1f0ea31c4a308e8421b076f43c104011a54f",
+      "immutable_citation_ranges_checked": 51,
+      "local_links_valid": true
+    },
+    {
+      "file": "docs/pi_configuration_analysis.md",
+      "sha256": "af13e0074333f7e982747a824a5b21cc22a76f83d4b36c567130bdf69cce34e7",
+      "immutable_citation_ranges_checked": 202,
+      "local_links_valid": true
+    },
+    {
+      "file": "docs/skillsbench_integration_analysis.md",
+      "sha256": "c842217bad88ae38ec0c258830014a64c5c1126204defab82ecf9bfff9841f86",
+      "immutable_citation_ranges_checked": 93,
+      "local_links_valid": true
+    }
+  ],
+  "documented_settings_covered": 72,
+  "task_package_hashes_matched": 101,
+  "third_party_checkouts_clean": true,
+  "split_reproduced": true,
+  "validation_tasks": 28,
+  "test_tasks": 59,
+  "proposed_split_sha256": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+  "dependencies_installed": false,
+  "benchmark_experiments_run": false
+}

@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "group_id": "family-e53a7e576d06",
+      "tasks": [
+        "3d-scan-calc"
+      ]
+    },
+    {
+      "group_id": "family-74432d9d98bc",
+      "tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "group_id": "family-4ea270b0f125",
+      "tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "group_id": "family-56d4f75e7c4d",
+      "tasks": [
+        "dapt-intrusion-detection"
+      ]
+    },
+    {
+      "group_id": "family-0c961e164997",
+      "tasks": [
+        "financial-modeling-qa"
+      ]
+    },
+    {
+      "group_id": "family-55709c97f7d4",
+      "tasks": [
+        "llm-prefix-cache-replay"
+      ]
+    },
+    {
+      "group_id": "family-ddd8f26ea30f",
+      "tasks": [
+        "mario-coin-counting"
+      ]
+    },
+    {
+      "group_id": "family-8fc326c558eb",
+      "tasks": [
+        "powerlifting-coef-calc"
+      ]
+    }
+  ],
+  "role": "validation_proposal_not_runner_input",
+  "task_ids": [
+    "3d-scan-calc",
+    "bike-rebalance",
+    "crystallographic-wyckoff-position-analysis",
+    "dapt-intrusion-detection",
+    "financial-modeling-qa",
+    "llm-prefix-cache-replay",
+    "mario-coin-counting",
+    "powerlifting-coef-calc"
+  ]
+}

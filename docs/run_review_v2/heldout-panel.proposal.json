@@ -1,0 +1,22 @@
+{
+  "outcomes_available": false,
+  "role": "heldout_evaluator_only_proposal",
+  "task_ids": [
+    "econ-detrending-correlation",
+    "energy-market-pricing",
+    "fix-build-google-auto",
+    "fix-erlang-ssh-cve",
+    "glm-lake-mendota",
+    "manufacturing-equipment-maintenance",
+    "organize-messy-files",
+    "paper-anonymizer",
+    "pddl-airport-planning",
+    "reserves-at-risk-calc",
+    "seismic-phase-picking",
+    "spring-boot-jakarta-migration",
+    "syzkaller-ppdev-syzlang",
+    "threejs-structure-parser",
+    "threejs-to-obj",
+    "travel-planning"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "approval_source": "direct_user_reply_in_current_chat",
+  "formal_tasks_dispatched": 0,
+  "inflight_overrun_accepted": true,
+  "prior_calibration_budget_reallocated": false,
+  "protocol_path": "docs/formal_protocol_20261028_v7/run_manifest.v7.proposal.json",
+  "protocol_sha256": "b709862d197587c443fa45072fe3cfbb4f3dff0061a56503cd11b5bce97f5422",
+  "recorded_at": "2026-10-28T09:41:49.159436+00:00",
+  "stage_caps_usd": {
+    "bo": 22,
+    "default": 4,
+    "heldout": 12,
+    "igbs": 22,
+    "random": 22
+  },
+  "total_new_dispatch_budget_usd": 82,
+  "user_reply": "批准 $82 缩减方案"
+}

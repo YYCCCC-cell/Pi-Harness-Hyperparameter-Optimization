@@ -1,0 +1,156 @@
+{
+  "arithmetic_sensitivity_not_forecast": {
+    "at_sample_max_usd": 188.86803479999998,
+    "at_sample_mean_usd": 97.68507768,
+    "at_sample_min_usd": 37.4148648
+  },
+  "attempts": {
+    "default_validation": 8,
+    "heldout_all_winners_and_default": 80,
+    "search_all_methods_all_seeds": 320,
+    "search_per_method_per_seed": 80,
+    "total": 408
+  },
+  "execution_enabled": false,
+  "formal_experiment_launched": false,
+  "gates_before_execution": [
+    "Activate and validate a versioned task-relevant search space, or explicitly redesign the method for fewer dimensions; do not treat controlled synthetic pressure as real-task activation.",
+    "Measure default costs on the selected eight-task panel and confirm native environments; current five complete costs cover only one different task.",
+    "Review/freeze versioned subset/group loader and implement it in the live controller; current runner still requires the full 28-task panel.",
+    "Freeze the conservative family/quarantine proposal; metadata-only audit is not content-level duplicate certification.",
+    "Approve the final manifest and API budget, configure matching provider spend controls, and refresh model/runtime availability."
+  ],
+  "manifest_sha256": "55168eeba5a2307877b37b03beab72d297cdbda0859b370e22f514e92f10b17d",
+  "model": "openrouter/openai/gpt-5.4-mini",
+  "observed_cost_evidence": {
+    "max_usd": 0.46291184999999996,
+    "mean_usd": 0.23942421,
+    "min_usd": 0.0917031,
+    "observations": [
+      {
+        "attempt": "thinking-high",
+        "cost_usd": 0.33043905000000007,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 418.0936887090065
+      },
+      {
+        "attempt": "reserve-low",
+        "cost_usd": 0.20937284999999997,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 303.89877941699524
+      },
+      {
+        "attempt": "reserve-high",
+        "cost_usd": 0.46291184999999996,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 368.3358419169963
+      },
+      {
+        "attempt": "recent-low",
+        "cost_usd": 0.0917031,
+        "source": "runs/pi-diagnostic-completion-20261027/summary.json",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 151.1059892080084
+      },
+      {
+        "attempt": "recent-high",
+        "cost_usd": 0.1026942,
+        "source": "runs/pi-diagnostic-completion-20261027/summary.json",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 165.3606097919983
+      }
+    ],
+    "pressure_probe_excluded": true,
+    "representative_of_selected_panel": false,
+    "whole_campaign_cost_known": false
+  },
+  "old_attempts": 4827,
+  "proposed_api_dispatch_ceilings_usd": {
+    "all_four_searches": 200,
+    "approval_status": "not_approved",
+    "default_validation": 5,
+    "heldout_all_winners": 50,
+    "insufficient_budget_policy": "stop; do not select from incomplete panels or silently drop tasks",
+    "local_compute_storage_egress": "not_metered; excluded from API USD",
+    "per_attempt_reservation": 1,
+    "policy": "soft_dispatch_gate_with_inflight_overrun; not a provider billing hard cap",
+    "search_per_method_per_seed": 50,
+    "total": 255
+  },
+  "protocol": {
+    "concurrency": 1,
+    "failure": "charge every dispatch; timeout/error/missing reward are nonpass; unknown cost stops all methods",
+    "heldout": "freeze every winner before reading any heldout outcomes; one attempt per task per winner; no test-guided tuning",
+    "outer_retries": 0,
+    "pass_at_1_resolution": {
+      "heldout": 0.0625,
+      "validation": 0.125
+    },
+    "seed_limit": "one search seed is exploratory, not evidence of across-seed robustness",
+    "timeouts": "native task-specific limits"
+  },
+  "recommended_scope": {
+    "bo_initial_panels": 3,
+    "diagnostic_history_is_not_free_optimizer_warm_start": true,
+    "evaluation_seed": 6203,
+    "heldout_count": 16,
+    "heldout_tasks": [
+      "econ-detrending-correlation",
+      "energy-market-pricing",
+      "fix-build-google-auto",
+      "fix-erlang-ssh-cve",
+      "glm-lake-mendota",
+      "manufacturing-equipment-maintenance",
+      "organize-messy-files",
+      "paper-anonymizer",
+      "pddl-airport-planning",
+      "reserves-at-risk-calc",
+      "seismic-phase-picking",
+      "spring-boot-jakarta-migration",
+      "syzkaller-ppdev-syzlang",
+      "threejs-structure-parser",
+      "threejs-to-obj",
+      "travel-planning"
+    ],
+    "methods": [
+      "default",
+      "random",
+      "bo",
+      "igbs",
+      "pair_blind"
+    ],
+    "provider_rng_controlled": false,
+    "schedule_seed": 42,
+    "search_panels": 10,
+    "search_seeds": [
+      20261027
+    ],
+    "selection_basis": "metadata categories and deterministic hashes only; no rewards or costs used",
+    "selection_seed": "EP6203-scale-v2-20261027-metadata-only",
+    "unused_validation_never_promoted_to_heldout": true,
+    "validation_count": 8,
+    "validation_tasks": [
+      "adaptive-cruise-control",
+      "civ6-adjacency-optimizer",
+      "debug-trl-grpo",
+      "exoplanet-detection-period",
+      "invoice-fraud-detection",
+      "multilingual-video-dubbing",
+      "powerlifting-coef-calc",
+      "suricata-custom-exfil"
+    ]
+  },
+  "schema_version": 2,
+  "source_pins": {
+    "benchflow": "99baefb602674bbd31139fd2f1a22c3ed45752f9",
+    "pi-acp": "b0581c9c1d675e634234674484247008b03d69b4",
+    "pi-mono": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a",
+    "skillsbench": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af"
+  },
+  "split_audit_sha256": "6de456f3cf7aa6f951601510ff28802de2e0a904bc2f48fb3411c338870fcc15",
+  "status": "conditional_design_not_execution_approval",
+  "task2_decision": "Original grid has no observed task compaction; mechanism evidence cannot make its task dimensions identifiable."
+}

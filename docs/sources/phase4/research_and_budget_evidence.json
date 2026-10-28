@@ -1,0 +1,240 @@
+{
+  "phase": 4,
+  "date": "2026-10-25",
+  "timezone": "Asia/Singapore",
+  "status": "research_and_design_only_not_approved_for_implementation",
+  "new_benchmark_attempts": 0,
+  "new_model_api_calls": 0,
+  "optimizer_implemented": false,
+  "calculation_provenance": "Python standard library arithmetic only; no benchmark or optimizer execution",
+  "validation_task_count": 28,
+  "heldout_task_count_metadata_only": 59,
+  "validation_group_count": 17,
+  "validation_group_sizes": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1,
+    3,
+    1,
+    3,
+    4,
+    1
+  ],
+  "grouping_status": "proposed; metadata/provenance review outstanding; not claimed independent",
+  "scenario_assumptions": [
+    "Current proposed 28/59 split; no outcomes read from held-out tasks",
+    "Default validation measured once; one final test attempt per task for every frozen method/seed winner",
+    "No free cross-method or cross-seed evaluation reuse",
+    "Pilot, additional sensitivity confirmation, compute, storage, egress excluded",
+    "Per-attempt USD and duration inputs are hypothetical, not measured prices or results"
+  ],
+  "budget_scenarios": [
+    {
+      "panels_per_search": 12,
+      "search_seeds": 1,
+      "extra_ablation_arms": 0,
+      "search_attempts": 1008,
+      "default_validation_attempts": 28,
+      "heldout_attempts": 236,
+      "total_attempts": 1272,
+      "hypothetical_api_usd_at_0.02_per_attempt": 25.44,
+      "hypothetical_api_usd_at_0.10_per_attempt": 127.2,
+      "hypothetical_hours_3min_4slots": 15.9,
+      "hypothetical_hours_10min_4slots": 53.0
+    },
+    {
+      "panels_per_search": 12,
+      "search_seeds": 1,
+      "extra_ablation_arms": 1,
+      "search_attempts": 1344,
+      "default_validation_attempts": 28,
+      "heldout_attempts": 295,
+      "total_attempts": 1667,
+      "hypothetical_api_usd_at_0.02_per_attempt": 33.34,
+      "hypothetical_api_usd_at_0.10_per_attempt": 166.7,
+      "hypothetical_hours_3min_4slots": 20.8375,
+      "hypothetical_hours_10min_4slots": 69.45833333333333
+    },
+    {
+      "panels_per_search": 12,
+      "search_seeds": 3,
+      "extra_ablation_arms": 0,
+      "search_attempts": 3024,
+      "default_validation_attempts": 28,
+      "heldout_attempts": 590,
+      "total_attempts": 3642,
+      "hypothetical_api_usd_at_0.02_per_attempt": 72.84,
+      "hypothetical_api_usd_at_0.10_per_attempt": 364.2,
+      "hypothetical_hours_3min_4slots": 45.525,
+      "hypothetical_hours_10min_4slots": 151.75
+    },
+    {
+      "panels_per_search": 12,
+      "search_seeds": 3,
+      "extra_ablation_arms": 1,
+      "search_attempts": 4032,
+      "default_validation_attempts": 28,
+      "heldout_attempts": 767,
+      "total_attempts": 4827,
+      "hypothetical_api_usd_at_0.02_per_attempt": 96.54,
+      "hypothetical_api_usd_at_0.10_per_attempt": 482.7,
+      "hypothetical_hours_3min_4slots": 60.3375,
+      "hypothetical_hours_10min_4slots": 201.125
+    },
+    {
+      "panels_per_search": 18,
+      "search_seeds": 3,
+      "extra_ablation_arms": 1,
+      "search_attempts": 6048,
+      "default_validation_attempts": 28,
+      "heldout_attempts": 767,
+      "total_attempts": 6843,
+      "hypothetical_api_usd_at_0.02_per_attempt": 136.86,
+      "hypothetical_api_usd_at_0.10_per_attempt": 684.3,
+      "hypothetical_hours_3min_4slots": 85.5375,
+      "hypothetical_hours_10min_4slots": 285.125
+    }
+  ],
+  "noise_illustration": {
+    "independent_bernoulli_p": 0.5,
+    "single_panel_se": 0.0944911182523068,
+    "single_panel_normal95_halfwidth": 0.1851991886334366,
+    "four_independent_cells_interaction_se": 0.1889822365046136,
+    "interaction_normal95_halfwidth": 0.3703983772668732,
+    "power": 0.8,
+    "power_calculations": [
+      {
+        "interaction_magnitude": 0.2,
+        "contrast_variance_assumption": 1,
+        "independent_contrasts_alpha_0.05": 197,
+        "independent_contrasts_bonferroni_3_pairs": 262
+      },
+      {
+        "interaction_magnitude": 0.1,
+        "contrast_variance_assumption": 1,
+        "independent_contrasts_alpha_0.05": 785,
+        "independent_contrasts_bonferroni_3_pairs": 1047
+      },
+      {
+        "interaction_magnitude": 0.05,
+        "contrast_variance_assumption": 1,
+        "independent_contrasts_alpha_0.05": 3140,
+        "independent_contrasts_bonferroni_3_pairs": 4188
+      }
+    ],
+    "limitations": "Normal approximations. Solver repeats are not new independent task families; covariance and group dependence alter these values."
+  },
+  "complexity_arithmetic": {
+    "d": 3,
+    "levels_per_dimension": 3,
+    "grid_points": 27,
+    "unrestricted_main_plus_pair_coefficients": 19,
+    "complete_grid_edges": 81,
+    "complete_grid_rectangles": 81,
+    "screen_panels": 7,
+    "screen_attempts": 196,
+    "screen_fraction_of_Q12": 0.5833333333333334,
+    "bootstrap_contributions_bound_per_refresh": 5508000
+  },
+  "third_party_read_only_verification": [
+    {
+      "path": "third_party/pi-mono",
+      "commit": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a",
+      "matches_prior_lock": true,
+      "clean": true
+    },
+    {
+      "path": "third_party/skillsbench",
+      "commit": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af",
+      "matches_prior_lock": true,
+      "clean": true
+    },
+    {
+      "path": "third_party/benchflow",
+      "commit": "99baefb602674bbd31139fd2f1a22c3ed45752f9",
+      "matches_prior_lock": true,
+      "clean": true
+    },
+    {
+      "path": "third_party/pi-acp",
+      "commit": "b0581c9c1d675e634234674484247008b03d69b4",
+      "matches_prior_lock": true,
+      "clean": true
+    }
+  ],
+  "project_source_and_evidence_sha256": {
+    "docs/sources/proposed_split.json": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+    "configs/hpo_validation_tasks.json": "2555ffc426f9c6f03b06f614ad07119c4021d4b52c46118b9f4358e0dd210f88",
+    "configs/hpo_space.json": "0b6656b57c2fa0dd64bbf2e2ea4b515c7f26d04db81474fb729d6450ad1c52be",
+    "configs/hpo_mock.json": "d7242970bbc04c258271f4a8e2a3f7f07a15152b3eee99b6e130474c94794dc9",
+    "hpo/methods.py": "e38357de80a97e3a6446388cc44282b1935ab412238972deea57f6eaee207426",
+    "hpo/evaluation.py": "8f5aa70d9b7accfe4166362a37550bf9170b2d1aff3fa1e7ed26a4e4a78881c2",
+    "hpo/runner.py": "d7ac7ea0c595b751cb6ab882686a9647dde4b6df0a7e207aa81b50878c07dba6",
+    "hpo/budget.py": "a4781ac7ab6a5e4dbf3a51860e4ea505dc8f889c849f9dd519556fc4a9e1c8b1",
+    "hpo/config.py": "cf74a190ea5d585f0e7ddd1050a58886e481e65124ff22e8ec86f4e01e467c33",
+    "runs/archive/pi-setup-20261026/phase2-preflight-20261025/result.json": "763033cb1daf227d2877277d7d0423aa1a4171fa92d275aaa72eeb7b887d29b3",
+    "runs/archive/pi-setup-20261026/phase2-preflight-20261025/pi-function-probes.json": "183868a00f7fc19ceab37c719f7c6a81e49be089037f6fdd7e09ec01275ad4ef",
+    "runs/phase3-baselines-20261025-reproducible/summary.json": "71c54d24bdaae2c2126dc7406d26a4eec1db6210b97ee3ee89f52379dda35f48",
+    "runs/phase3-baselines-20261025-reproducible/bo-components.json": "95ff28c598a47d7cec96264be32b620f448796e035e66c6b0a06810734ad93ea",
+    "pilot/worker.py": "6f13c1b6e7a693aa4ac05691b47ba6fdf56e9bf797202e87bd95c58ca5fd2b36",
+    "pilot/config.py": "f6bc18309fb330bf0540f134dad0586163f94c41c697b6c8051e92e210b9e9ec",
+    "pilot/results.py": "7c26932150e36d123e0a1e972090e312e674638381aed12837ad3c6f39b18d9e",
+    "pilot/__init__.py": "41b39360a4824e8317c4d3c0b08b9636a96c6cafc66d928077bc8ef1747f70d8",
+    "pilot/__main__.py": "ef3b4407f153dfcde9217460d752354d34eb30fc0c5089d53a1efa3d55355a99",
+    "pilot/preflight.py": "b40b58e7243313c19171d12fcd4abecd7d4960f33a02e0f4f4366396b4be743b",
+    "tests/test_pilot.py": "5d75c348e4036245b1298e027584b398b22743dbfc39c6c44059b8dba8ae0a8a",
+    "tests/test_hpo.py": "29d9ac8a3b640db502b326a4100b061c7d6ca4416f396f32ec80d00c215c6814",
+    "schemas/hpo_space.schema.json": "826c79a7fb3efc3724d2c2f7f783e9527379881430450ed49b60e82a832c0758",
+    "schemas/hpo_campaign.schema.json": "1708b1c42e8468c8bdb25b01fdadcea45b60555dc0ed27c70f3e8440f4704c3f",
+    "schemas/pi_search_settings.schema.json": "dee389ac2f7a00bf18bc8e65e47b3f440ee312145770b42c12036c74614de7f2",
+    "schemas/hpo_result.schema.json": "518246fa623f0f73a9ade734f42293dae541ca6b2c7babb755f72fdf203ae7dc",
+    "hpo/reproducibility.py": "6616fd2978f846dd0ad625d0a74e7d6d69b87d88059cdf2f471f48acf6603cd6",
+    "hpo/__init__.py": "ef01787d0842b3ee6c5ea4f4b4b80d199b472e446202637c50f88124edf3cf96",
+    "hpo/__main__.py": "fb7255f73fe6bf98b55a4293e4c06dd6e393d92fb7da13345231399a534b206d",
+    "requirements-hpo.lock": "af20414dcf6c3eec2c745f348a473bb963cc7ccfa6ac29ec2948a2092efa2285"
+  },
+  "additional_downloaded_primary_sources": [
+    {
+      "path": "docs/sources/phase4/differential_grouping_accepted.pdf",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/156228/1/PID2794611.pdf",
+      "version": "accepted manuscript of IEEE TEVC 18(3):378-393 (2014); repository cover included",
+      "pages": 17,
+      "locators": "Section III, Theorem 1, Equations 3-4: PDF page 5; Section III.A, Algorithm 1: PDF page 6",
+      "sha256": "72c54c6d97015d3bd31e02df2d4285856f2bcfbc5ba23822ae1e0ca617322fec",
+      "extracted_text": "docs/sources/phase4/differential_grouping_accepted.txt",
+      "text_sha256": "b7a89b6a619a5edca83bcd5d238571913558de43b6a09217f781eb7b5c646cf1"
+    },
+    {
+      "path": "docs/sources/phase4/paramils_jair2009.pdf",
+      "url": "https://www.cs.ubc.ca/labs/algorithms/Projects/ParamILS/papers/09-JAIR-ParamILS.pdf",
+      "version": "JAIR 36:267-306 (2009)",
+      "pages": 40,
+      "locators": "Sections 3.1-3.2: PDF page 7; Algorithm Framework 1: PDF page 8",
+      "sha256": "c2aab53ff8bb05571a9d6d01cea9264faeecba39e84527347396840172ddd450",
+      "extracted_text": "docs/sources/phase4/paramils_jair2009.txt",
+      "text_sha256": "7291580f4520430ca72352e0ec52c7032dbea9f64ed9cdff357f1370a8c83e91"
+    }
+  ],
+  "other_sources": "Versioned local papers in docs/sources/research/local_materials.json; publisher/author links and section locators in phase4_interaction_aware_hpo_design.md",
+  "document_validation": {
+    "report_path": "docs/phase4_interaction_aware_hpo_design.md",
+    "report_sha256": "b6253ff69b395a15b3eb38b44ac5f8d6294985ec79f716652bf266174c0f03e8",
+    "local_links_checked": 29,
+    "missing_local_links": [],
+    "code_fences_balanced": true,
+    "display_math_delimiters_balanced": true,
+    "phase3_source_hashes_checked": 16,
+    "phase3_source_mismatches": [],
+    "proposed_optimizer_files_exist": false,
+    "verification_scope": "Documentation, arithmetic, source identity and checkout cleanliness only; no benchmark or optimizer tests executed in Phase 4"
+  }
+}

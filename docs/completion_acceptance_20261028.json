@@ -1,0 +1,107 @@
+{
+  "recorded_date": "2026-10-28",
+  "formal_search_launched": false,
+  "heldout_dispatched": false,
+  "native_conditions_changed_for_diagnostics": [
+    "agent_timeout_seconds:900->20"
+  ],
+  "diagnostic_not_optimization_data": true,
+  "real_timeout_accounting_verified": true,
+  "end_to_end_automatic_delayed_receipt_polling_real_validated": false,
+  "delayed_receipt_policy": "404-only backoff, 180 seconds total; 401/403 stops; offline regression tested",
+  "attempts": [
+    {
+      "run": "runs/controlled-timeout-real-20261028",
+      "attempts": 1,
+      "model_requests": 5,
+      "receipt_count": 4,
+      "complete": false,
+      "known_cost_usd": "0.01355700",
+      "full_cost_usd": null,
+      "task_wall_seconds": 62.55618716700701,
+      "phase_timing": {
+        "agent_execution": 20.0,
+        "agent_setup": 4.3,
+        "environment_setup": 14.9,
+        "total": 61.8,
+        "verifier": 3.5
+      },
+      "additional_receipt_review_seconds": 2.84805149998283,
+      "cleanup_verified": true,
+      "settings_verified": true,
+      "worker_interrupted": false,
+      "watchdog_timeout": true,
+      "original_files_unchanged": true,
+      "original_automatic_measurement_error": "request_accounting_incomplete",
+      "provider_cancelled_flags": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "key_delta_usd": "0.04570275",
+      "receipt_errors": []
+    },
+    {
+      "run": "runs/controlled-timeout-drain-real-20261028",
+      "attempts": 1,
+      "model_requests": 3,
+      "receipt_count": 3,
+      "complete": true,
+      "known_cost_usd": "0.03214575",
+      "full_cost_usd": "0.03214575",
+      "task_wall_seconds": 89.44948583398946,
+      "phase_timing": {
+        "agent_execution": 20.0,
+        "agent_setup": 4.8,
+        "environment_setup": 4.9,
+        "total": 87.8,
+        "verifier": 3.5
+      },
+      "additional_receipt_review_seconds": 2.3662090839934535,
+      "cleanup_verified": true,
+      "settings_verified": true,
+      "worker_interrupted": false,
+      "watchdog_timeout": true,
+      "original_files_unchanged": true,
+      "original_automatic_measurement_error": "request_accounting_incomplete",
+      "provider_cancelled_flags": [
+        false,
+        false,
+        false
+      ],
+      "key_delta_usd": "0.03214575",
+      "receipt_errors": []
+    }
+  ],
+  "allocation": {
+    "original_cap_usd": "5",
+    "prior_known_usd": "1.48639455",
+    "new_known_usd": "0.04570275",
+    "known_total_usd": "1.53209730",
+    "historical_unknown_extra_holdback_usd": "1",
+    "first_controlled_attempt_total_reservation_usd": "1",
+    "first_controlled_attempt_known_charged_inside_reservation_usd": "0.01355700",
+    "first_controlled_attempt_remaining_unknown_reservation_usd": "0.98644300",
+    "remaining_dispatchable_usd": "1.48145970",
+    "all_unknown_full_costs_remain_null": true
+  },
+  "native_planning_panel_cost_usd": "1.00977450",
+  "native_planning_panel_wall_seconds": 3046.687575790994,
+  "formal_proposal": {
+    "attempts": 504,
+    "validation_tasks": 8,
+    "heldout_tasks": 16,
+    "configurations_per_search": 13,
+    "staged_usd": 155,
+    "approved": false
+  },
+  "rejected_small_scenario": {
+    "validation_tasks": 4,
+    "reason": "IGBS requires at least eight groups; four groups disables guidance"
+  },
+  "source_sha256": {
+    "runs/controlled-timeout-real-20261028/receipt-review/review.json": "50df528e4301e5c80b783be675a35d25b8c56a4a062b5d49a2bf1ec6fd74eb6c",
+    "runs/controlled-timeout-drain-real-20261028/receipt-review/review.json": "94846342466003e4b4fcac6824850f47b5c690ed5d4f0077d9d6893e7b5a46f0"
+  }
+}

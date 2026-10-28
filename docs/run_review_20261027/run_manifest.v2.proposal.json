@@ -1,0 +1,387 @@
+{
+  "arithmetic_sensitivity_not_forecast": {
+    "at_sample_max_usd": 188.8680348,
+    "at_sample_mean_usd": 90.5865111,
+    "at_sample_min_usd": 37.4148648
+  },
+  "attempts": {
+    "default_validation": 8,
+    "heldout_all_winners_and_default": 80,
+    "search_all_methods_all_seeds": 320,
+    "search_per_method_per_seed": 80,
+    "total": 408
+  },
+  "budget_planning_assumption": {
+    "basis": "Planning allowance about 1.35x the largest fully metered task cost observed; not a statistical upper bound or guarantee across tasks.",
+    "usd_per_planned_attempt": 0.625
+  },
+  "execution_enabled": false,
+  "formal_experiment_launched": false,
+  "gates_before_execution": [
+    "Require a closed, measurement-valid real task diagnostic with at least one completed native threshold compaction in the early_compaction_v2 space; controlled pressure alone is insufficient.",
+    "Run the declared default eight-task panel first under its own fixed budget and confirm native environments; current complete costs cover only one task. This panel is included in the 408 count, never a free optimizer warm start.",
+    "Review/freeze versioned subset/group loader and implement it in the live controller; current runner still requires the full 28-task panel.",
+    "Complete the evaluator-owned heldout execution path without exposing heldout results or task contents to the optimizer.",
+    "Freeze the conservative family/quarantine proposal; metadata-only audit is not content-level duplicate certification.",
+    "Approve the final manifest and API budget, configure matching provider spend controls, and refresh model/runtime availability."
+  ],
+  "manifest_sha256": "94dba8f6df5d985041f87a6e25feffdec2516898036d1e666995ca6659d97402",
+  "model": "openrouter/openai/gpt-5.4-mini",
+  "native_phase_limits": {
+    "3d-scan-calc": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "beee99b3485cca702765627216cee7210b700e9709c6b0c309e8c5d80f729c45",
+      "verifier.timeout_sec": 900.0
+    },
+    "bike-rebalance": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "e0c4df63f4231cf3e0ebc49d78529c44177833e6f90d0de389b1fe096c9f6fdf",
+      "verifier.timeout_sec": 900.0
+    },
+    "crystallographic-wyckoff-position-analysis": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f30ecc94de28d1bf3be0685f7a28b869970243edf0e534151d513e221b82d41f",
+      "verifier.timeout_sec": 240.0
+    },
+    "dapt-intrusion-detection": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "8f1739e8a100f7834df0c5354e9dccda2f6ce042cb56244839e0820b50048172",
+      "verifier.timeout_sec": 600.0
+    },
+    "earthquake-plate-calculation": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fe9a152c1cb3a2b9f2062219d4082c94a5c1d43ce2f0ab3bee209b4a4ea2ef6a",
+      "verifier.timeout_sec": 900.0
+    },
+    "econ-detrending-correlation": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d3d8413c9f03bfff5bee899f3e375d80838dfda786df53020dd7718cf4e3a152",
+      "verifier.timeout_sec": 240.0
+    },
+    "energy-unit-commitment": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3879a430c8316d2b0b1c9fd05760d056d8179c57b83fdcff6b6bc465a4572338",
+      "verifier.timeout_sec": 900.0
+    },
+    "financial-modeling-qa": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fbce3b022690e02820c69860dbfffa993aba8c2140f86a163d617d41a68f833a",
+      "verifier.timeout_sec": 600.0
+    },
+    "fix-erlang-ssh-cve": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "78035d7a9643ccb7b5d27bfd1e09e9cf87418673b543444fb34d5787a1329ee3",
+      "verifier.timeout_sec": 1200.0
+    },
+    "jax-computing-basics": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1016b0a2c60d31532be6b01fa690b8a39b168668f521fd17905b2e82540e57d2",
+      "verifier.timeout_sec": 600.0
+    },
+    "lake-warming-attribution": {
+      "agent.timeout_sec": 300.0,
+      "environment.build_timeout_sec": 300.0,
+      "front_matter_sha256": "f1f39a55f70b3c3b999c597ee44d03abb27c6bc2abfd66a58193b2e30617edc9",
+      "verifier.timeout_sec": 300.0
+    },
+    "llm-prefix-cache-replay": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "99867f2abb84fcf95453fffe64ab73a3daedc96a54e8820b5c78218b943e036b",
+      "verifier.timeout_sec": 300.0
+    },
+    "manufacturing-equipment-maintenance": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "2079894fe515df0a33464deeaa51ebe870e3ccbee292ce2077559595aa543072",
+      "verifier.timeout_sec": 300.0
+    },
+    "mario-coin-counting": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f52ff5d81329c387a6612cacad763054eed5a20202c5ed34029d411fbc74dfa8",
+      "verifier.timeout_sec": 900.0
+    },
+    "organize-messy-files": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3a79eb987ba66b6d0ba7bbccde0370083107aaf8a8bc394c94eea580fb9545b0",
+      "verifier.timeout_sec": 900.0
+    },
+    "pddl-airport-planning": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "4308bb75ee34ce8b4db304fadcb35fbffff7fe20f9a536181704699905821cd0",
+      "verifier.timeout_sec": 600.0
+    },
+    "powerlifting-coef-calc": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3962ea53967b32ccedf914e1273fdbafb1b5b790149532c0d348743378a82433",
+      "verifier.timeout_sec": 600.0
+    },
+    "pptx-reference-formatting": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "19e86439f456aa82c29325f49b1b3f32b4e4d0ac0813590f095ff49c54e2fdc0",
+      "verifier.timeout_sec": 600.0
+    },
+    "python-scala-translation": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "6fbb6f9459e73a95ceffccf70e3b2906113a684ac1c5ff1f0a3a9816ed0c46ad",
+      "verifier.timeout_sec": 600.0
+    },
+    "reserves-at-risk-calc": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d46b355b82008ffe02b60a54387c0f769652e86b8c1314ad6211c9d29a59dbed",
+      "verifier.timeout_sec": 600.0
+    },
+    "syzkaller-ppdev-syzlang": {
+      "agent.timeout_sec": 1400.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "2dba6a41051bd6a9703c624e2572bf0cd56c49ea00afd3dd03f192038f9dde59",
+      "verifier.timeout_sec": 1200.0
+    },
+    "threejs-structure-parser": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fbd8ebb638e9c1415cf62e2d72141f47e213b1a99f0a6235c070a4d0fd057efa",
+      "verifier.timeout_sec": 300.0
+    },
+    "threejs-to-obj": {
+      "agent.timeout_sec": 300.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1e721fef36effceade6a5c57b8a4a045f93fc21055617101022c00ed6d2eb994",
+      "verifier.timeout_sec": 300.0
+    },
+    "travel-planning": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f374e8d1e91fcae4a8d9fcf73bc1cb7fe689bd05f5702b60b2863604b0f4cdce",
+      "verifier.timeout_sec": 300.0
+    }
+  },
+  "observed_cost_evidence": {
+    "max_usd": 0.46291185,
+    "mean_usd": 0.2220257625,
+    "min_usd": 0.0917031,
+    "observations": [
+      {
+        "attempt": "thinking-high",
+        "cost_usd": 0.33043905000000007,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "space_profile": "original",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 418.0936887090065
+      },
+      {
+        "attempt": "reserve-low",
+        "cost_usd": 0.20937284999999997,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "space_profile": "original",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 303.89877941699524
+      },
+      {
+        "attempt": "reserve-high",
+        "cost_usd": 0.46291184999999996,
+        "source": "runs/pi-diagnostic-real-20261027-remaining/summary.json",
+        "space_profile": "original",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 368.3358419169963
+      },
+      {
+        "attempt": "recent-low",
+        "cost_usd": 0.0917031,
+        "source": "runs/pi-diagnostic-completion-20261027/summary.json",
+        "space_profile": "original",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 151.1059892080084
+      },
+      {
+        "attempt": "recent-high",
+        "cost_usd": 0.1026942,
+        "source": "runs/pi-diagnostic-completion-20261027/summary.json",
+        "space_profile": "original",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 165.3606097919983
+      },
+      {
+        "attempt": "reserve-early",
+        "cost_usd": 0.17785784999999998,
+        "source": "runs/pi-early-diagnostic-real-20261027/summary.json",
+        "space_profile": "early_compaction_v2",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 226.7109531669994
+      },
+      {
+        "attempt": "recent-small",
+        "cost_usd": 0.15027480000000001,
+        "source": "runs/pi-early-diagnostic-real-20261027/summary.json",
+        "space_profile": "early_compaction_v2",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 216.3103726249974
+      },
+      {
+        "attempt": "reserve-mid",
+        "cost_usd": 0.2509523999999999,
+        "source": "runs/pi-early-diagnostic-real-20261027/summary.json",
+        "space_profile": "early_compaction_v2",
+        "task": "llm-prefix-cache-replay",
+        "wall_seconds": 442.33420241699787
+      }
+    ],
+    "pressure_probe_excluded": true,
+    "representative_of_selected_panel": false,
+    "whole_campaign_cost_known": false
+  },
+  "old_attempts": 4827,
+  "proposed_api_dispatch_ceilings_usd": {
+    "all_four_searches": 200,
+    "approval_status": "not_approved",
+    "default_validation": 5,
+    "heldout_all_winners": 50,
+    "insufficient_budget_policy": "stop; do not select from incomplete panels or silently drop tasks",
+    "local_compute_storage_egress": "not_metered; excluded from API USD",
+    "per_attempt_reservation": 1,
+    "policy": "soft_dispatch_gate_with_inflight_overrun; not a provider billing hard cap",
+    "search_per_method_per_seed": 50,
+    "total": 255
+  },
+  "protocol": {
+    "concurrency": 1,
+    "failure": "charge every dispatch; timeout/error/missing reward are nonpass; unknown cost stops all methods",
+    "heldout": "freeze every winner before reading any heldout outcomes; one attempt per task per winner; no test-guided tuning",
+    "outer_retries": 0,
+    "pass_at_1_resolution": {
+      "heldout": 0.0625,
+      "validation": 0.125
+    },
+    "seed_limit": "one search seed is exploratory, not evidence of across-seed robustness",
+    "timeouts": "native task-specific limits"
+  },
+  "readiness": {
+    "budget_approved": false,
+    "diagnostic_closed": true,
+    "heldout_execution_implemented": false,
+    "real_task_compaction_observed": true,
+    "selected_default_panel_calibrated": false,
+    "subset_controller_implemented": false
+  },
+  "real_task_compaction_observed_in_v2": true,
+  "recommended_scope": {
+    "bo_initial_panels": 3,
+    "diagnostic_history_is_not_free_optimizer_warm_start": true,
+    "evaluation_seed": 6203,
+    "heldout_count": 16,
+    "heldout_tasks": [
+      "earthquake-plate-calculation",
+      "econ-detrending-correlation",
+      "energy-unit-commitment",
+      "fix-erlang-ssh-cve",
+      "jax-computing-basics",
+      "lake-warming-attribution",
+      "manufacturing-equipment-maintenance",
+      "organize-messy-files",
+      "pddl-airport-planning",
+      "pptx-reference-formatting",
+      "python-scala-translation",
+      "reserves-at-risk-calc",
+      "syzkaller-ppdev-syzlang",
+      "threejs-structure-parser",
+      "threejs-to-obj",
+      "travel-planning"
+    ],
+    "methods": [
+      "default",
+      "random",
+      "bo",
+      "igbs",
+      "pair_blind"
+    ],
+    "provider_rng_controlled": false,
+    "schedule_seed": 42,
+    "search_panels": 10,
+    "search_seeds": [
+      20261027
+    ],
+    "selection_basis": "Eight metadata categories; shorter native agent timeout first, prefer distinct related-task groups; deterministic hash tie breaks. No outcomes or measured costs used.",
+    "selection_seed": "EP6203-scale-v2-20261027-metadata-only",
+    "unused_validation_never_promoted_to_heldout": true,
+    "validation_count": 8,
+    "validation_tasks": [
+      "3d-scan-calc",
+      "bike-rebalance",
+      "crystallographic-wyckoff-position-analysis",
+      "dapt-intrusion-detection",
+      "financial-modeling-qa",
+      "llm-prefix-cache-replay",
+      "mario-coin-counting",
+      "powerlifting-coef-calc"
+    ]
+  },
+  "schema_version": 2,
+  "search_space": {
+    "default": {
+      "compaction": {
+        "keepRecentTokens": 20000,
+        "reserveTokens": 16384
+      },
+      "defaultThinkingLevel": "medium"
+    },
+    "feasibility": {
+      "context_window": 400000,
+      "output_allowance": 128000,
+      "provenance": "openrouter_model_metadata",
+      "safety_margin": 4096
+    },
+    "parameters": {
+      "compaction.keepRecentTokens": [
+        4000,
+        10000,
+        20000
+      ],
+      "compaction.reserveTokens": [
+        16384,
+        360000,
+        375000
+      ],
+      "defaultThinkingLevel": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "schema_version": 1
+  },
+  "search_space_profile": "early_compaction_v2",
+  "source_pins": {
+    "benchflow": "99baefb602674bbd31139fd2f1a22c3ed45752f9",
+    "pi-acp": "b0581c9c1d675e634234674484247008b03d69b4",
+    "pi-mono": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a",
+    "skillsbench": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af"
+  },
+  "split_audit_sha256": "6de456f3cf7aa6f951601510ff28802de2e0a904bc2f48fb3411c338870fcc15",
+  "status": "conditional_design_not_execution_approval",
+  "task2_decision": "Original grid remains inactive in these tasks. Use the explicit early_compaction_v2 space only after its real task compaction evidence closes.",
+  "wall_time_policy": {
+    "cleanup_may_add_time": true,
+    "default_validation_cap_seconds": 19260.0,
+    "heldout_total_cap_seconds": 192400.0,
+    "kind": "native_phase_allowance_sum_not_runtime_forecast",
+    "method_cap_seconds": 192600.0,
+    "total_phase_allowance_hours": 272.7944444444444
+  }
+}

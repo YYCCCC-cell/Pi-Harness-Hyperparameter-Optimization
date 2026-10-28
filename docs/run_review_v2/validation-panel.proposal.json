@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "group_id": "family-8cd5e83f16d5",
+      "tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "group_id": "family-c0bba8b93f20",
+      "tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "group_id": "family-56d4f75e7c4d",
+      "tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "group_id": "family-e528d669a97a",
+      "tasks": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "group_id": "family-ed71e7371883",
+      "tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "group_id": "family-2b38197a6264",
+      "tasks": [
+        "invoice-fraud-detection"
+      ]
+    },
+    {
+      "group_id": "family-ddd8f26ea30f",
+      "tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "group_id": "family-8fc326c558eb",
+      "tasks": [
+        "powerlifting-coef-calc"
+      ]
+    }
+  ],
+  "role": "validation_proposal_not_runner_input",
+  "task_ids": [
+    "adaptive-cruise-control",
+    "civ6-adjacency-optimizer",
+    "debug-trl-grpo",
+    "exoplanet-detection-period",
+    "invoice-fraud-detection",
+    "multilingual-video-dubbing",
+    "powerlifting-coef-calc",
+    "suricata-custom-exfil"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "reviewed_arithmetic_full_bill_unresolved",
+  "execution_enabled": false,
+  "formal_search_launched_by_this_review": false,
+  "paid_model_requests_by_this_review": 0,
+  "source_sha256": {
+    "logs/openrouter_usage_20261027_2300_2320.summary.json": "a82ef82e1f4c52c8e11e0032e6743bb6f7d5e1d581e4394b02865afa8f24105f",
+    "docs/formal_protocol_20261028_v5/run_manifest.v5.proposal.json": "2c55faa3c4dd71f3dc6f86c74427513ecd2923d431592ca31ac6c1ca724b5427",
+    "docs/run_review_20261027_calibrated/run_manifest.v3.proposal.json": "34f15d02ab1d86471d2545bcc454e89586675b45fb8dbf19f65fcb77111ba8d4"
+  },
+  "calibration": {
+    "known_api_cost_usd": "1.03555110",
+    "full_api_cost_usd": null,
+    "unknown_cost_holdback_usd": "1.00000000",
+    "budget_charge_including_holdback_usd": "2.03555110",
+    "unspent_original_5usd_after_holdback": "2.96444890",
+    "fully_metered_model_tasks": 7,
+    "model_tasks": 8,
+    "bike_full_cost_usd": null,
+    "bike_known_cost_usd": "0.47662005"
+  },
+  "scope_preserved_from_v5": {
+    "validation_tasks": 8,
+    "heldout_tasks": 16,
+    "search_configurations_per_method": 13,
+    "search_seeds": [
+      20261027
+    ],
+    "igbs_initial_configurations": 7,
+    "igbs_adaptive_configurations": 6,
+    "scope_change_justified_by_new_evidence": false
+  },
+  "known_cost_basis_only": {
+    "validation_attempts": 424,
+    "heldout_attempts": 80,
+    "total_attempts": 504,
+    "dispatch_caps_usd": {
+      "default": 5,
+      "each_search": 30,
+      "heldout": 30,
+      "total": 155
+    },
+    "same_as_default_arithmetic_usd": "65.2397193000",
+    "search_2x_heldout_2_5x_usd": "134.62164300000",
+    "all_3x_sensitivity_usd": "195.7191579000"
+  },
+  "if_each_panel_had_additional_1usd_cost_sensitivity": {
+    "validation_attempts": 424,
+    "heldout_attempts": 80,
+    "total_attempts": 504,
+    "dispatch_caps_usd": {
+      "default": 10,
+      "each_search": 55,
+      "heldout": 55,
+      "total": 285
+    },
+    "same_as_default_arithmetic_usd": "128.2397193000",
+    "search_2x_heldout_2_5x_usd": "264.62164300000",
+    "all_3x_sensitivity_usd": "384.7191579000"
+  },
+  "time_scenarios_hours": {
+    "mixed_cold_warm_mean": 56.169355661544614,
+    "twice_mean": 112.33871132308923
+  },
+  "budget_approval_status": "not_approved",
+  "final_budget_usd": null,
+  "decision": "Keep the v5 504-attempt protocol and $155 as provisional only; do not launch or treat the lower-bound cost mean as complete.",
+  "remaining_gates": [
+    "Old bicycle request inventory cannot be closed from existing completion callbacks; retain null and $1 holdback.",
+    "Validate the request-journal policy on a bounded real task before formal execution; local fake-provider tests do not establish real-provider cancellation billing.",
+    "If historical complete billing cannot be recovered, explicitly agree on a revised costing basis before approving a formal budget.",
+    "Confirm the concrete formal budget separately; calibration authorization is not formal-experiment authorization."
+  ],
+  "limits": [
+    "No new paid task or heldout result was used.",
+    "Planning multipliers and the $1 sensitivity are assumptions, not measured upper bounds or confidence intervals.",
+    "The $1 historical holdback is not proven final cost and is not released by a stable aggregate key counter.",
+    "Local preparation, storage and electricity are outside API costs."
+  ]
+}

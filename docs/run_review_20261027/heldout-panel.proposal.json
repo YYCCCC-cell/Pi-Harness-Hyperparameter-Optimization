@@ -1,0 +1,22 @@
+{
+  "outcomes_available": false,
+  "role": "heldout_evaluator_only_proposal",
+  "task_ids": [
+    "earthquake-plate-calculation",
+    "econ-detrending-correlation",
+    "energy-unit-commitment",
+    "fix-erlang-ssh-cve",
+    "jax-computing-basics",
+    "lake-warming-attribution",
+    "manufacturing-equipment-maintenance",
+    "organize-messy-files",
+    "pddl-airport-planning",
+    "pptx-reference-formatting",
+    "python-scala-translation",
+    "reserves-at-risk-calc",
+    "syzkaller-ppdev-syzlang",
+    "threejs-structure-parser",
+    "threejs-to-obj",
+    "travel-planning"
+  ]
+}

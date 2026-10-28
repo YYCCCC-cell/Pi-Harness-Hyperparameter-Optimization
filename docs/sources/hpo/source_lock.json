@@ -1,0 +1,357 @@
+{
+  "reviewed_on": "2026-10-25",
+  "smac_version": "2.4.0",
+  "smac_wheel_sha256": "670fb21b812f2130fc5b07d31a9da51821685c5edcccacc9720a199291273b2c",
+  "pynisher_sdist_sha256": "2722b795d22129ddd5247038bba727ae06ecdb3a5942070817be7c8d4a680e31",
+  "python": "3.12.14",
+  "build_tools": {
+    "setuptools": "80.9.0",
+    "wheel": "0.45.1"
+  },
+  "review_scope": "SMAC import/facade/config-selection source, dependency metadata, all wheel manifests for .pth or data/scripts hooks; pynisher setup.py/setup.cfg/pyproject.toml. Not an exhaustive dependency security audit.",
+  "artifacts": [
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "install_hooks": []
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "filename": "click-8.5.0-py3-none-any.whl",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "install_hooks": []
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "filename": "cloudpickle-3.1.2-py3-none-any.whl",
+      "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+      "install_hooks": []
+    },
+    {
+      "name": "ConfigSpace",
+      "version": "1.2.1",
+      "filename": "configspace-1.2.1-py3-none-any.whl",
+      "sha256": "78d3cef1bdb447bf25c2433891580bf6c2b468d47b729356a8646d5b7cd9eb5a",
+      "install_hooks": []
+    },
+    {
+      "name": "dask",
+      "version": "2026.8.0",
+      "filename": "dask-2026.8.0-py3-none-any.whl",
+      "sha256": "ccc0c83a189b0398602435189771d28dad7b5773b6089bb8dce14ae732dd782c",
+      "install_hooks": []
+    },
+    {
+      "name": "dask-jobqueue",
+      "version": "0.9.0",
+      "filename": "dask_jobqueue-0.9.0-py2.py3-none-any.whl",
+      "sha256": "253dfc4f0b8722201a08e05b841859dfeea1f6698ff21eff0d9370e5aa8ae20f",
+      "install_hooks": []
+    },
+    {
+      "name": "distributed",
+      "version": "2026.8.0",
+      "filename": "distributed-2026.8.0-py3-none-any.whl",
+      "sha256": "3bd8882861a2cf497453f28c6b61135fa8ef2bb1d6885ad3b9f27e887e9c0e01",
+      "install_hooks": []
+    },
+    {
+      "name": "emcee",
+      "version": "3.1.6",
+      "filename": "emcee-3.1.6-py2.py3-none-any.whl",
+      "sha256": "f2d63752023bdccf744461450e512a5b417ae7d28f18e12acd76a33de87580cb",
+      "install_hooks": []
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "filename": "fsspec-2026.9.0-py3-none-any.whl",
+      "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+      "install_hooks": []
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "filename": "jinja2-3.1.6-py3-none-any.whl",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "install_hooks": []
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "filename": "joblib-1.6.0-py3-none-any.whl",
+      "sha256": "3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba",
+      "install_hooks": []
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "filename": "jsonschema-4.26.0-py3-none-any.whl",
+      "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+      "install_hooks": []
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "filename": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+      "install_hooks": []
+    },
+    {
+      "name": "locket",
+      "version": "1.0.0",
+      "filename": "locket-1.0.0-py2.py3-none-any.whl",
+      "sha256": "b6c819a722f7b6bd955b80781788e4a66a55628b858d347536b7e81325a3a5e3",
+      "install_hooks": []
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.4",
+      "filename": "markupsafe-3.0.4-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "0930db9bdc62d22944e10b066448bb65dc9abe9112880c7cab8da54db4284d5f",
+      "install_hooks": []
+    },
+    {
+      "name": "more-itertools",
+      "version": "11.2.1",
+      "filename": "more_itertools-11.2.1-py3-none-any.whl",
+      "sha256": "35a7377edd1dd6608dcb2cdf534ded55ea32d49448875ad042cd3f879fb1ded0",
+      "install_hooks": []
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.3",
+      "filename": "msgpack-1.2.3-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "905a189853d6bdb204c7ae5f4ab77fb857448abfff574d3d93c62e2815b24b4f",
+      "install_hooks": []
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "filename": "numpy-2.2.6-cp312-cp312-macosx_14_0_arm64.whl",
+      "sha256": "894b3a42502226a1cac872f840030665f33326fc3dac8e57c607905773cdcde3",
+      "install_hooks": []
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "filename": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "install_hooks": []
+    },
+    {
+      "name": "partd",
+      "version": "1.4.2",
+      "filename": "partd-1.4.2-py3-none-any.whl",
+      "sha256": "978e4ac767ec4ba5b86c6eaa52e5a2a3bc748a2ca839e8cc798f1cc6ce6efb0f",
+      "install_hooks": []
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "filename": "psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl",
+      "sha256": "1a7b04c10f32cc88ab39cbf606e117fd74721c831c98a27dc04578deb0c16979",
+      "install_hooks": []
+    },
+    {
+      "name": "pynisher",
+      "version": "1.0.10",
+      "filename": "pynisher-1.0.10-py3-none-any.whl",
+      "sha256": "94b7d75821d81ef5f16c3492901b9aa9778216505f385d24e94bee7e7fb1345c",
+      "install_hooks": []
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "filename": "pyparsing-3.3.3-py3-none-any.whl",
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+      "install_hooks": []
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "filename": "pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "fc09d0aa354569bc501d4e787133afc08552722d3ab34836a80547331bb5d4a0",
+      "install_hooks": []
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "filename": "referencing-0.37.0-py3-none-any.whl",
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+      "install_hooks": []
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29",
+      "filename": "regex-2026.9.29-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "f57dc6b8fef170f105d2cf5cdce254f47b137d7755086cf7050f47e16582abba",
+      "install_hooks": []
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "filename": "rpds_py-2026.9.1-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "e21c1429e205828ea886a2293a4a2c8e01f4c25d9893ca330e97a6cf73f52e7b",
+      "install_hooks": []
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "filename": "scikit_learn-1.6.1-cp312-cp312-macosx_12_0_arm64.whl",
+      "sha256": "2c2cae262064e6a9b77eee1c8e768fc46aa0b8338c6a8297b9b6759720ec0ff2",
+      "install_hooks": []
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "filename": "scipy-1.15.3-cp312-cp312-macosx_14_0_arm64.whl",
+      "sha256": "05dc6abcd105e1a29f95eada46d4a3f251743cfd7d3ae8ddb4088047f24ea477",
+      "install_hooks": []
+    },
+    {
+      "name": "smac",
+      "version": "2.4.0",
+      "filename": "smac-2.4.0-py3-none-any.whl",
+      "sha256": "670fb21b812f2130fc5b07d31a9da51821685c5edcccacc9720a199291273b2c",
+      "install_hooks": []
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "filename": "sortedcontainers-2.4.0-py2.py3-none-any.whl",
+      "sha256": "a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0",
+      "install_hooks": []
+    },
+    {
+      "name": "tblib",
+      "version": "3.2.2",
+      "filename": "tblib-3.2.2-py3-none-any.whl",
+      "sha256": "26bdccf339bcce6a88b2b5432c988b266ebbe63a4e593f6b578b1d2e723d2b76",
+      "install_hooks": []
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0",
+      "filename": "threadpoolctl-3.7.0-py3-none-any.whl",
+      "sha256": "cd8b60b5641b45c67bbf73c64c843235fc2d8a480c87389f52f5dbee893b86be",
+      "install_hooks": []
+    },
+    {
+      "name": "toolz",
+      "version": "1.2.0",
+      "filename": "toolz-1.2.0-py3-none-any.whl",
+      "sha256": "890f820b1cb8152785aaf9386d8707770110809035800985ca65cb24ce1120ef",
+      "install_hooks": []
+    },
+    {
+      "name": "tornado",
+      "version": "6.6",
+      "filename": "tornado-6.6-cp311-abi3-macosx_10_9_universal2.whl",
+      "sha256": "01abf15429d64f04ccfafc238b191cc2c177108b7a331f4461707ad77198c8c2",
+      "install_hooks": []
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "install_hooks": []
+    },
+    {
+      "name": "zict",
+      "version": "3.0.0",
+      "filename": "zict-3.0.0-py2.py3-none-any.whl",
+      "sha256": "5796e36bd0e0cc8cf0fbc1ace6a68912611c1dbd74750a3f3026b9b9d6a327ae",
+      "install_hooks": []
+    }
+  ],
+  "source_snapshots": [
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/facade/abstract_facade.py",
+      "sha256": "56096b1cae6545ef55d38103c8ed252152e88e5b2cfe85b5b971bb215d90193b",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/facade/abstract_facade.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/facade/hyperparameter_optimization_facade.py",
+      "sha256": "31535d9b633af35ee5573402935b12b77359507d843c83e9d9a4926a23ea7003",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/facade/hyperparameter_optimization_facade.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/scenario.py",
+      "sha256": "f5db704259e8f78cac08ec95166fe683510716ca249649eb1eed250b021761bf",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/scenario.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/main/config_selector.py",
+      "sha256": "eb1705c3df13a45de0b6cc9b10b1d9db4c347e6beaf432d0bd9976b7fc244664",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/main/config_selector.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/main/smbo.py",
+      "sha256": "d8c95fff29dd4af0a9d8c754d756e864559fb021c68ceb5b35e9f717b7b39c11",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/main/smbo.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/intensifier/intensifier.py",
+      "sha256": "b83ea184007c02946fac865bcf9121ab4105df0cc1f4d50c0ba4aa993e72a942",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/intensifier/intensifier.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/runhistory/dataclasses.py",
+      "sha256": "28d37819c613de7561a268c146bd4a021881ffb551a843da6fc456b05590a708",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/runhistory/dataclasses.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/model/random_forest/random_forest.py",
+      "sha256": "9ccab8fc65abcabe95f4655c8704829d2e9be380cebfd2376391f9c62e9e1f6c",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/model/random_forest/random_forest.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/initial_design/abstract_initial_design.py",
+      "sha256": "7ee0e362ed16ddb78734d28641e9d30d0590b630d5efb85ec271cb6839f31843",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/initial_design/abstract_initial_design.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/initial_design/sobol_design.py",
+      "sha256": "a9e002780c813a4104f6e70b85b71bb5247d0cd3c884aea9f1ec8d40689404c9",
+      "url": "https://github.com/automl/SMAC3/blob/v2.4.0/smac/initial_design/sobol_design.py"
+    },
+    {
+      "distribution": "smac",
+      "version": "2.4.0",
+      "path": "smac/acquisition/maximizer/local_search.py",
+      "sha256": "ce11c89f12e326f2be514fbfe5165faffcc9a5c3f56fc20ef93b2ee0b366e4c7"
+    },
+    {
+      "distribution": "ConfigSpace",
+      "version": "1.2.1",
+      "path": "ConfigSpace/configuration.py",
+      "sha256": "45f1b592f7d29c85d00dc3071c6cf964b42c9bd91d1900185a7b5e8bbd7cdd7c"
+    }
+  ]
+}

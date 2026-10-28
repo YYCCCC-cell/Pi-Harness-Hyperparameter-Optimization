@@ -1,0 +1,766 @@
+{
+  "content_level_duplicate_certification": false,
+  "cross_split_related_components": [
+    [
+      "adaptive-cruise-control",
+      "drone-planning-control",
+      "hvac-control",
+      "r2r-mpc-control"
+    ],
+    [
+      "bike-rebalance",
+      "exam-block-sequencing",
+      "paratransit-routing"
+    ],
+    [
+      "pdf-excel-diff",
+      "powerlifting-coef-calc",
+      "sales-pivot-analysis",
+      "shock-analysis-demand",
+      "shock-analysis-supply",
+      "weighted-gdp-calc"
+    ]
+  ],
+  "eligible_heldout": [
+    "ada-bathroom-plan-repair",
+    "azure-bgp-oscillation-route-leak",
+    "citation-check",
+    "court-form-filling",
+    "data-to-d3",
+    "dialogue-parser",
+    "earthquake-phase-association",
+    "earthquake-plate-calculation",
+    "econ-detrending-correlation",
+    "edit-pdf",
+    "energy-ac-optimal-power-flow",
+    "energy-market-pricing",
+    "energy-unit-commitment",
+    "enterprise-information-search",
+    "exceltable-in-ppt",
+    "fix-build-agentops",
+    "fix-build-google-auto",
+    "fix-druid-loophole-cve",
+    "fix-erlang-ssh-cve",
+    "flink-query",
+    "flood-risk-analysis",
+    "glm-lake-mendota",
+    "grid-dispatch-operator",
+    "jax-computing-basics",
+    "jpg-ocr-stat",
+    "lab-unit-harmonization",
+    "lake-warming-attribution",
+    "lean4-proof",
+    "manufacturing-codebook-normalization",
+    "manufacturing-equipment-maintenance",
+    "manufacturing-fjsp-optimization",
+    "offer-letter-generator",
+    "organize-messy-files",
+    "paper-anonymizer",
+    "pddl-airport-planning",
+    "pddl-tpp-planning",
+    "pptx-reference-formatting",
+    "protein-expression-analysis",
+    "python-scala-translation",
+    "quantum-numerical-simulation",
+    "radar-vital-signs",
+    "reserves-at-risk-calc",
+    "sec-financial-report",
+    "seismic-phase-picking",
+    "setup-fuzzing-py",
+    "simpo-code-reproduction",
+    "software-dependency-audit",
+    "spring-boot-jakarta-migration",
+    "syzkaller-ppdev-syzlang",
+    "threejs-structure-parser",
+    "threejs-to-obj",
+    "tictoc-unnecessary-abort-detection",
+    "travel-planning"
+  ],
+  "frozen_runner_rosters_changed": false,
+  "groups": [
+    {
+      "eligible_heldout": [],
+      "group_id": "family-e53a7e576d06",
+      "quarantine": [],
+      "tasks": [
+        "3d-scan-calc"
+      ],
+      "validation": [
+        "3d-scan-calc"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "ada-bathroom-plan-repair"
+      ],
+      "group_id": "family-b6807f4388d8",
+      "quarantine": [],
+      "tasks": [
+        "ada-bathroom-plan-repair"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-8cd5e83f16d5",
+      "quarantine": [
+        "drone-planning-control"
+      ],
+      "tasks": [
+        "adaptive-cruise-control",
+        "drone-planning-control",
+        "hvac-control",
+        "r2r-mpc-control"
+      ],
+      "validation": [
+        "adaptive-cruise-control",
+        "hvac-control",
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "azure-bgp-oscillation-route-leak"
+      ],
+      "group_id": "family-8de35f3175bf",
+      "quarantine": [],
+      "tasks": [
+        "azure-bgp-oscillation-route-leak"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-74432d9d98bc",
+      "quarantine": [
+        "exam-block-sequencing",
+        "paratransit-routing"
+      ],
+      "tasks": [
+        "bike-rebalance",
+        "exam-block-sequencing",
+        "paratransit-routing"
+      ],
+      "validation": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "citation-check"
+      ],
+      "group_id": "family-b653a597e156",
+      "quarantine": [],
+      "tasks": [
+        "citation-check"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-c0bba8b93f20",
+      "quarantine": [],
+      "tasks": [
+        "civ6-adjacency-optimizer"
+      ],
+      "validation": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "court-form-filling",
+        "edit-pdf"
+      ],
+      "group_id": "family-3e09937ad392",
+      "quarantine": [],
+      "tasks": [
+        "court-form-filling",
+        "edit-pdf"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-4ea270b0f125",
+      "quarantine": [],
+      "tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ],
+      "validation": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-56d4f75e7c4d",
+      "quarantine": [],
+      "tasks": [
+        "dapt-intrusion-detection",
+        "suricata-custom-exfil"
+      ],
+      "validation": [
+        "dapt-intrusion-detection",
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "data-to-d3"
+      ],
+      "group_id": "family-2d132e939565",
+      "quarantine": [],
+      "tasks": [
+        "data-to-d3"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-e528d669a97a",
+      "quarantine": [],
+      "tasks": [
+        "debug-trl-grpo"
+      ],
+      "validation": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "dialogue-parser"
+      ],
+      "group_id": "family-0ac18c23dfa6",
+      "quarantine": [],
+      "tasks": [
+        "dialogue-parser"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-d73d3e2ade5d",
+      "quarantine": [],
+      "tasks": [
+        "dynamic-object-aware-egomotion"
+      ],
+      "validation": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "earthquake-phase-association",
+        "earthquake-plate-calculation",
+        "seismic-phase-picking"
+      ],
+      "group_id": "family-85b04d3be298",
+      "quarantine": [],
+      "tasks": [
+        "earthquake-phase-association",
+        "earthquake-plate-calculation",
+        "seismic-phase-picking"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "econ-detrending-correlation"
+      ],
+      "group_id": "family-033446e55ddd",
+      "quarantine": [],
+      "tasks": [
+        "econ-detrending-correlation"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "energy-ac-optimal-power-flow",
+        "energy-market-pricing",
+        "energy-unit-commitment",
+        "grid-dispatch-operator"
+      ],
+      "group_id": "family-c1e311ce5b93",
+      "quarantine": [],
+      "tasks": [
+        "energy-ac-optimal-power-flow",
+        "energy-market-pricing",
+        "energy-unit-commitment",
+        "grid-dispatch-operator"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "enterprise-information-search"
+      ],
+      "group_id": "family-ea615642c04b",
+      "quarantine": [],
+      "tasks": [
+        "enterprise-information-search"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "exceltable-in-ppt",
+        "pptx-reference-formatting"
+      ],
+      "group_id": "family-bb1ce454e38c",
+      "quarantine": [],
+      "tasks": [
+        "exceltable-in-ppt",
+        "pptx-reference-formatting"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-ed71e7371883",
+      "quarantine": [],
+      "tasks": [
+        "exoplanet-detection-period",
+        "gravitational-wave-detection",
+        "mars-clouds-clustering"
+      ],
+      "validation": [
+        "exoplanet-detection-period",
+        "gravitational-wave-detection",
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-0c961e164997",
+      "quarantine": [],
+      "tasks": [
+        "financial-modeling-qa",
+        "xlsx-recover-data"
+      ],
+      "validation": [
+        "financial-modeling-qa",
+        "xlsx-recover-data"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "fix-build-agentops",
+        "fix-build-google-auto"
+      ],
+      "group_id": "family-161a59300c38",
+      "quarantine": [],
+      "tasks": [
+        "fix-build-agentops",
+        "fix-build-google-auto"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "fix-druid-loophole-cve",
+        "fix-erlang-ssh-cve",
+        "software-dependency-audit"
+      ],
+      "group_id": "family-5ff4af5c6177",
+      "quarantine": [],
+      "tasks": [
+        "fix-druid-loophole-cve",
+        "fix-erlang-ssh-cve",
+        "software-dependency-audit"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-55709c97f7d4",
+      "quarantine": [],
+      "tasks": [
+        "fix-visual-stability",
+        "llm-prefix-cache-replay",
+        "parallel-tfidf-search",
+        "react-performance-debugging"
+      ],
+      "validation": [
+        "fix-visual-stability",
+        "llm-prefix-cache-replay",
+        "parallel-tfidf-search",
+        "react-performance-debugging"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "flink-query"
+      ],
+      "group_id": "family-3e213ed9e7fb",
+      "quarantine": [],
+      "tasks": [
+        "flink-query"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "flood-risk-analysis",
+        "glm-lake-mendota",
+        "lake-warming-attribution"
+      ],
+      "group_id": "family-62b51ce97f04",
+      "quarantine": [],
+      "tasks": [
+        "flood-risk-analysis",
+        "glm-lake-mendota",
+        "lake-warming-attribution"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-2b38197a6264",
+      "quarantine": [],
+      "tasks": [
+        "invoice-fraud-detection"
+      ],
+      "validation": [
+        "invoice-fraud-detection"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "jax-computing-basics"
+      ],
+      "group_id": "family-72362b87bb4f",
+      "quarantine": [],
+      "tasks": [
+        "jax-computing-basics"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "jpg-ocr-stat"
+      ],
+      "group_id": "family-688169fec9a9",
+      "quarantine": [],
+      "tasks": [
+        "jpg-ocr-stat"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "lab-unit-harmonization"
+      ],
+      "group_id": "family-0f72908a31d7",
+      "quarantine": [],
+      "tasks": [
+        "lab-unit-harmonization"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-33ebe61cb8a3",
+      "quarantine": [],
+      "tasks": [
+        "latex-formula-extraction"
+      ],
+      "validation": [
+        "latex-formula-extraction"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "lean4-proof"
+      ],
+      "group_id": "family-04c678a6728b",
+      "quarantine": [],
+      "tasks": [
+        "lean4-proof"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "manufacturing-codebook-normalization",
+        "manufacturing-equipment-maintenance",
+        "manufacturing-fjsp-optimization"
+      ],
+      "group_id": "family-b08913b09551",
+      "quarantine": [],
+      "tasks": [
+        "manufacturing-codebook-normalization",
+        "manufacturing-equipment-maintenance",
+        "manufacturing-fjsp-optimization"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-ddd8f26ea30f",
+      "quarantine": [],
+      "tasks": [
+        "mario-coin-counting",
+        "multilingual-video-dubbing",
+        "video-silence-remover"
+      ],
+      "validation": [
+        "mario-coin-counting",
+        "multilingual-video-dubbing",
+        "video-silence-remover"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "offer-letter-generator",
+        "paper-anonymizer"
+      ],
+      "group_id": "family-ff077577a909",
+      "quarantine": [],
+      "tasks": [
+        "offer-letter-generator",
+        "paper-anonymizer"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "organize-messy-files"
+      ],
+      "group_id": "family-794b20c946ba",
+      "quarantine": [],
+      "tasks": [
+        "organize-messy-files"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "pddl-airport-planning",
+        "pddl-tpp-planning"
+      ],
+      "group_id": "family-f9c5750372a1",
+      "quarantine": [],
+      "tasks": [
+        "pddl-airport-planning",
+        "pddl-tpp-planning"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [],
+      "group_id": "family-8fc326c558eb",
+      "quarantine": [
+        "shock-analysis-demand",
+        "shock-analysis-supply",
+        "weighted-gdp-calc"
+      ],
+      "tasks": [
+        "pdf-excel-diff",
+        "powerlifting-coef-calc",
+        "sales-pivot-analysis",
+        "shock-analysis-demand",
+        "shock-analysis-supply",
+        "weighted-gdp-calc"
+      ],
+      "validation": [
+        "pdf-excel-diff",
+        "powerlifting-coef-calc",
+        "sales-pivot-analysis"
+      ]
+    },
+    {
+      "eligible_heldout": [
+        "protein-expression-analysis"
+      ],
+      "group_id": "family-75b3e3b626bb",
+      "quarantine": [],
+      "tasks": [
+        "protein-expression-analysis"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "python-scala-translation"
+      ],
+      "group_id": "family-70d1b0af950e",
+      "quarantine": [],
+      "tasks": [
+        "python-scala-translation"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "quantum-numerical-simulation"
+      ],
+      "group_id": "family-6eef0a494dae",
+      "quarantine": [],
+      "tasks": [
+        "quantum-numerical-simulation"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "radar-vital-signs"
+      ],
+      "group_id": "family-dc963dbb0a86",
+      "quarantine": [],
+      "tasks": [
+        "radar-vital-signs"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "reserves-at-risk-calc"
+      ],
+      "group_id": "family-e3bccb0881ae",
+      "quarantine": [],
+      "tasks": [
+        "reserves-at-risk-calc"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "sec-financial-report"
+      ],
+      "group_id": "family-6eda041129b4",
+      "quarantine": [],
+      "tasks": [
+        "sec-financial-report"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "setup-fuzzing-py",
+        "syzkaller-ppdev-syzlang"
+      ],
+      "group_id": "family-f4d9491a01d8",
+      "quarantine": [],
+      "tasks": [
+        "setup-fuzzing-py",
+        "syzkaller-ppdev-syzlang"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "simpo-code-reproduction"
+      ],
+      "group_id": "family-54f935ebfcf1",
+      "quarantine": [],
+      "tasks": [
+        "simpo-code-reproduction"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "spring-boot-jakarta-migration"
+      ],
+      "group_id": "family-904984e9b5d9",
+      "quarantine": [],
+      "tasks": [
+        "spring-boot-jakarta-migration"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "threejs-structure-parser",
+        "threejs-to-obj"
+      ],
+      "group_id": "family-0d98bc6546b5",
+      "quarantine": [],
+      "tasks": [
+        "threejs-structure-parser",
+        "threejs-to-obj"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "tictoc-unnecessary-abort-detection"
+      ],
+      "group_id": "family-0706aed2a7ef",
+      "quarantine": [],
+      "tasks": [
+        "tictoc-unnecessary-abort-detection"
+      ],
+      "validation": []
+    },
+    {
+      "eligible_heldout": [
+        "travel-planning"
+      ],
+      "group_id": "family-2dc601b6c2c1",
+      "quarantine": [],
+      "tasks": [
+        "travel-planning"
+      ],
+      "validation": []
+    }
+  ],
+  "heldout_outcomes_used": false,
+  "original": {
+    "active": 87,
+    "declared_algorithm_reproduced": true,
+    "disjoint_and_complete": true,
+    "exact_duplicate_digests": [],
+    "excluded": 14,
+    "group_count": 58,
+    "heldout": 59,
+    "validation": 28
+  },
+  "proposed_validation": [
+    "3d-scan-calc",
+    "adaptive-cruise-control",
+    "bike-rebalance",
+    "civ6-adjacency-optimizer",
+    "crystallographic-wyckoff-position-analysis",
+    "dapt-intrusion-detection",
+    "debug-trl-grpo",
+    "dynamic-object-aware-egomotion",
+    "exoplanet-detection-period",
+    "financial-modeling-qa",
+    "fix-visual-stability",
+    "gravitational-wave-detection",
+    "hvac-control",
+    "invoice-fraud-detection",
+    "latex-formula-extraction",
+    "llm-prefix-cache-replay",
+    "mario-coin-counting",
+    "mars-clouds-clustering",
+    "multilingual-video-dubbing",
+    "parallel-tfidf-search",
+    "pdf-excel-diff",
+    "powerlifting-coef-calc",
+    "r2r-mpc-control",
+    "react-performance-debugging",
+    "sales-pivot-analysis",
+    "suricata-custom-exfil",
+    "video-silence-remover",
+    "xlsx-recover-data"
+  ],
+  "quarantined_heldout": [
+    "drone-planning-control",
+    "exam-block-sequencing",
+    "paratransit-routing",
+    "shock-analysis-demand",
+    "shock-analysis-supply",
+    "weighted-gdp-calc"
+  ],
+  "source_sha256": {
+    "configs/hpo_related_task_review.json": "a4d5ebeb5681717b5ac00502bbcdd792bbaa92db6252a53e847aca6500174da5",
+    "docs/run_review/heldout_roster.json": "ed1ffb1772b515f65c80d05f5d82a497f09ab6a9083e01cabd8a4763408b594b",
+    "docs/sources/proposed_split.json": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+    "docs/sources/skillsbench-v1.1-task-manifest.json": "0aa87c4d4f64c33db74b20e770f4b4a77dc21911e81a8ffd50cbb84ac7a4cc6f"
+  },
+  "status": "metadata_audit_completed_with_conservative_quarantine_proposal",
+  "validation_group_count": 15
+}

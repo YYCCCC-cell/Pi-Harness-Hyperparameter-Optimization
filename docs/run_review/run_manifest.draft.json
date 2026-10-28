@@ -1,0 +1,852 @@
+{
+  "approval_instructions": "Resolve every blocker, regenerate the final manifest, then obtain explicit human approval of its exact hash and itemized USD ceilings. No approval is inferred from preparing this file.",
+  "blockers": [
+    "benchflow_0.6.3_dependencies_not_installed_in_this_interpreter",
+    "docker_executable_missing",
+    "not_selected:model",
+    "not_selected:api_key_env",
+    "not_selected:budget_usd",
+    "not_selected:runtime_image",
+    "not_selected:runtime_review",
+    "budget_and_manifest_not_approved",
+    "live_hpo_evaluator_not_connected",
+    "real_model_feasibility_and_parameter_activation_unverified",
+    "split_metadata_provenance_review_pending",
+    "hard_timeout_cleanup_and_inflight_usd_bounds_unverified"
+  ],
+  "credential_environment_variable": null,
+  "execution_enabled": false,
+  "isolation": {
+    "enforcement": "Mock controller allowlist and read-guard tests; live sandbox/mount isolation still unverified",
+    "heldout_results_available": false,
+    "optimizer_groups": "configs/hpo_validation_groups.json",
+    "optimizer_reads_this_review_manifest": false,
+    "optimizer_roster": "configs/hpo_validation_tasks.json"
+  },
+  "manifest_sha256": "d2877a013f2ec95c6142eec453852766ef6e3c282aa8f440a4da1f2cf227953d",
+  "model": null,
+  "planned_attempts": {
+    "default_validation": 28,
+    "heldout_all_frozen_winners_and_default": 767,
+    "search_all_methods_all_seeds": 4032,
+    "search_per_method_per_seed": 336,
+    "total_excluding_pilot": 4827
+  },
+  "preflight": {
+    "blockers": [
+      "benchflow_0.6.3_dependencies_not_installed_in_this_interpreter",
+      "docker_executable_missing",
+      "not_selected:model",
+      "not_selected:api_key_env",
+      "not_selected:budget_usd",
+      "not_selected:runtime_image",
+      "not_selected:runtime_review"
+    ],
+    "observations": {
+      "benchflow_distribution_version": null,
+      "credential_present": false,
+      "docker_executable": null,
+      "python": "3.12.14",
+      "repositories": {
+        "benchflow": {
+          "clean": true,
+          "commit": "99baefb602674bbd31139fd2f1a22c3ed45752f9"
+        },
+        "pi-acp": {
+          "clean": true,
+          "commit": "b0581c9c1d675e634234674484247008b03d69b4"
+        },
+        "pi-mono": {
+          "clean": true,
+          "commit": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a"
+        },
+        "skillsbench": {
+          "clean": true,
+          "commit": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af"
+        }
+      }
+    },
+    "ready": false,
+    "warnings": [
+      "budget_usd is checked after completion, not a hard dollar cap; the runtime review must specify provider-side spend control or explicitly accepted in-flight overrun.",
+      "A hello-world success does not validate compaction activity or general benchmark performance."
+    ]
+  },
+  "process_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "protocol": {
+    "bo_initial_panels": 3,
+    "concurrency": 1,
+    "evaluation_seed": 6203,
+    "failure_policy": "All dispatches charged; raw_reward==1 passes; timeout/error/missing reward nonpass; no outer retries",
+    "incumbent_rule": "Complete measurement-valid panel; pass fraction then USD then runtime then config hash",
+    "loop_strategy": "single-shot",
+    "method_wall_time_cap_seconds": null,
+    "methods": [
+      "default",
+      "random",
+      "bo",
+      "igbs",
+      "pair_blind"
+    ],
+    "missing_cost_or_usage": "Stop all methods; preserve null and all incurred charges",
+    "outer_replacements": 0,
+    "panels_per_search": 12,
+    "schedule_seed": 42,
+    "search_seeds": [
+      20261025,
+      20261026,
+      20261027
+    ],
+    "skill_mode": "with-skill",
+    "solver_seed_guaranteed": false,
+    "test_policy": "Freeze all method/seed winners before any test outcomes; one attempt/task/winner; no selection by test",
+    "timeouts": "Native per-task agent, verifier and build limits below; no 120s mock override"
+  },
+  "provider_spend_enforcement": null,
+  "rosters": {
+    "source_split_sha256": "0cca4204d3c377bea2932cdaded58070dab5596d3def76024de27d0d169c1c4b",
+    "status": "IDs_locked_from_proposal_metadata_review_pending",
+    "test": [
+      "ada-bathroom-plan-repair",
+      "azure-bgp-oscillation-route-leak",
+      "citation-check",
+      "court-form-filling",
+      "data-to-d3",
+      "dialogue-parser",
+      "drone-planning-control",
+      "earthquake-phase-association",
+      "earthquake-plate-calculation",
+      "econ-detrending-correlation",
+      "edit-pdf",
+      "energy-ac-optimal-power-flow",
+      "energy-market-pricing",
+      "energy-unit-commitment",
+      "enterprise-information-search",
+      "exam-block-sequencing",
+      "exceltable-in-ppt",
+      "fix-build-agentops",
+      "fix-build-google-auto",
+      "fix-druid-loophole-cve",
+      "fix-erlang-ssh-cve",
+      "flink-query",
+      "flood-risk-analysis",
+      "glm-lake-mendota",
+      "grid-dispatch-operator",
+      "jax-computing-basics",
+      "jpg-ocr-stat",
+      "lab-unit-harmonization",
+      "lake-warming-attribution",
+      "lean4-proof",
+      "manufacturing-codebook-normalization",
+      "manufacturing-equipment-maintenance",
+      "manufacturing-fjsp-optimization",
+      "offer-letter-generator",
+      "organize-messy-files",
+      "paper-anonymizer",
+      "paratransit-routing",
+      "pddl-airport-planning",
+      "pddl-tpp-planning",
+      "pptx-reference-formatting",
+      "protein-expression-analysis",
+      "python-scala-translation",
+      "quantum-numerical-simulation",
+      "radar-vital-signs",
+      "reserves-at-risk-calc",
+      "sec-financial-report",
+      "seismic-phase-picking",
+      "setup-fuzzing-py",
+      "shock-analysis-demand",
+      "shock-analysis-supply",
+      "simpo-code-reproduction",
+      "software-dependency-audit",
+      "spring-boot-jakarta-migration",
+      "syzkaller-ppdev-syzlang",
+      "threejs-structure-parser",
+      "threejs-to-obj",
+      "tictoc-unnecessary-abort-detection",
+      "travel-planning",
+      "weighted-gdp-calc"
+    ],
+    "validation": [
+      "3d-scan-calc",
+      "adaptive-cruise-control",
+      "bike-rebalance",
+      "civ6-adjacency-optimizer",
+      "crystallographic-wyckoff-position-analysis",
+      "dapt-intrusion-detection",
+      "debug-trl-grpo",
+      "dynamic-object-aware-egomotion",
+      "exoplanet-detection-period",
+      "financial-modeling-qa",
+      "fix-visual-stability",
+      "gravitational-wave-detection",
+      "hvac-control",
+      "invoice-fraud-detection",
+      "latex-formula-extraction",
+      "llm-prefix-cache-replay",
+      "mario-coin-counting",
+      "mars-clouds-clustering",
+      "multilingual-video-dubbing",
+      "parallel-tfidf-search",
+      "pdf-excel-diff",
+      "powerlifting-coef-calc",
+      "r2r-mpc-control",
+      "react-performance-debugging",
+      "sales-pivot-analysis",
+      "suricata-custom-exfil",
+      "video-silence-remover",
+      "xlsx-recover-data"
+    ],
+    "validation_group_count": 17
+  },
+  "runtime_image_digest": null,
+  "schema_version": 1,
+  "search_space": {
+    "default": {
+      "compaction": {
+        "keepRecentTokens": 20000,
+        "reserveTokens": 16384
+      },
+      "defaultThinkingLevel": "medium"
+    },
+    "feasibility": {
+      "context_window": 128000,
+      "output_allowance": 16384,
+      "provenance": "synthetic_mock_metadata_only",
+      "safety_margin": 4096
+    },
+    "parameters": {
+      "compaction.keepRecentTokens": [
+        10000,
+        20000,
+        40000
+      ],
+      "compaction.reserveTokens": [
+        8192,
+        16384,
+        32768
+      ],
+      "defaultThinkingLevel": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "schema_version": 1
+  },
+  "software": {
+    "ConfigSpace": "1.2.1",
+    "jsonschema": "4.26.0",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "smac": "2.4.0"
+  },
+  "source_pins": {
+    "benchflow": "99baefb602674bbd31139fd2f1a22c3ed45752f9",
+    "pi-acp": "b0581c9c1d675e634234674484247008b03d69b4",
+    "pi-mono": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a",
+    "skillsbench": "b63b7b2850226b6aa4fb5929a8c1ac7bc4d9a6af"
+  },
+  "source_sha256": {
+    "configs/hpo_space.json": "0b6656b57c2fa0dd64bbf2e2ea4b515c7f26d04db81474fb729d6450ad1c52be",
+    "configs/hpo_validation_groups.json": "681f031848b164ee961118fa5631b7c401ba30aca01c8ebcab7a507ba30839af",
+    "configs/hpo_validation_tasks.json": "2555ffc426f9c6f03b06f614ad07119c4021d4b52c46118b9f4358e0dd210f88",
+    "evaluation/__init__.py": "ba809e3002aefe73b78d4e4e26bfd6cac86c95501355c7d2940ea9e6def7d6e9",
+    "evaluation/report.py": "7acbeafe053c0e71c0ca474832c652bdb682fc228efcce6cc0379b164d52b266",
+    "evaluation/review.py": "82659ab06371e2781dabe3b41a596d8a4ba658b939545608e13982cec727f424",
+    "hpo/__init__.py": "1416f42738ac52e99566f314b3d8f3834eee272cb659de232dc702d86f9fdc5b",
+    "hpo/__main__.py": "64b8913b63a4ebc56bb01d2db3e755bdf9776489a726c613e9fad6876b87e272",
+    "hpo/budget.py": "a4781ac7ab6a5e4dbf3a51860e4ea505dc8f889c849f9dd519556fc4a9e1c8b1",
+    "hpo/config.py": "a3d6c442112d25a34b8d3a7df8d21393678f91d37d5b5e0e82947f3940df0578",
+    "hpo/contrasts.py": "d2a9ab6e10b337942d08eeb3e08c3feb42314ab7bbb862db612d15e400a12e9a",
+    "hpo/evaluation.py": "8f5aa70d9b7accfe4166362a37550bf9170b2d1aff3fa1e7ed26a4e4a78881c2",
+    "hpo/interaction_search.py": "41f8102dd570395c79d7fa02817679ff871ff1ae394cc032355b314370c1ca63",
+    "hpo/methods.py": "f7f9a8e5377d6eaaa4176749f8eb1f03b9b4a14d124d5d1fdafe9f8f8907f098",
+    "hpo/reproducibility.py": "6616fd2978f846dd0ad625d0a74e7d6d69b87d88059cdf2f471f48acf6603cd6",
+    "hpo/runner.py": "76e692f02217dffb81ad3bf4dddabb97e1145682df52693802737816d0b3144c",
+    "hpo/selection.py": "6d4f305c4f932154d13d7089d935e11176ded3d7a4c17072709ba4a21c5f4452",
+    "pilot/__init__.py": "41b39360a4824e8317c4d3c0b08b9636a96c6cafc66d928077bc8ef1747f70d8",
+    "pilot/__main__.py": "ef3b4407f153dfcde9217460d752354d34eb30fc0c5089d53a1efa3d55355a99",
+    "pilot/config.py": "f6bc18309fb330bf0540f134dad0586163f94c41c697b6c8051e92e210b9e9ec",
+    "pilot/preflight.py": "b40b58e7243313c19171d12fcd4abecd7d4960f33a02e0f4f4366396b4be743b",
+    "pilot/results.py": "7c26932150e36d123e0a1e972090e312e674638381aed12837ad3c6f39b18d9e",
+    "pilot/sandbox/launch.py": "1c1a41c5dc7f9ba1562540d17247f1d158fde82d26cd70e15e06fb99cffd4040",
+    "pilot/sandbox/pi_rpc_audit.py": "4644ca46fc20459011347fee4d02dfc9a78801c482fa27f73583b3861e075308",
+    "pilot/worker.py": "6f13c1b6e7a693aa4ac05691b47ba6fdf56e9bf797202e87bd95c58ca5fd2b36",
+    "requirements-hpo.lock": "af20414dcf6c3eec2c745f348a473bb963cc7ccfa6ac29ec2948a2092efa2285",
+    "schemas/hpo_campaign.schema.json": "c206719c6fff64784205a575aace58c8c8e0937cc18bc8cb927ea1d207b340c9",
+    "schemas/hpo_result.schema.json": "518246fa623f0f73a9ade734f42293dae541ca6b2c7babb755f72fdf203ae7dc",
+    "schemas/hpo_space.schema.json": "826c79a7fb3efc3724d2c2f7f783e9527379881430450ed49b60e82a832c0758",
+    "schemas/pi_search_settings.schema.json": "dee389ac2f7a00bf18bc8e65e47b3f440ee312145770b42c12036c74614de7f2",
+    "scripts/plot_mock.py": "6b90d4b91ba48f4ed6ec4ffd8028590ba95f41034c97acbf9bd2202d1d0bfe08",
+    "scripts/reproduce_mock.py": "3b5711f358c3d5e3eb6761a99e3cf8e0656cafdfaba75739fc5791e2083a9d58",
+    "scripts/restore_sources.py": "c5c69961b38d3c85de4d247da26b8cc5937727218192d8089eb07baece285fc9",
+    "tests/test_hpo.py": "29d9ac8a3b640db502b326a4100b061c7d6ca4416f396f32ec80d00c215c6814",
+    "tests/test_interaction.py": "4acb1475d5550160011bfe0b702997092ca40f0b63a857e1f11ef01a72c8e805",
+    "tests/test_pilot.py": "5d75c348e4036245b1298e027584b398b22743dbfc39c6c44059b8dba8ae0a8a",
+    "tests/test_review.py": "009b587dada70eb30b52305218578c9d83a576fb4d47a13ef58947a1fadb97fd"
+  },
+  "status": "draft_not_approved",
+  "student_algorithm": {
+    "action_cycle": [
+      "pair",
+      "single",
+      "global"
+    ],
+    "bootstrap_quantile": 0.95,
+    "bootstrap_resamples": 2000,
+    "minimum_groups": 8,
+    "minimum_stability": 0.8,
+    "practical_threshold": 0.05,
+    "screen_panels": 7,
+    "version": "igbs-1"
+  },
+  "task_timeout_seconds": {
+    "3d-scan-calc": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "beee99b3485cca702765627216cee7210b700e9709c6b0c309e8c5d80f729c45",
+      "verifier.timeout_sec": 900.0
+    },
+    "ada-bathroom-plan-repair": {
+      "agent.timeout_sec": 2400.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "a34ab8898bb4631304ff444eb7753292a62ab0a4f97c2aaa4c187fc68f99a2c4",
+      "verifier.timeout_sec": 900.0
+    },
+    "adaptive-cruise-control": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "cd7c5b123e4290480fb2e9353d6ab54190da2886fe2a40828663c42c6fbe9531",
+      "verifier.timeout_sec": 1800.0
+    },
+    "azure-bgp-oscillation-route-leak": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "56192382947b6d4970e030f4dd22082be5c805f5515ffa476a14aadb2a6b0c51",
+      "verifier.timeout_sec": 240.0
+    },
+    "bike-rebalance": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "e0c4df63f4231cf3e0ebc49d78529c44177833e6f90d0de389b1fe096c9f6fdf",
+      "verifier.timeout_sec": 900.0
+    },
+    "citation-check": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "9fd06eee15589e5ee4f5e924d50cdf74aba5e3a85bd6ed628ef0a1bb2aa9f03d",
+      "verifier.timeout_sec": 900.0
+    },
+    "civ6-adjacency-optimizer": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "65133da600e0745b143173f18b451849308af5ef2a834bcc30eb353dfddd7ee9",
+      "verifier.timeout_sec": 900.0
+    },
+    "court-form-filling": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "752b54d65d2033b068d95dd63cb3626f2d61b105320e2aea455ac44a4741945f",
+      "verifier.timeout_sec": 600.0
+    },
+    "crystallographic-wyckoff-position-analysis": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f30ecc94de28d1bf3be0685f7a28b869970243edf0e534151d513e221b82d41f",
+      "verifier.timeout_sec": 240.0
+    },
+    "dapt-intrusion-detection": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "8f1739e8a100f7834df0c5354e9dccda2f6ce042cb56244839e0820b50048172",
+      "verifier.timeout_sec": 600.0
+    },
+    "data-to-d3": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1944fc541edcc3da13a1ba05ad475c5ea1ff41fc688aff6a5fd1bb8fd876d669",
+      "verifier.timeout_sec": 240.0
+    },
+    "debug-trl-grpo": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 2400.0,
+      "front_matter_sha256": "64c16a03643b88d5d2f3368e36dd6bc8f5b79174e078a269369ecb627d1701d9",
+      "verifier.timeout_sec": 120.0
+    },
+    "dialogue-parser": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f9c00bfac17d42d2a435fe38924ffeb778e68a5c34a7fd0958213151138c7f50",
+      "verifier.timeout_sec": 900.0
+    },
+    "drone-planning-control": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "daaa706584caf3ba59ce483f10f7890a4a3c71f0f6d1415e63e47a7a0c698642",
+      "verifier.timeout_sec": 600.0
+    },
+    "dynamic-object-aware-egomotion": {
+      "agent.timeout_sec": 1200.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "0ef6da462d6e71ea12409ce8b2ca8d7b9136d0a002945afeb105016e726cdb48",
+      "verifier.timeout_sec": 900.0
+    },
+    "earthquake-phase-association": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 900.0,
+      "front_matter_sha256": "11e55686e34269d32c63d2ce6e7e2264479de33a46f90a4f24fe0fa0efa78bd6",
+      "verifier.timeout_sec": 240.0
+    },
+    "earthquake-plate-calculation": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fe9a152c1cb3a2b9f2062219d4082c94a5c1d43ce2f0ab3bee209b4a4ea2ef6a",
+      "verifier.timeout_sec": 900.0
+    },
+    "econ-detrending-correlation": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d3d8413c9f03bfff5bee899f3e375d80838dfda786df53020dd7718cf4e3a152",
+      "verifier.timeout_sec": 240.0
+    },
+    "edit-pdf": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "8ee85992e5a6d27176eb3ae229c74a5da01a2c84cf4cf16ec7d3a473cb408485",
+      "verifier.timeout_sec": 900.0
+    },
+    "energy-ac-optimal-power-flow": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "e451228f71de7f28300c22cc841980bcee4381ed32fb46616f028c4d0430d504",
+      "verifier.timeout_sec": 240.0
+    },
+    "energy-market-pricing": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "bb676b02490445effbe2d286a137a3d99238ad34c71743320eab32fdcde4575b",
+      "verifier.timeout_sec": 900.0
+    },
+    "energy-unit-commitment": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3879a430c8316d2b0b1c9fd05760d056d8179c57b83fdcff6b6bc465a4572338",
+      "verifier.timeout_sec": 900.0
+    },
+    "enterprise-information-search": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "20777d9c9f611f41a70339d6d51e4797db1299bf6e95fe363d5c97e9df0b0756",
+      "verifier.timeout_sec": 600.0
+    },
+    "exam-block-sequencing": {
+      "agent.timeout_sec": 1500.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3e83d326465a304e8e79e3c3388a2e24984283ae85447e66e16d8bd63a8a943a",
+      "verifier.timeout_sec": 600.0
+    },
+    "exceltable-in-ppt": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "95daa714f75a51cf14c35b26c0ec94befd1f0778331bd4b67f153aff5b978b3f",
+      "verifier.timeout_sec": 900.0
+    },
+    "exoplanet-detection-period": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 900.0,
+      "front_matter_sha256": "3c5987318a7712d9c927d6dae3e90139a84630e71efa2d4159c91bcb5dda56ff",
+      "verifier.timeout_sec": 240.0
+    },
+    "financial-modeling-qa": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fbce3b022690e02820c69860dbfffa993aba8c2140f86a163d617d41a68f833a",
+      "verifier.timeout_sec": 600.0
+    },
+    "fix-build-agentops": {
+      "agent.timeout_sec": 7200.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3bd235878a76d0ed299f4661873575f2ac725e13a28573bb977c495b00e369bb",
+      "verifier.timeout_sec": 240.0
+    },
+    "fix-build-google-auto": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "66d9033c02312d5f0236b8bdde49e5fbc2c095c6f32c58f2ea2ce212aa8b1c91",
+      "verifier.timeout_sec": 900.0
+    },
+    "fix-druid-loophole-cve": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 3600.0,
+      "front_matter_sha256": "85443e00cb9df8245811031af4c3b210468e5025a570ef26048a61eed13f6059",
+      "verifier.timeout_sec": 1800.0
+    },
+    "fix-erlang-ssh-cve": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "78035d7a9643ccb7b5d27bfd1e09e9cf87418673b543444fb34d5787a1329ee3",
+      "verifier.timeout_sec": 1200.0
+    },
+    "fix-visual-stability": {
+      "agent.timeout_sec": 3000.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "9517efeb3abbfb1686134f25c12ecafd656f27e0c6370a88d548582c9a704092",
+      "verifier.timeout_sec": 900.0
+    },
+    "flink-query": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "ce53caf74f723d992c282dc6bca2b175f289ed27d743d5c9d915e5712fb57f8e",
+      "verifier.timeout_sec": 600.0
+    },
+    "flood-risk-analysis": {
+      "agent.timeout_sec": 7200.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "ab8fad0575ef516e9deef704eb68f75ecd86eb599974e6f1e9c2467a62b1d76b",
+      "verifier.timeout_sec": 240.0
+    },
+    "glm-lake-mendota": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3bc71a2b1ba059c068b1875e23c6b4b6c7b19254791fe6d6dfdb4605f6b9d1eb",
+      "verifier.timeout_sec": 600.0
+    },
+    "gravitational-wave-detection": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 1800.0,
+      "front_matter_sha256": "7d5382c9a44d2d434d447e58cb46c3406067f310aec421b648f63fdf2cc964e6",
+      "verifier.timeout_sec": 240.0
+    },
+    "grid-dispatch-operator": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "a723664ed94ab3a342b3d97eda53aa584d57ff9dc4f1ae629986b32d9a70a5de",
+      "verifier.timeout_sec": 600.0
+    },
+    "hvac-control": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "5236ca9d4d148a2cb007062e59882f56015b69be227842e50900a462ea1f58c7",
+      "verifier.timeout_sec": 1800.0
+    },
+    "invoice-fraud-detection": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "e9bba282acef3a22075efefe039bdf0d809aa077aeef57d3aafd270140b9981a",
+      "verifier.timeout_sec": 240.0
+    },
+    "jax-computing-basics": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1016b0a2c60d31532be6b01fa690b8a39b168668f521fd17905b2e82540e57d2",
+      "verifier.timeout_sec": 600.0
+    },
+    "jpg-ocr-stat": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "30ed686a951b36b34660d8121b5db208f8c5f6e1dfdb186a40fd698d09320501",
+      "verifier.timeout_sec": 600.0
+    },
+    "lab-unit-harmonization": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1270c97119a719692908dfdf15a01fbe413198e60ac036b86fdec6e9712b4c4b",
+      "verifier.timeout_sec": 1800.0
+    },
+    "lake-warming-attribution": {
+      "agent.timeout_sec": 300.0,
+      "environment.build_timeout_sec": 300.0,
+      "front_matter_sha256": "f1f39a55f70b3c3b999c597ee44d03abb27c6bc2abfd66a58193b2e30617edc9",
+      "verifier.timeout_sec": 300.0
+    },
+    "latex-formula-extraction": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "f7391be83545bb08c134f54758b7983fa89cb6ab769808915f3f22a0f1a56399",
+      "verifier.timeout_sec": 240.0
+    },
+    "lean4-proof": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "535d6c56c2b1a4ebbf2969434ea3ae0c145c0d256e25a5da9bcba686fe08a52c",
+      "verifier.timeout_sec": 600.0
+    },
+    "llm-prefix-cache-replay": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "99867f2abb84fcf95453fffe64ab73a3daedc96a54e8820b5c78218b943e036b",
+      "verifier.timeout_sec": 300.0
+    },
+    "manufacturing-codebook-normalization": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1107b45b6641e1b2e5209d35a3c8177ca2ac57d4bbda6c41207cf7ebe60c0e16",
+      "verifier.timeout_sec": 300.0
+    },
+    "manufacturing-equipment-maintenance": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "2079894fe515df0a33464deeaa51ebe870e3ccbee292ce2077559595aa543072",
+      "verifier.timeout_sec": 300.0
+    },
+    "manufacturing-fjsp-optimization": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "41249fc06170abcb840b219903571cf70045551314a196cf1dceb9e0116ab94f",
+      "verifier.timeout_sec": 450.0
+    },
+    "mario-coin-counting": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f52ff5d81329c387a6612cacad763054eed5a20202c5ed34029d411fbc74dfa8",
+      "verifier.timeout_sec": 900.0
+    },
+    "mars-clouds-clustering": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 900.0,
+      "front_matter_sha256": "57428505a6726f6d379de012b78a5eadefe2c87dd3ad77e1683c9af9509e2c4e",
+      "verifier.timeout_sec": 1800.0
+    },
+    "multilingual-video-dubbing": {
+      "agent.timeout_sec": 2700.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "7116fcc018f76da10ded0b7f2716bf5a5a9aa103b708f205e43509d390a570d4",
+      "verifier.timeout_sec": 1350.0
+    },
+    "offer-letter-generator": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d5fa395a1f99a78555c91ac309370dea541a0d47501e56a801dac6ea7b6e3cac",
+      "verifier.timeout_sec": 900.0
+    },
+    "organize-messy-files": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3a79eb987ba66b6d0ba7bbccde0370083107aaf8a8bc394c94eea580fb9545b0",
+      "verifier.timeout_sec": 900.0
+    },
+    "paper-anonymizer": {
+      "agent.timeout_sec": 1000.0,
+      "environment.build_timeout_sec": 300.0,
+      "front_matter_sha256": "a82181d8b9982a296d2c47cca580d8e3e8a977581c39e590cb78285d4972b0f2",
+      "verifier.timeout_sec": 300.0
+    },
+    "parallel-tfidf-search": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "b6c8f3f67951ac490c6e20f750fa46449f40f2d8c42cfa1abda3fa15539d9fe0",
+      "verifier.timeout_sec": 900.0
+    },
+    "paratransit-routing": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "10f8165faf03f89ff448230304d0da286d51e53accab33d3276dba9f98f1b581",
+      "verifier.timeout_sec": 900.0
+    },
+    "pddl-airport-planning": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "4308bb75ee34ce8b4db304fadcb35fbffff7fe20f9a536181704699905821cd0",
+      "verifier.timeout_sec": 600.0
+    },
+    "pddl-tpp-planning": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "37818b22c121140acd6b0ba1e641edeebd5b28e4d4913534163a0c77fb7ce433",
+      "verifier.timeout_sec": 600.0
+    },
+    "pdf-excel-diff": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "c947e84497c1b7be5117815d94d9758ba4da1bd98bde7a67f7df8e86dbab98d5",
+      "verifier.timeout_sec": 240.0
+    },
+    "powerlifting-coef-calc": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3962ea53967b32ccedf914e1273fdbafb1b5b790149532c0d348743378a82433",
+      "verifier.timeout_sec": 600.0
+    },
+    "pptx-reference-formatting": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "19e86439f456aa82c29325f49b1b3f32b4e4d0ac0813590f095ff49c54e2fdc0",
+      "verifier.timeout_sec": 600.0
+    },
+    "protein-expression-analysis": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 900.0,
+      "front_matter_sha256": "a4fad4257f6f99308e8543ec975de1c47f5bbc875cea2cd39e7d59dca92b64f1",
+      "verifier.timeout_sec": 1800.0
+    },
+    "python-scala-translation": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "6fbb6f9459e73a95ceffccf70e3b2906113a684ac1c5ff1f0a3a9816ed0c46ad",
+      "verifier.timeout_sec": 600.0
+    },
+    "quantum-numerical-simulation": {
+      "agent.timeout_sec": 7200.0,
+      "environment.build_timeout_sec": 1800.0,
+      "front_matter_sha256": "2bc84e23488c451d3e91bef1e4033eef5ef5acc8b99986cb99cf071175144058",
+      "verifier.timeout_sec": 1800.0
+    },
+    "r2r-mpc-control": {
+      "agent.timeout_sec": 1200.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "dc99ecd57e0274e7842939bbee3fbbbf59fcbe854deadae94aa6d32db51dd7c7",
+      "verifier.timeout_sec": 1200.0
+    },
+    "radar-vital-signs": {
+      "agent.timeout_sec": 1200.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "29659e03887407e41cf08d431a3a45f92bf9f5f4073c326a701d420df0c3272c",
+      "verifier.timeout_sec": 600.0
+    },
+    "react-performance-debugging": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "55df87a5a81955e02bf60e7917740719f126ba437c6e111130d428f789bb6cec",
+      "verifier.timeout_sec": 400.0
+    },
+    "reserves-at-risk-calc": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d46b355b82008ffe02b60a54387c0f769652e86b8c1314ad6211c9d29a59dbed",
+      "verifier.timeout_sec": 600.0
+    },
+    "sales-pivot-analysis": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "85a16bc9dabd0329d50fff75dcbf919e46ea6b760cb77d38bb0bda2b75e26145",
+      "verifier.timeout_sec": 300.0
+    },
+    "sec-financial-report": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "18ab424b9c21930e94296ac425d5545532086d9b07160022c645977800475a8e",
+      "verifier.timeout_sec": 900.0
+    },
+    "seismic-phase-picking": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 900.0,
+      "front_matter_sha256": "ae6e74bec3367db202e1aa0dab081bdfb8c982758ef28ca8cc44d67647ff6a37",
+      "verifier.timeout_sec": 240.0
+    },
+    "setup-fuzzing-py": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "8d02099a319564176d2245d0e7601d49578b5ea7ced720dcdbbfcf3406ad88da",
+      "verifier.timeout_sec": 600.0
+    },
+    "shock-analysis-demand": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f5378a3b3be95114b14e969aee9b6681fa430a60e166ff1a0c1aec2103177d70",
+      "verifier.timeout_sec": 240.0
+    },
+    "shock-analysis-supply": {
+      "agent.timeout_sec": 2700.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "e742ae51bc3596ba31aa6fa8d4413eef389281c48f9fe64c4e72b97fda5bcc51",
+      "verifier.timeout_sec": 1350.0
+    },
+    "simpo-code-reproduction": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "a10a2a84e04bc91db39424765a1c3e44ac0d4b7739463367d8adad64b6b0d2f6",
+      "verifier.timeout_sec": 900.0
+    },
+    "software-dependency-audit": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "62ef3aeb15f3efad6c310fc40abe726f64f9a6b5ae5b7b1d572db1acb49b1cd3",
+      "verifier.timeout_sec": 240.0
+    },
+    "spring-boot-jakarta-migration": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "a182b75419c6f03a401f3cba31fd578fab82efe6804d21cd4e589a69fe75b1ec",
+      "verifier.timeout_sec": 900.0
+    },
+    "suricata-custom-exfil": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "d4f1f93d857fabb9068d5170e6c44da5200d83e73140579978d66d42422de9b3",
+      "verifier.timeout_sec": 900.0
+    },
+    "syzkaller-ppdev-syzlang": {
+      "agent.timeout_sec": 1400.0,
+      "environment.build_timeout_sec": 1200.0,
+      "front_matter_sha256": "2dba6a41051bd6a9703c624e2572bf0cd56c49ea00afd3dd03f192038f9dde59",
+      "verifier.timeout_sec": 1200.0
+    },
+    "threejs-structure-parser": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "fbd8ebb638e9c1415cf62e2d72141f47e213b1a99f0a6235c070a4d0fd057efa",
+      "verifier.timeout_sec": 300.0
+    },
+    "threejs-to-obj": {
+      "agent.timeout_sec": 300.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "1e721fef36effceade6a5c57b8a4a045f93fc21055617101022c00ed6d2eb994",
+      "verifier.timeout_sec": 300.0
+    },
+    "tictoc-unnecessary-abort-detection": {
+      "agent.timeout_sec": 1800.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "5035a3738a57499cfa17765657c441b68d2aee94e103cfe50092ffede8192ebd",
+      "verifier.timeout_sec": 600.0
+    },
+    "travel-planning": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "f374e8d1e91fcae4a8d9fcf73bc1cb7fe689bd05f5702b60b2863604b0f4cdce",
+      "verifier.timeout_sec": 300.0
+    },
+    "video-silence-remover": {
+      "agent.timeout_sec": 3600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "db4607c737ddb03c395d83118f7b448fc2da338e9f75420e67774ad8cd27dd71",
+      "verifier.timeout_sec": 240.0
+    },
+    "weighted-gdp-calc": {
+      "agent.timeout_sec": 900.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "c9eb77af6824f437474d1ac647c9b461ca64d2dff0e1822fe8405401a9ea30b1",
+      "verifier.timeout_sec": 900.0
+    },
+    "xlsx-recover-data": {
+      "agent.timeout_sec": 600.0,
+      "environment.build_timeout_sec": 600.0,
+      "front_matter_sha256": "3995085303e16817c27558d6c942a462086929c005e65e0be2de5c008cf217d8",
+      "verifier.timeout_sec": 600.0
+    }
+  },
+  "usd_budget": {
+    "compute_storage_egress_cap": null,
+    "currency": "USD",
+    "default_validation_cap": null,
+    "equality_rule": "Same approved USD ceiling for every search method/seed; actual spending may differ",
+    "heldout_total_cap": null,
+    "per_attempt_reservation_bound": null,
+    "pilot_cap": null,
+    "project_total_cap": null,
+    "search_cap_per_method_per_seed": {
+      "bo": null,
+      "igbs": null,
+      "pair_blind": null,
+      "random": null
+    },
+    "status": "not_supplied_not_approved"
+  }
+}

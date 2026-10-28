@@ -1,0 +1,38 @@
+{
+  "backend": "skillsbench_pi_v1",
+  "bo_initial_configurations": 3,
+  "configurations_per_search": 10,
+  "default_spend_cap_usd": 4,
+  "live": {
+    "accounting_policy": "request_journal_v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "attempt_spend_reservation_usd": 1,
+    "cleanup_timeout_seconds": 90,
+    "heldout_profile": "compact_v3",
+    "model": "openrouter/openai/gpt-5.4-mini",
+    "runtime_image": "sha256:734d8418aed236eaba2e789988770ffb92109ce59bb20ca71148e2ff0e3d5422",
+    "runtime_python": ".venv-runtime/bin/python",
+    "runtime_review": "runs/runtime-ready-20261026-repair/runtime-review.json",
+    "setup_timeout_seconds": 300,
+    "skill_mode": "with-skill",
+    "space_profile": "early_compaction_v2",
+    "spend_policy": "reservation_with_inflight_overrun",
+    "validation_profile": "grouped_v2"
+  },
+  "method_simulated_cost_cap": 0,
+  "method_spend_cap_usd": 22,
+  "method_wall_time_seconds": 192600,
+  "methods": [
+    "default",
+    "random",
+    "bo",
+    "igbs"
+  ],
+  "schema_version": 1,
+  "seeds": {
+    "evaluation": 6203,
+    "schedule": 42,
+    "search": 20261027
+  },
+  "task_timeout_seconds": null
+}
