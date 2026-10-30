@@ -1,9 +1,0 @@
-phase,method,ended,measurement_valid,policy_failures,passes,operational_ended_fraction,valid_only_pass_at_1,planned_task_count,unresolved,not_started,known_usd,holdback_usd
-validation,default,8,7,1,3,0.375,0.42857142857142855,,0,,1.0885071,1.0
-validation,random,44,40,4,10,0.22727272727272727,0.25,,0,,5.99997885,4.0
-validation,bo,44,41,3,8,0.18181818181818182,0.1951219512195122,,0,,4.1785113,5.0
-validation,igbs,43,37,6,15,0.3488372093023256,0.40540540540540543,,0,,8.42964735,6.0
-heldout,default,3,2,1,2,0.6666666666666666,1.0,8,1,4,0.05988225,1.0
-heldout,random,3,3,0,1,0.3333333333333333,0.3333333333333333,8,0,5,0.1873485,0.0
-heldout,bo,3,3,0,2,0.6666666666666666,0.6666666666666666,8,0,5,0.308955,0.0
-heldout,igbs,3,3,0,3,1.0,1.0,8,0,5,0.17201445,0.0
