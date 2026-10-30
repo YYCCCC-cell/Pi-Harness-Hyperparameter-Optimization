@@ -1,0 +1,15 @@
+{
+  "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "reviewed_date_hong_kong": "2026-10-30",
+  "price_kind": "standard_public_token_price_snapshot_not_invoice",
+  "model": {
+    "id": "gpt-5.4-mini",
+    "snapshot": "gpt-5.4-mini-2026-03-17",
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "input_modalities": ["text", "image"],
+    "reasoning_efforts": ["low", "medium", "high"],
+    "service_tier": "default",
+    "pricing_per_million": {"input": "0.75", "cached_input": "0.075", "output": "4.50"}
+  }
+}

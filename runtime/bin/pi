@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /opt/benchflow/node/bin/node /opt/benchflow/pi/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js "$@"

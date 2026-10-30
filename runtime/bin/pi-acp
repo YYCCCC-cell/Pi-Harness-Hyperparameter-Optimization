@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /opt/benchflow/node/bin/node /opt/benchflow/js-agents/lib/node_modules/pi-acp/dist/index.js "$@"
