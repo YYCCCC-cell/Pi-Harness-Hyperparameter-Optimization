@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explicit mock or live Pi/SkillsBench HPO campaign",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "backend",
+    "configurations_per_search",
+    "bo_initial_configurations",
+    "seeds",
+    "task_timeout_seconds",
+    "method_wall_time_seconds",
+    "method_spend_cap_usd",
+    "method_simulated_cost_cap"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "backend": {
+      "enum": [
+        "deterministic_mock_v1",
+        "skillsbench_pi_v1"
+      ]
+    },
+    "methods": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "default",
+          "random",
+          "bo",
+          "igbs",
+          "pair_blind"
+        ]
+      }
+    },
+    "configurations_per_search": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 27
+    },
+    "bo_initial_configurations": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 26
+    },
+    "seeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "search",
+        "evaluation",
+        "schedule"
+      ],
+      "properties": {
+        "search": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "evaluation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "schedule": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "task_timeout_seconds": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 120
+    },
+    "method_wall_time_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 604800
+    },
+    "method_spend_cap_usd": {
+      "type": "number",
+      "minimum": 0
+    },
+    "default_spend_cap_usd": {
+      "type": "number",
+      "minimum": 0
+    },
+    "method_simulated_cost_cap": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "live": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runtime_python",
+        "runtime_image",
+        "runtime_review",
+        "model",
+        "api_key_env",
+        "skill_mode",
+        "attempt_spend_reservation_usd",
+        "spend_policy",
+        "setup_timeout_seconds",
+        "cleanup_timeout_seconds"
+      ],
+      "properties": {
+        "runtime_python": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime_image": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "runtime_review": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "enum": [
+            "openrouter/openai/gpt-5.4-mini",
+            "openai/gpt-5.4-mini"
+          ]
+        },
+        "api_key_env": {
+          "enum": [
+            "OPENROUTER_API_KEY",
+            "OPENAI_API_KEY"
+          ]
+        },
+        "skill_mode": {
+          "enum": [
+            "with-skill",
+            "no-skill"
+          ]
+        },
+        "attempt_spend_reservation_usd": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "spend_policy": {
+          "const": "reservation_with_inflight_overrun"
+        },
+        "setup_timeout_seconds": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 1800
+        },
+        "cleanup_timeout_seconds": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 180
+        },
+        "space_profile": {
+          "enum": [
+            "original",
+            "early_compaction_v2"
+          ]
+        },
+        "validation_profile": {
+          "enum": [
+            "original",
+            "grouped_v2"
+          ]
+        },
+        "heldout_profile": {
+          "enum": [
+            "grouped_v2",
+            "compact_v3"
+          ]
+        },
+        "accounting_policy": {
+          "const": "request_journal_v1"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "model": {
+                "const": "openai/gpt-5.4-mini"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "api_key_env": {
+                "const": "OPENAI_API_KEY"
+              }
+            },
+            "required": [
+              "accounting_policy"
+            ]
+          },
+          "else": {
+            "properties": {
+              "api_key_env": {
+                "const": "OPENROUTER_API_KEY"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "backend": {
+            "const": "deterministic_mock_v1"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "method_spend_cap_usd": {
+            "const": 0
+          },
+          "default_spend_cap_usd": {
+            "const": 0
+          },
+          "task_timeout_seconds": {
+            "type": "integer"
+          }
+        },
+        "not": {
+          "required": [
+            "live"
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "live"
+        ],
+        "properties": {
+          "method_spend_cap_usd": {
+            "exclusiveMinimum": 0
+          },
+          "method_simulated_cost_cap": {
+            "const": 0
+          },
+          "task_timeout_seconds": {
+            "const": null
+          }
+        }
+      }
+    }
+  ]
+}

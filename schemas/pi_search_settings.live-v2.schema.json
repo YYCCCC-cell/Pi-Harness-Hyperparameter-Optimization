@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explicit early-compaction live v2 settings",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "defaultThinkingLevel",
+    "compaction"
+  ],
+  "properties": {
+    "defaultThinkingLevel": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "compaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reserveTokens",
+        "keepRecentTokens"
+      ],
+      "properties": {
+        "reserveTokens": {
+          "type": "integer",
+          "enum": [
+            16384,
+            360000,
+            375000
+          ]
+        },
+        "keepRecentTokens": {
+          "type": "integer",
+          "enum": [
+            4000,
+            10000,
+            20000
+          ]
+        }
+      }
+    }
+  }
+}
