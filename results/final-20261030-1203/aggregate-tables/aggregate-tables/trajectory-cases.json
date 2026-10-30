@@ -1,0 +1,73 @@
+[
+  {
+    "case": "econ_filter_component",
+    "attempt_ids": [
+      "heldout-random-000",
+      "heldout-default-000"
+    ],
+    "observations": {
+      "random_filter_selection": "hpfilter(...)[1]",
+      "default_filter_selection": "unpacked cycle, trend; correlated cycle",
+      "random_answer": 0.9925,
+      "default_answer": 0.68885,
+      "native_target": 0.68885,
+      "absolute_tolerance": 0.001,
+      "random_tests": "3/4",
+      "default_tests": "4/4"
+    },
+    "source_sha256": {
+      "runs/deadline-20261030/attempts/heldout-random-000/benchflow/live/pe6203-6960528ac8804c788c24020983efa9a5/trajectory/acp_trajectory.jsonl": "5d05d0d7007e46a171c5b97f4d4b1244d6282c59b1dabd077c2d0df2f066d52f",
+      "runs/deadline-20261030/attempts/heldout-random-000/benchflow/live/pe6203-6960528ac8804c788c24020983efa9a5/verifier/ctrf.json": "956d089140e33694d247cfdd2ba82e32debbba5c449bdbca0246ed322a65eea4",
+      "runs/deadline-20261030/attempts/heldout-random-000/benchflow/live/pe6203-6960528ac8804c788c24020983efa9a5/verifier/test-stdout.txt": "3619e860c8075ebba3fe8f01748a85a435f605a81098b69014fd3ebc72b1655e",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/trajectory/acp_trajectory.jsonl": "25b43a7e5b7a5a918f97fd3891d0a00cd3423ad341b52888ff027c808d34f516",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/verifier/ctrf.json": "1fc9177af842d075a6a41c42247b132fb6be0998be8dbf9288f82472b0d6bb65",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/verifier/test-stdout.txt": "f1d05251b3dc0830c4b97cddcc54cd19b3faa2b8d5d2923b9052975dab95e8b4"
+    }
+  },
+  {
+    "case": "econ_quarter_aggregation",
+    "attempt_ids": [
+      "heldout-bo-000",
+      "heldout-default-000"
+    ],
+    "observations": {
+      "bo_selection": "only rows explicitly matching 2024:",
+      "default_selection": "three available quarterly rows averaged",
+      "bo_answer": 0.68986,
+      "bo_absolute_error": 0.00101,
+      "native_absolute_tolerance": 0.001,
+      "bo_tests": "3/4"
+    },
+    "source_sha256": {
+      "runs/deadline-20261030/attempts/heldout-bo-000/benchflow/live/pe6203-2eafbd27d14f47cfbaac8bd3a4dd2f07/trajectory/acp_trajectory.jsonl": "8160a20b5c047e342544e15294317c5ef503eada23fdba293a620e0bc3f435e9",
+      "runs/deadline-20261030/attempts/heldout-bo-000/benchflow/live/pe6203-2eafbd27d14f47cfbaac8bd3a4dd2f07/verifier/ctrf.json": "162ea6f521b226a371dda888abaf3a981afb6ff39f16eb8bb566fd04c935f8d4",
+      "runs/deadline-20261030/attempts/heldout-bo-000/benchflow/live/pe6203-2eafbd27d14f47cfbaac8bd3a4dd2f07/verifier/test-stdout.txt": "b042cfd4cc73ad2478d62c5e88193324e14b499e6e1fe2cf37b948cdba95f181",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/trajectory/acp_trajectory.jsonl": "25b43a7e5b7a5a918f97fd3891d0a00cd3423ad341b52888ff027c808d34f516",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/verifier/ctrf.json": "1fc9177af842d075a6a41c42247b132fb6be0998be8dbf9288f82472b0d6bb65",
+      "runs/deadline-20261030/attempts/heldout-default-000/benchflow/live/pe6203-dbba40defea54dc186619c4b21622a82/verifier/test-stdout.txt": "f1d05251b3dc0830c4b97cddcc54cd19b3faa2b8d5d2923b9052975dab95e8b4"
+    }
+  },
+  {
+    "case": "jax_recurrence_repair",
+    "attempt_ids": [
+      "heldout-random-002",
+      "heldout-bo-002"
+    ],
+    "observations": {
+      "random_recurrence": "tanh(x @ Wx + h @ Wh + b)",
+      "bo_recorded_edit": "tanh(x @ Wx.T + h @ Wh.T + b)",
+      "random_failed_native_test": "test_allclose: scan_rnn",
+      "random_tests": "4/5",
+      "bo_tests": "5/5",
+      "causal_scope": "Observed code repair and native result in these runs; not a method-level or thinking-level causal estimate."
+    },
+    "source_sha256": {
+      "runs/deadline-20261030/attempts/heldout-random-002/benchflow/live/pe6203-cbdcd2ce2261422388f286d3e241a693/trajectory/acp_trajectory.jsonl": "cbdb587cc037afa3200c6736b4ad8e6891844399be25577351c5eeb8ca1b23b6",
+      "runs/deadline-20261030/attempts/heldout-random-002/benchflow/live/pe6203-cbdcd2ce2261422388f286d3e241a693/verifier/ctrf.json": "ab90be8788929b61d13519826794cd818bac80076da27334f7f6c759c563399d",
+      "runs/deadline-20261030/attempts/heldout-random-002/benchflow/live/pe6203-cbdcd2ce2261422388f286d3e241a693/verifier/test-stdout.txt": "cb6816b8f0afa6a666fb8d18e5f2aeef177c301d4904a39157f00126f4ace4f9",
+      "runs/deadline-20261030/attempts/heldout-bo-002/benchflow/live/pe6203-e26cdf2311cf4cd6b09674a7b06dd9e0/trajectory/acp_trajectory.jsonl": "50e41005d7b2c2ac1a570d400b26ba3b0c29ae6690f5a0983691b40c7f09bed9",
+      "runs/deadline-20261030/attempts/heldout-bo-002/benchflow/live/pe6203-e26cdf2311cf4cd6b09674a7b06dd9e0/verifier/ctrf.json": "3e4b144745883688d1d97c9486116e954e8bec39ff069bf5b394b186fad13241",
+      "runs/deadline-20261030/attempts/heldout-bo-002/benchflow/live/pe6203-e26cdf2311cf4cd6b09674a7b06dd9e0/verifier/test-stdout.txt": "e683980a087285792699028b2d74f4aa414640dd351e841564f22793dbc5c574"
+    }
+  }
+]
