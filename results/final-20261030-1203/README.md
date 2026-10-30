@@ -1,7 +1,5 @@
 # Recorded experiment aggregates
 
-Cutoff: 30 October 2026, 12:03 HKT. The campaign stopped with `controller_error_FileNotFoundError`. These aggregates describe a stopped, partial revised operational evaluation.
-
 - `audit.json`: provenance, timing, measurement, accounting and completeness checks.
 - `aggregate-tables/method-coverage.csv` and `.json`: validation and held-out ended observations, valid observations, policy penalties, passes and missing coverage.
 - `aggregate-tables/frozen-winners.csv` and `.json`: the four configurations frozen before held-out testing.
