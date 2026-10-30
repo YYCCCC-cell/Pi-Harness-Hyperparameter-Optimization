@@ -1,0 +1,189 @@
+{
+  "recorded_at_utc": "2026-10-30T07:48:49.153446+00:00",
+  "scope": "Integrated synthetic mechanism validation into a separately versioned submission; real campaign cutoff unchanged",
+  "offline_tests": {
+    "tests_run": 89,
+    "passed": 88,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 28.601,
+    "environment": "existing project Python 3.12 environment",
+    "test_modules": [
+      "tests.test_hpo",
+      "tests.test_interaction",
+      "tests.test_deadline_run",
+      "tests.test_deadline_frozen"
+    ]
+  },
+  "python_files_syntax_checked": 140,
+  "byte_identical_code_and_data_directories": {
+    "hpo": 11,
+    "evaluation": 37,
+    "runtime": 14,
+    "pilot": 13,
+    "configs": 11,
+    "schemas": 7,
+    "tests": 33,
+    "scripts": 45,
+    "results": 21
+  },
+  "presentation_byte_identical_to_reviewed_source": true,
+  "prior_source_verification": {
+    "recorded_at_utc": "2026-10-30T06:18:42.810077+00:00",
+    "scope": "reviewed local submission copy, with sanitized aggregates and rendered English deliverables",
+    "source_package_offline_tests": {
+      "recorded_at_utc": "2026-10-30T04:01:03.447406+00:00",
+      "scope": "existing project Python environment, source-only export without local runs or third_party",
+      "tests_run": 89,
+      "passed": 88,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "new_model_calls": 0,
+      "syntax_checked_python_files": 137,
+      "secret_pattern_findings": 0,
+      "test_modules": [
+        "tests.test_hpo",
+        "tests.test_interaction",
+        "tests.test_deadline_run",
+        "tests.test_deadline_frozen"
+      ],
+      "release_only_change": "Isolated temporary offline allocation claim fixture in tests/test_deadline_run.py; live controller unchanged.",
+      "not_verified": [
+        "fresh dependency installation",
+        "final experimental completeness",
+        "final report and presentation inclusion",
+        "GitHub publication"
+      ]
+    },
+    "existing_environment_pip_check": {
+      "result": "No broken requirements found",
+      "checked_on": "2026-10-30",
+      "fresh_install_performed": false
+    },
+    "syntax_checked_python_files": 139,
+    "frozen_source_public_comparison": {
+      "source_entries": 160,
+      "included_byte_identical": 149,
+      "export_transformed": [
+        "docs/restart_20261029/M2/README.md",
+        "docs/restart_20261029/M3/README.md",
+        "docs/restart_20261029/M4/README.md",
+        "docs/restart_20261029/M5/README.md",
+        "docs/restart_20261029/M6/README.md",
+        "docs/restart_20261029/README.md",
+        "tests/test_deadline_run.py"
+      ],
+      "excluded_local_evidence_and_launchers": [
+        ".vscode/tasks.json",
+        "artifacts/openai-adaptation-20261029/verification.json",
+        "docs/restart_20261029/Start Real Experiment.command",
+        "runs/restart-formal-20261029/runtime-review.openai.json"
+      ],
+      "note": "Export documentation sanitation and offline test fixture changes are distinct from the unmodified frozen experiment workspace."
+    },
+    "release_only_changes": [
+      "Isolated temporary allocation-claim fixture in tests/test_deadline_run.py from the earlier source export.",
+      "Portable plot interpreter in scripts/restart_20261029/live_follow.py via EP6203_PLOT_PYTHON or sys.executable.",
+      "Corrected relocated historical README links and updated current English package documents.",
+      "Added sanitized aggregates, reproducible scientific figures and reviewed English report/presentation."
+    ],
+    "new_model_calls": 0,
+    "git_push_performed": false,
+    "not_verified": [
+      "fresh dependency installation on another machine",
+      "missing final eight-task results",
+      "provider invoice reconciliation",
+      "GitHub publication"
+    ],
+    "sensitive_pattern_check": "Run scripts/verify_release_package.py; matching values are never printed.",
+    "link_and_hash_check": "Run scripts/verify_release_package.py against UPLOAD_MANIFEST.json."
+  },
+  "new_model_calls": 0,
+  "git_push_performed": false,
+  "not_verified": [
+    "fresh dependency install on a new machine",
+    "full heldout test completion",
+    "IGBS adaptive-stage empirical efficacy",
+    "provider invoice reconciliation",
+    "GitHub publication"
+  ],
+  "prior_paper_verification": {
+    "pages": 12,
+    "tables": 13,
+    "figures": 2,
+    "format": "A4 single-column academic paper; Times New Roman body; numbered captions and bibliography",
+    "renderer": "bundled LibreOffice through render_docx.py",
+    "visual_review": "All final rendered pages inspected; no clipping or overlapping content"
+  },
+  "paper": {
+    "pages": 13,
+    "tables": 14,
+    "figures": 3,
+    "rendered": true,
+    "visual_review": "All 13 pages inspected; final changed pages reviewed separately",
+    "primary_real_result_tables_unchanged": true
+  },
+  "synthetic_validation": {
+    "verified_at_beijing": "2026-10-30T15:51:58.258594+08:00",
+    "status": "passed",
+    "trace_count": 6,
+    "complete_panels": 60,
+    "synthetic_task_evaluations": 480,
+    "source_hashes_match": true,
+    "trace_hash_chains_valid": true,
+    "model_calls": 0,
+    "paid_api_cost_usd": 0,
+    "checks": [
+      {
+        "check": "strong_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "strong_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "Strong known interaction selects its parameter pair; pair-blind removes pair weighting",
+        "passed": true
+      },
+      {
+        "check": "flat_no_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "flat_no_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "flat_no_interaction: zero pair weight, uniform fallback, identical guided/blind trajectory",
+        "passed": true
+      },
+      {
+        "check": "weak_uncertain_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "weak_uncertain_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+        "passed": true
+      },
+      {
+        "check": "weak_uncertain_interaction: zero pair weight, uniform fallback, identical guided/blind trajectory",
+        "passed": true
+      }
+    ],
+    "visual_inspection": "passed: title, synthetic watermark, values, legend, axes and caveats visible; no clipping observed"
+  },
+  "integrated_at_utc": "2026-10-30T08:00:32.584881+00:00",
+  "watermark_removal": {
+    "updated_at_utc": "2026-10-30T08:10:49.548818+00:00",
+    "change": "Removed central diagonal watermark from report figure 3; all source disclosures and experimental values retained",
+    "changed_page": 13,
+    "pages_1_to_12_render_identical": true,
+    "all_pdf_text_unchanged": true,
+    "docx_only_changed_part": "word/media/image3.png",
+    "visual_review": "passed; chart values, axes, legend and captions intact",
+    "new_model_calls": 0
+  }
+}
