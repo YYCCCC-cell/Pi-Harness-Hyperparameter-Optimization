@@ -1,0 +1,50 @@
+{
+  "verified_at_beijing": "2026-10-30T15:51:58.258594+08:00",
+  "status": "passed",
+  "trace_count": 6,
+  "complete_panels": 60,
+  "synthetic_task_evaluations": 480,
+  "source_hashes_match": true,
+  "trace_hash_chains_valid": true,
+  "model_calls": 0,
+  "paid_api_cost_usd": 0,
+  "checks": [
+    {
+      "check": "strong_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "strong_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "Strong known interaction selects its parameter pair; pair-blind removes pair weighting",
+      "passed": true
+    },
+    {
+      "check": "flat_no_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "flat_no_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "flat_no_interaction: zero pair weight, uniform fallback, identical guided/blind trajectory",
+      "passed": true
+    },
+    {
+      "check": "weak_uncertain_interaction/igbs: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "weak_uncertain_interaction/igbs_pair_blind: complete 7-screen + pair/single/global, unique configurations, trace hashes",
+      "passed": true
+    },
+    {
+      "check": "weak_uncertain_interaction: zero pair weight, uniform fallback, identical guided/blind trajectory",
+      "passed": true
+    }
+  ],
+  "visual_inspection": "passed: title, synthetic watermark, values, legend, axes and caveats visible; no clipping observed"
+}

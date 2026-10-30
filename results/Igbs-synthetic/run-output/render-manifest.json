@@ -1,0 +1,7 @@
+{
+  "evidence_kind": "controlled_synthetic_not_benchmark",
+  "results_sha256": "442a31c12f150365e0a9eeb6e439421f085de5b8f5b4fd7446d27baba9f606cd",
+  "renderer_sha256": "47ae15a457b9849d9d8f5f85fd4dc6df4fb1b4d010db19a42ee9189a24476b2b",
+  "figure": "mechanism-check.png",
+  "visual_inspection": "passed: title, synthetic watermark, values, legend, axes and caveats visible; no clipping observed"
+}

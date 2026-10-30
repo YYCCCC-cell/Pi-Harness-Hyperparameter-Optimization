@@ -1,0 +1,129 @@
+{
+  "experiment_id": "igbs-controlled-synthetic-mechanism-20261030-v1",
+  "evidence_kind": "controlled_synthetic_not_benchmark",
+  "created_at": "2026-10-30T07:49:47.711605+00:00",
+  "seed": 31,
+  "methods": [
+    "igbs",
+    "igbs_pair_blind"
+  ],
+  "scenarios": [
+    "strong_interaction",
+    "flat_no_interaction",
+    "weak_uncertain_interaction"
+  ],
+  "panels_per_method_scenario": 10,
+  "groups": [
+    {
+      "group_id": "synthetic-group-0",
+      "tasks": [
+        "synthetic-task-0"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-1",
+      "tasks": [
+        "synthetic-task-1"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-2",
+      "tasks": [
+        "synthetic-task-2"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-3",
+      "tasks": [
+        "synthetic-task-3"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-4",
+      "tasks": [
+        "synthetic-task-4"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-5",
+      "tasks": [
+        "synthetic-task-5"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-6",
+      "tasks": [
+        "synthetic-task-6"
+      ]
+    },
+    {
+      "group_id": "synthetic-group-7",
+      "tasks": [
+        "synthetic-task-7"
+      ]
+    }
+  ],
+  "space": {
+    "schema_version": 1,
+    "parameters": {
+      "defaultThinkingLevel": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "compaction.reserveTokens": [
+        16384,
+        360000,
+        375000
+      ],
+      "compaction.keepRecentTokens": [
+        4000,
+        10000,
+        20000
+      ]
+    },
+    "default": {
+      "defaultThinkingLevel": "medium",
+      "compaction": {
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    "feasibility": {
+      "provenance": "openrouter_model_metadata",
+      "context_window": 400000,
+      "output_allowance": 128000,
+      "safety_margin": 4096
+    }
+  },
+  "algorithm_constants": {
+    "version": "igbs-1",
+    "screen_panels": 7,
+    "action_cycle": [
+      "pair",
+      "single",
+      "global"
+    ],
+    "bootstrap_resamples": 2000,
+    "bootstrap_quantile": 0.95,
+    "practical_threshold": 0.05,
+    "minimum_groups": 8,
+    "minimum_stability": 0.8
+  },
+  "objective_rule": "Choose the first two dimensions' alternative levels in the seeded initial design, then Y=1[A=alt_A AND B=alt_B] for all eight artificial groups (strong), no groups (flat), or only groups 0 and 1 (weak).",
+  "design_boundary": "Signal levels are deliberately aligned to the initial screen to provide a known-answer software check. This is not an unbiased optimizer efficacy benchmark. Artificial groups do not provide empirical statistical independence.",
+  "synthetic_tie_break": "All accounting/time inputs to the optimizer are fixed zero to neutralize those tie-breaks. Actual offline wall time is measured separately; no inference about model runtime is possible.",
+  "model_calls": 0,
+  "paid_api_cost_usd": 0,
+  "network_and_subprocess_guard": true,
+  "source_sha256": {
+    "hpo/interaction_search.py": "41f8102dd570395c79d7fa02817679ff871ff1ae394cc032355b314370c1ca63",
+    "hpo/contrasts.py": "d2a9ab6e10b337942d08eeb3e08c3feb42314ab7bbb862db612d15e400a12e9a",
+    "hpo/config.py": "cf1b4c60885b82f3587aebb25809c8cd2dd8d6b01f7b97a60614d9c16f62d837",
+    "hpo/selection.py": "b4491d5052b6295adbdf60f1cf0985cf8f03a7ad9a7a4090c433b8d4e5c4914e",
+    "configs/hpo_space.live-v2.json": "1888417ac5de2bffffe03e5718636f8e57b7dff8e472a3c30a2e8fe218a1639b",
+    "runtime/openrouter-model.json": "e8c410959de5d6bc50c7ee2a7d899b7879f7d946292b0ff8ea25cb366525fa32",
+    "experiments/igbs-validation-20261030/optimizers.py": "b995af22d74103afcce3fe52ce311d99a1a3297ac5047dfe6b1ad683e8a4faf2",
+    "experiments/igbs-synthetic-demo-20261030/run_demo.py": "cdec0fed131e63adc46d7ef0463ae3706746f56e984adc0acb7402fb22cb0da9"
+  }
+}

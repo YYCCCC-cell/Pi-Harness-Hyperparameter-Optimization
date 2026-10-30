@@ -1,0 +1,4 @@
+scenario,absolute_contrast,bootstrap_radius,leave_one_group_stability,igbs_routing_weight,pair_blind_applied_weight,igbs_reason,pair_blind_reason,igbs_selected_block,pair_blind_selected_block,evidence_kind
+strong_interaction,1.0,0.0,1.0,0.95,0,positive_stable_weight,pair_blind_uniform,"['defaultThinkingLevel', 'compaction.reserveTokens']","['defaultThinkingLevel', 'compaction.keepRecentTokens']",controlled_synthetic_not_benchmark
+flat_no_interaction,0.0,0.0,0.0,0.0,0,unidentified_or_unreliable_uniform,pair_blind_uniform,"['defaultThinkingLevel', 'compaction.keepRecentTokens']","['defaultThinkingLevel', 'compaction.keepRecentTokens']",controlled_synthetic_not_benchmark
+weak_uncertain_interaction,0.25,0.25,1.0,0.0,0,unidentified_or_unreliable_uniform,pair_blind_uniform,"['defaultThinkingLevel', 'compaction.keepRecentTokens']","['defaultThinkingLevel', 'compaction.keepRecentTokens']",controlled_synthetic_not_benchmark

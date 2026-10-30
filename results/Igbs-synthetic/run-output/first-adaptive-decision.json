@@ -1,0 +1,59 @@
+[
+  {
+    "scenario": "strong_interaction",
+    "absolute_contrast": 1.0,
+    "bootstrap_radius": 0.0,
+    "leave_one_group_stability": 1.0,
+    "igbs_routing_weight": 0.95,
+    "pair_blind_applied_weight": 0,
+    "igbs_reason": "positive_stable_weight",
+    "pair_blind_reason": "pair_blind_uniform",
+    "igbs_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.reserveTokens"
+    ],
+    "pair_blind_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.keepRecentTokens"
+    ],
+    "evidence_kind": "controlled_synthetic_not_benchmark"
+  },
+  {
+    "scenario": "flat_no_interaction",
+    "absolute_contrast": 0.0,
+    "bootstrap_radius": 0.0,
+    "leave_one_group_stability": 0.0,
+    "igbs_routing_weight": 0.0,
+    "pair_blind_applied_weight": 0,
+    "igbs_reason": "unidentified_or_unreliable_uniform",
+    "pair_blind_reason": "pair_blind_uniform",
+    "igbs_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.keepRecentTokens"
+    ],
+    "pair_blind_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.keepRecentTokens"
+    ],
+    "evidence_kind": "controlled_synthetic_not_benchmark"
+  },
+  {
+    "scenario": "weak_uncertain_interaction",
+    "absolute_contrast": 0.25,
+    "bootstrap_radius": 0.25,
+    "leave_one_group_stability": 1.0,
+    "igbs_routing_weight": 0.0,
+    "pair_blind_applied_weight": 0,
+    "igbs_reason": "unidentified_or_unreliable_uniform",
+    "pair_blind_reason": "pair_blind_uniform",
+    "igbs_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.keepRecentTokens"
+    ],
+    "pair_blind_selected_block": [
+      "defaultThinkingLevel",
+      "compaction.keepRecentTokens"
+    ],
+    "evidence_kind": "controlled_synthetic_not_benchmark"
+  }
+]

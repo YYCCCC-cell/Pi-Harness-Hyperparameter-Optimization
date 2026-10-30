@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "state": "stopped_partial_revised_operational_evaluation",
+  "snapshot_updated_at": "2026-10-30T04:03:07.240263+00:00",
+  "original_formal_complete": false,
+  "heldout_complete": false,
+  "invoice_reconciled": false,
+  "coverage": [
+    {
+      "phase": "validation",
+      "method": "default",
+      "ended": 8,
+      "measurement_valid": 7,
+      "policy_failures": 1,
+      "passes": 3,
+      "operational_ended_fraction": 0.375,
+      "valid_only_pass_at_1": 0.42857142857142855,
+      "planned_task_count": null,
+      "unresolved": 0,
+      "not_started": null,
+      "known_usd": 1.0885071,
+      "holdback_usd": 1.0
+    },
+    {
+      "phase": "validation",
+      "method": "random",
+      "ended": 44,
+      "measurement_valid": 40,
+      "policy_failures": 4,
+      "passes": 10,
+      "operational_ended_fraction": 0.22727272727272727,
+      "valid_only_pass_at_1": 0.25,
+      "planned_task_count": null,
+      "unresolved": 0,
+      "not_started": null,
+      "known_usd": 5.99997885,
+      "holdback_usd": 4.0
+    },
+    {
+      "phase": "validation",
+      "method": "bo",
+      "ended": 44,
+      "measurement_valid": 41,
+      "policy_failures": 3,
+      "passes": 8,
+      "operational_ended_fraction": 0.18181818181818182,
+      "valid_only_pass_at_1": 0.1951219512195122,
+      "planned_task_count": null,
+      "unresolved": 0,
+      "not_started": null,
+      "known_usd": 4.1785113,
+      "holdback_usd": 5.0
+    },
+    {
+      "phase": "validation",
+      "method": "igbs",
+      "ended": 43,
+      "measurement_valid": 37,
+      "policy_failures": 6,
+      "passes": 15,
+      "operational_ended_fraction": 0.3488372093023256,
+      "valid_only_pass_at_1": 0.40540540540540543,
+      "planned_task_count": null,
+      "unresolved": 0,
+      "not_started": null,
+      "known_usd": 8.42964735,
+      "holdback_usd": 6.0
+    },
+    {
+      "phase": "heldout",
+      "method": "default",
+      "ended": 3,
+      "measurement_valid": 2,
+      "policy_failures": 1,
+      "passes": 2,
+      "operational_ended_fraction": 0.6666666666666666,
+      "valid_only_pass_at_1": 1.0,
+      "planned_task_count": 8,
+      "unresolved": 1,
+      "not_started": 4,
+      "known_usd": 0.05988225,
+      "holdback_usd": 1.0
+    },
+    {
+      "phase": "heldout",
+      "method": "random",
+      "ended": 3,
+      "measurement_valid": 3,
+      "policy_failures": 0,
+      "passes": 1,
+      "operational_ended_fraction": 0.3333333333333333,
+      "valid_only_pass_at_1": 0.3333333333333333,
+      "planned_task_count": 8,
+      "unresolved": 0,
+      "not_started": 5,
+      "known_usd": 0.1873485,
+      "holdback_usd": 0.0
+    },
+    {
+      "phase": "heldout",
+      "method": "bo",
+      "ended": 3,
+      "measurement_valid": 3,
+      "policy_failures": 0,
+      "passes": 2,
+      "operational_ended_fraction": 0.6666666666666666,
+      "valid_only_pass_at_1": 0.6666666666666666,
+      "planned_task_count": 8,
+      "unresolved": 0,
+      "not_started": 5,
+      "known_usd": 0.308955,
+      "holdback_usd": 0.0
+    },
+    {
+      "phase": "heldout",
+      "method": "igbs",
+      "ended": 3,
+      "measurement_valid": 3,
+      "policy_failures": 0,
+      "passes": 3,
+      "operational_ended_fraction": 1.0,
+      "valid_only_pass_at_1": 1.0,
+      "planned_task_count": 8,
+      "unresolved": 0,
+      "not_started": 5,
+      "known_usd": 0.17201445,
+      "holdback_usd": 0.0
+    }
+  ],
+  "budget": {
+    "cap_usd": 60,
+    "known_usd": 20.4248448,
+    "holdback_usd": 17.0,
+    "committed_usd": 37.4248448,
+    "remaining_usd": 22.5751552,
+    "methods": {
+      "default": {
+        "cap_usd": 3,
+        "known_usd": 1.0885071,
+        "holdback_usd": 1.0,
+        "remaining_usd": 0.9114929
+      },
+      "random": {
+        "cap_usd": 16,
+        "known_usd": 5.99997885,
+        "holdback_usd": 4.0,
+        "remaining_usd": 6.00002115
+      },
+      "bo": {
+        "cap_usd": 16,
+        "known_usd": 4.1785113,
+        "holdback_usd": 5.0,
+        "remaining_usd": 6.8214887
+      },
+      "igbs": {
+        "cap_usd": 16,
+        "known_usd": 8.42964735,
+        "holdback_usd": 6.0,
+        "remaining_usd": 1.57035265
+      },
+      "heldout": {
+        "cap_usd": 9,
+        "known_usd": 0.7282002,
+        "holdback_usd": 1.0,
+        "remaining_usd": 7.2717998
+      }
+    }
+  },
+  "common_budget_domains": {
+    "known_usd": {
+      "lower": 2.15150685,
+      "upper": 4.03755405
+    },
+    "committed_usd": {
+      "lower": 7.15150685,
+      "upper": 7.53589035
+    }
+  },
+  "common_budget_note": "Complete coverage panel endpoints only; partial panels excluded. Committed axis includes $1 per unknown request reserve; all incumbent scores 0.25 in committed common domain. Known-only axis omits unknown exposure and is sensitivity only. Default is a fixed baseline, excluded from search domain.",
+  "winners": [
+    {
+      "method": "default",
+      "config_id": "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+      "thinking": "medium",
+      "keep_recent_tokens": 20000,
+      "reserve_tokens": 16384,
+      "validation_operational_score": 0.375,
+      "validation_measurement_valid": false,
+      "validation_policy_failures": 1
+    },
+    {
+      "method": "random",
+      "config_id": "efde95006d904ebfd8fe4c228ef533cc4945592c08e86f2f785fae0c925de0b0",
+      "thinking": "low",
+      "keep_recent_tokens": 10000,
+      "reserve_tokens": 16384,
+      "validation_operational_score": 0.25,
+      "validation_measurement_valid": true,
+      "validation_policy_failures": 0
+    },
+    {
+      "method": "bo",
+      "config_id": "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+      "thinking": "medium",
+      "keep_recent_tokens": 4000,
+      "reserve_tokens": 16384,
+      "validation_operational_score": 0.375,
+      "validation_measurement_valid": true,
+      "validation_policy_failures": 0
+    },
+    {
+      "method": "igbs",
+      "config_id": "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+      "thinking": "medium",
+      "keep_recent_tokens": 4000,
+      "reserve_tokens": 16384,
+      "validation_operational_score": 0.625,
+      "validation_measurement_valid": true,
+      "validation_policy_failures": 0
+    }
+  ],
+  "igbs_actions": [
+    "screen"
+  ],
+  "unresolved": {
+    "attempt_id": "heldout-default-003",
+    "task_id": "organize-messy-files",
+    "phase": "heldout",
+    "provider_setup_marker_exists": false,
+    "journal_exists": false,
+    "result_usage_kind": "not_dispatched",
+    "no_additional_inventoried_exposure": true,
+    "counted_in_outcome_denominator": false,
+    "logged_stop_reason": "controller_error_FileNotFoundError",
+    "missing_filename_logged": false,
+    "caution": "No invoice reconciliation; preserve all $17 existing holdbacks. No inferred pass/fail from missing completion.",
+    "evidence_sha256": {
+      "runs/deadline-20261030/attempts/heldout-default-003/execution.json": "eb588449cc04ca31235c52032eac5d9c93943896864dc0306db85fccba433d86",
+      "runs/deadline-20261030/attempts/heldout-default-003/execution-evidence.json": "dd2a3e38e18152218c22d76c5b49e3dd29d3004e8474738dd31eb6ee7d5ba2ba",
+      "runs/deadline-20261030/attempts/heldout-default-003/raw-result.json": "6f3ca4d334fbd125bde0c8dc893415a8ffc94166ae650b6f59a43bfb88235d92",
+      "runs/deadline-20261030/attempts/heldout-default-003/benchflow-result.json": "71cf1e359f6667eb959f9d5c636fc238bf5790fa9610b4145b73208db1951bbb",
+      "runs/deadline-20261030/attempts/heldout-default-003/cleanup.json": "7caf2db4663c262d889d119f0aff6a19221427feb857384afba79ab05ceaed41"
+    },
+    "setup_marker_ordering": {
+      "source": "evaluation/task_runtime.py:183",
+      "marker_written_before_provider_runtime_start": true,
+      "worker_exit_code": 0,
+      "worker_interrupted": false,
+      "cleanup_verified": true,
+      "native_total_seconds": 600.4,
+      "worker_stderr_timeout_message_seconds": 900,
+      "timing_discrepancy_note": "Native total and generic stderr timeout label differ; do not infer an exact timeout threshold or root cause from the message alone."
+    }
+  },
+  "source_sha256": {
+    "summary.json": "9a7c21eb713fa1db6360f25173e61ac687ba2f908ad89eb039ae708c3b8aa99b",
+    "protocol.json": "5aacbe1b9863d1dbcdadacdd9ce5b6ed389b3df403f8d33e9d09f4d753a0f7e6",
+    "frozen-selection.json": "dd2f221c7c3ce5e46d26f445a7a200353f38cb637b6857851fa967ab3abbab7e"
+  },
+  "integrity_audit_status": "passed",
+  "integrity": {
+    "protocol_source_hashes": {
+      "checked": 160,
+      "mismatches": []
+    },
+    "frozen_evidence_hashes": {
+      "checked": 1267,
+      "mismatches": []
+    },
+    "protocol_hash_matches": true,
+    "frozen_loader_validated": true,
+    "attempts_checked": 151,
+    "attempts_failed": [],
+    "recomputed_exposure": {
+      "known_usd": 20.4248448,
+      "holdback_usd": 17.0,
+      "request_count": 2211,
+      "unknown_request_count": 17
+    },
+    "summary_exposure_matches": true
+  },
+  "timing_and_independence": {
+    "last_validation_dispatch": "2026-10-30T02:57:50.358557+00:00",
+    "validation_cutoff": "2026-10-30T11:00:00+08:00",
+    "validation_dispatch_within_cutoff": true,
+    "freeze_at": "2026-10-30T03:14:04.333119+00:00",
+    "first_heldout_dispatch": "2026-10-30T03:14:25.435463+00:00",
+    "heldout_after_all_winners_frozen": true,
+    "heldout_dispatch_within_cutoff": true,
+    "validation_heldout_tasks_disjoint": true,
+    "provider_seed_controlled": false
+  },
+  "runtime_evidence": {
+    "ended_attempts": 151,
+    "settings_model_verified_count": 151,
+    "provider_effort_verified_count": 151,
+    "measurement_valid_count": 136,
+    "measurement_valid_but_settings_or_effort_unverified": [],
+    "completed_compactions": 6,
+    "attempts_with_compaction": [
+      {
+        "attempt_id": "igbs-002-000",
+        "phase": "validation",
+        "method": "igbs",
+        "panel_id": "igbs-002",
+        "measurement_valid": false,
+        "settings_and_model_verified": true,
+        "provider_effort_verified": true,
+        "completed_compactions": 2,
+        "compaction_audit_valid": true,
+        "compaction_activity": "observed",
+        "keep_recent_effect": "requires_matched_compaction_comparison"
+      },
+      {
+        "attempt_id": "igbs-002-001",
+        "phase": "validation",
+        "method": "igbs",
+        "panel_id": "igbs-002",
+        "measurement_valid": true,
+        "settings_and_model_verified": true,
+        "provider_effort_verified": true,
+        "completed_compactions": 1,
+        "compaction_audit_valid": true,
+        "compaction_activity": "observed",
+        "keep_recent_effect": "requires_matched_compaction_comparison"
+      },
+      {
+        "attempt_id": "random-002-002",
+        "phase": "validation",
+        "method": "random",
+        "panel_id": "random-002",
+        "measurement_valid": false,
+        "settings_and_model_verified": true,
+        "provider_effort_verified": true,
+        "completed_compactions": 1,
+        "compaction_audit_valid": true,
+        "compaction_activity": "observed",
+        "keep_recent_effect": "requires_matched_compaction_comparison"
+      },
+      {
+        "attempt_id": "igbs-002-002",
+        "phase": "validation",
+        "method": "igbs",
+        "panel_id": "igbs-002",
+        "measurement_valid": true,
+        "settings_and_model_verified": true,
+        "provider_effort_verified": true,
+        "completed_compactions": 1,
+        "compaction_audit_valid": true,
+        "compaction_activity": "observed",
+        "keep_recent_effect": "requires_matched_compaction_comparison"
+      },
+      {
+        "attempt_id": "igbs-004-006",
+        "phase": "validation",
+        "method": "igbs",
+        "panel_id": "igbs-004",
+        "measurement_valid": true,
+        "settings_and_model_verified": true,
+        "provider_effort_verified": true,
+        "completed_compactions": 1,
+        "compaction_audit_valid": true,
+        "compaction_activity": "observed",
+        "keep_recent_effect": "requires_matched_compaction_comparison"
+      }
+    ],
+    "winner_validation_attempts": 32,
+    "winner_validation_completed_compactions": 0,
+    "heldout_completed_compactions": 0
+  },
+  "integrity_issues": [],
+  "limits": [
+    "The original formal protocol and independent heldout are incomplete; revised operational selection is not original formal completion.",
+    "Operational scores assign zero only to dispatched, evidenced measurement-policy failures; unstarted/unresolved outcomes are missing.",
+    "All six IGBS candidates were screening actions; no observed interaction-guided block search and no evidence of its advantage.",
+    "BO and IGBS selected identical settings; their single-run outcome differences do not identify a method effect.",
+    "Provider sampling seed was not controlled; same task seed and configuration do not imply identical model outputs.",
+    "Valid-only heldout pass@1 is conditioned on measured validity and has only 2 or 3 observations per method; it is not full heldout performance.",
+    "Runtime model/settings attestation can be valid while a request inventory is incomplete; the 17 unknown request costs remain unresolved.",
+    "No generalization gap or final heldout ranking is warranted from the incomplete panel.",
+    "Known usage prices are estimates, not reconciled invoices; holdbacks are conservative budget reservations, not observed spend.",
+    "Zero compactions in the four selected validation panels and the heldout attempts means observed winners do not demonstrate a keepRecentTokens mechanism."
+  ]
+}

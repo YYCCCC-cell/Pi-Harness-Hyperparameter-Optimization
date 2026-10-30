@@ -1,0 +1,5 @@
+method,config_id,thinking,keep_recent_tokens,reserve_tokens,validation_operational_score,validation_measurement_valid,validation_policy_failures
+default,079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46,medium,20000,16384,0.375,False,1
+random,efde95006d904ebfd8fe4c228ef533cc4945592c08e86f2f785fae0c925de0b0,low,10000,16384,0.25,True,0
+bo,660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059,medium,4000,16384,0.375,True,0
+igbs,660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059,medium,4000,16384,0.625,True,0

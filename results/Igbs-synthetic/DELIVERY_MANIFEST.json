@@ -1,0 +1,30 @@
+{
+  "kind": "controlled_synthetic_mechanism_not_benchmark",
+  "created_at_beijing": "2026-10-30T15:51:58.258594+08:00",
+  "files_sha256": {
+    "experiments/igbs-synthetic-demo-20261030/RESULTS.md": "ef656a03dd86872a3c6e4e986d95bf749f9d2c72b9ca11aa254a9ec0f18abdce",
+    "experiments/igbs-synthetic-demo-20261030/render_report.py": "47ae15a457b9849d9d8f5f85fd4dc6df4fb1b4d010db19a42ee9189a24476b2b",
+    "experiments/igbs-synthetic-demo-20261030/run-output/first-adaptive-decision.csv": "a3b68d316107dd7586c44c3b20805013caae28c11ffbc8559f6d8ddeacbb8eed",
+    "experiments/igbs-synthetic-demo-20261030/run-output/first-adaptive-decision.json": "04f2dda699e822b79038de1735214d4298cf07041518c1f76160f5055bf61348",
+    "experiments/igbs-synthetic-demo-20261030/run-output/flat_no_interaction/igbs/optimizer-trace.jsonl": "7b8d151bdb7d3503cc0e1d0ff4b0207da474b51dc17b5b11145785b787dd0004",
+    "experiments/igbs-synthetic-demo-20261030/run-output/flat_no_interaction/igbs/rounds.json": "2b9179e5886e031e2c2b8172ff18b61ec38ac2c265c6f4ea988312b26f66e9c1",
+    "experiments/igbs-synthetic-demo-20261030/run-output/flat_no_interaction/igbs_pair_blind/optimizer-trace.jsonl": "83260eae15a7fef44480a1bcc65b3d86c8ac53295faa71242b9c3bfd730f8858",
+    "experiments/igbs-synthetic-demo-20261030/run-output/flat_no_interaction/igbs_pair_blind/rounds.json": "0c8f5d51b36120b635a2994730125be8dab50a52d92b590854a8ca6a40fdabc3",
+    "experiments/igbs-synthetic-demo-20261030/run-output/mechanism-check.pdf": "e79fa35d2b0127e8d0f9310deff7189d1ee8c4f01681d5889ba4ebba9c17d3ac",
+    "experiments/igbs-synthetic-demo-20261030/run-output/mechanism-check.png": "4a707de527d3faff778ccc5b6c41e3db3654579fecf50dcbc2efc68e5b98ff70",
+    "experiments/igbs-synthetic-demo-20261030/run-output/protocol.json": "a3597beff1d20525647716ec9aa29c291a77eeb603f427eb4e74a69fff754450",
+    "experiments/igbs-synthetic-demo-20261030/run-output/render-manifest.json": "34c364e1f1245baf42bdcaaf62da3c77be9bc1824b1a3a886601dc1e0bca67a5",
+    "experiments/igbs-synthetic-demo-20261030/run-output/results.json": "442a31c12f150365e0a9eeb6e439421f085de5b8f5b4fd7446d27baba9f606cd",
+    "experiments/igbs-synthetic-demo-20261030/run-output/rounds.csv": "c36a54839b3148ad087171225b6e31a19f7f0eb31d6c82998a592df963da59a7",
+    "experiments/igbs-synthetic-demo-20261030/run-output/strong_interaction/igbs/optimizer-trace.jsonl": "b57dbb933983eda4af4f7d986845fd807e0bec8f6fc130b9d0521b9219c9afb5",
+    "experiments/igbs-synthetic-demo-20261030/run-output/strong_interaction/igbs/rounds.json": "a8c27d83e5b97e18bcaacf9528c39036528ed33b8fb28cd4949b3f7aafc177e4",
+    "experiments/igbs-synthetic-demo-20261030/run-output/strong_interaction/igbs_pair_blind/optimizer-trace.jsonl": "dcf7d20bb188436a4db9eb0e75e7e166603d9469d9f05b656e2835029b978024",
+    "experiments/igbs-synthetic-demo-20261030/run-output/strong_interaction/igbs_pair_blind/rounds.json": "0985516f2b432f88f5deaa2f4e6b524ef2f877b4724e4b880960391084a635be",
+    "experiments/igbs-synthetic-demo-20261030/run-output/verification.json": "91c68b764a09fcf4a16e0901c314e191074c90597810e50cbe7f91ce088f5801",
+    "experiments/igbs-synthetic-demo-20261030/run-output/weak_uncertain_interaction/igbs/optimizer-trace.jsonl": "3c4cb2043da070fa1afa74a190f2da8be6a0c68b296a98a69960da3aa941f0f9",
+    "experiments/igbs-synthetic-demo-20261030/run-output/weak_uncertain_interaction/igbs/rounds.json": "516577b357c5441086296c0c06107ea7cae991970165cd96528d7af871887c75",
+    "experiments/igbs-synthetic-demo-20261030/run-output/weak_uncertain_interaction/igbs_pair_blind/optimizer-trace.jsonl": "ec7241db7e63b46b66aca0225d4e49c864c867ad2f7d0a168271f4186315fba7",
+    "experiments/igbs-synthetic-demo-20261030/run-output/weak_uncertain_interaction/igbs_pair_blind/rounds.json": "4e1a5f347e2fe5f9d103f57eacd4c3cab8ea02eb8af9ecd01d0c9e9c7eae1246",
+    "experiments/igbs-synthetic-demo-20261030/run_demo.py": "cdec0fed131e63adc46d7ef0463ae3706746f56e984adc0acb7402fb22cb0da9"
+  }
+}

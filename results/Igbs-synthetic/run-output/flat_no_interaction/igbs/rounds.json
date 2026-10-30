@@ -1,0 +1,2525 @@
+{
+  "scenario": "flat_no_interaction",
+  "method": "igbs",
+  "target_pair": {
+    "defaultThinkingLevel": "high",
+    "compaction.reserveTokens": 360000
+  },
+  "rows": [
+    {
+      "step": 1,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 20000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 2,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 20000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "high"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 3,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 20000,
+          "reserveTokens": 360000
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 4,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 4000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 5,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 20000,
+          "reserveTokens": 360000
+        },
+        "defaultThinkingLevel": "high"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 6,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 4000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "high"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 7,
+      "action": "screen",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 4000,
+          "reserveTokens": 360000
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": null,
+      "target_pair_contrasts": [],
+      "diagnostic": null,
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 8,
+      "action": "pair",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 10000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "low"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": [
+        "defaultThinkingLevel",
+        "compaction.keepRecentTokens"
+      ],
+      "routing_reason": "unidentified_or_unreliable_uniform",
+      "target_pair_contrasts": [
+        {
+          "background": {
+            "compaction.keepRecentTokens": 20000
+          },
+          "bootstrap_radius": 0.0,
+          "coefficients": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "configuration_ids": [
+            "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+            "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+            "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+            "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+          ],
+          "cost_time_contrasts": {
+            "actual_cost_usd": 0.0,
+            "estimated_cost_usd": null,
+            "simulated_cost_units": 0.0,
+            "simulated_time_seconds": 0.0
+          },
+          "delta": 0.0,
+          "dimensions": [
+            "defaultThinkingLevel",
+            "compaction.reserveTokens"
+          ],
+          "group_count": 8,
+          "kind": "rectangle",
+          "leave_one_group_stability": 0.0,
+          "levels": [
+            [
+              "medium",
+              "high"
+            ],
+            [
+              16384,
+              360000
+            ]
+          ],
+          "routing_weight": 0.0,
+          "task_count": 8
+        }
+      ],
+      "diagnostic": {
+        "blocks": [
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          }
+        ],
+        "contrasts": [
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+              "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "7774402810996bab9261b9657a233bb9e37f94cdb7aae7ed248a207b25eecad4",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "9f41888eec98b8f99ecfd74e78225b5669ba58654e260ecf9ebf6fa021219725",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          }
+        ],
+        "interpretation": "Local observed contrasts; routing weights are not significance tests."
+      },
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 9,
+      "action": "single",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 10000,
+          "reserveTokens": 16384
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": [
+        "compaction.keepRecentTokens"
+      ],
+      "routing_reason": "unidentified_or_unreliable_uniform",
+      "target_pair_contrasts": [
+        {
+          "background": {
+            "compaction.keepRecentTokens": 20000
+          },
+          "bootstrap_radius": 0.0,
+          "coefficients": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "configuration_ids": [
+            "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+            "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+            "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+            "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+          ],
+          "cost_time_contrasts": {
+            "actual_cost_usd": 0.0,
+            "estimated_cost_usd": null,
+            "simulated_cost_units": 0.0,
+            "simulated_time_seconds": 0.0
+          },
+          "delta": 0.0,
+          "dimensions": [
+            "defaultThinkingLevel",
+            "compaction.reserveTokens"
+          ],
+          "group_count": 8,
+          "kind": "rectangle",
+          "leave_one_group_stability": 0.0,
+          "levels": [
+            [
+              "medium",
+              "high"
+            ],
+            [
+              16384,
+              360000
+            ]
+          ],
+          "routing_weight": 0.0,
+          "task_count": 8
+        }
+      ],
+      "diagnostic": {
+        "blocks": [
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          }
+        ],
+        "contrasts": [
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+              "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "7774402810996bab9261b9657a233bb9e37f94cdb7aae7ed248a207b25eecad4",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "9f41888eec98b8f99ecfd74e78225b5669ba58654e260ecf9ebf6fa021219725",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          }
+        ],
+        "interpretation": "Local observed contrasts; routing weights are not significance tests."
+      },
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    },
+    {
+      "step": 10,
+      "action": "global",
+      "settings": {
+        "compaction": {
+          "keepRecentTokens": 4000,
+          "reserveTokens": 375000
+        },
+        "defaultThinkingLevel": "medium"
+      },
+      "synthetic_success_fraction": 0.0,
+      "incumbent_synthetic_success_fraction": 0.0,
+      "selected_block": null,
+      "routing_reason": "scheduled_global",
+      "target_pair_contrasts": [
+        {
+          "background": {
+            "compaction.keepRecentTokens": 20000
+          },
+          "bootstrap_radius": 0.0,
+          "coefficients": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "configuration_ids": [
+            "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+            "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+            "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+            "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+          ],
+          "cost_time_contrasts": {
+            "actual_cost_usd": 0.0,
+            "estimated_cost_usd": null,
+            "simulated_cost_units": 0.0,
+            "simulated_time_seconds": 0.0
+          },
+          "delta": 0.0,
+          "dimensions": [
+            "defaultThinkingLevel",
+            "compaction.reserveTokens"
+          ],
+          "group_count": 8,
+          "kind": "rectangle",
+          "leave_one_group_stability": 0.0,
+          "levels": [
+            [
+              "medium",
+              "high"
+            ],
+            [
+              16384,
+              360000
+            ]
+          ],
+          "routing_weight": 0.0,
+          "task_count": 8
+        }
+      ],
+      "diagnostic": {
+        "blocks": [
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 3,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          },
+          {
+            "coverage": 1,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "identified": true,
+            "weight": 0.0
+          }
+        ],
+        "contrasts": [
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "eafc34538666c1c5dee6f80d59c507ab4d7b13abee0a29ae27f807eead674854"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                4000,
+                10000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384,
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "eafc34538666c1c5dee6f80d59c507ab4d7b13abee0a29ae27f807eead674854",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "edge",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                10000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.keepRecentTokens": 20000
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73",
+              "93db70ea69e2eabd2351deada26bbdc5d31614ea2e2ba4ae0128eb928bca40af"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.reserveTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                16384,
+                360000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "compaction.reserveTokens": 16384
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "7774402810996bab9261b9657a233bb9e37f94cdb7aae7ed248a207b25eecad4",
+              "c7d56a0c40150c8bd7e2346280d83f512ffd27a951045877d3029ba2b2dc1b73"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "defaultThinkingLevel",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                "medium",
+                "high"
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          },
+          {
+            "background": {
+              "defaultThinkingLevel": "medium"
+            },
+            "bootstrap_radius": 0.0,
+            "coefficients": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "configuration_ids": [
+              "660bdb8bafc5706ed7a0cfe0a92bd478b8e21adde0c8258682273bad8f514059",
+              "079ee0fcb56be7fff498021c406e83095a4ad55ef1f4edee3cabdc0d7a2dab46",
+              "9f41888eec98b8f99ecfd74e78225b5669ba58654e260ecf9ebf6fa021219725",
+              "52ae4d4ab2f963286e41b0ac62452ee077d849f7645f7cf2d17182b6b10905bd"
+            ],
+            "cost_time_contrasts": {
+              "actual_cost_usd": 0.0,
+              "estimated_cost_usd": null,
+              "simulated_cost_units": 0.0,
+              "simulated_time_seconds": 0.0
+            },
+            "delta": 0.0,
+            "dimensions": [
+              "compaction.reserveTokens",
+              "compaction.keepRecentTokens"
+            ],
+            "group_count": 8,
+            "kind": "rectangle",
+            "leave_one_group_stability": 0.0,
+            "levels": [
+              [
+                16384,
+                360000
+              ],
+              [
+                4000,
+                20000
+              ]
+            ],
+            "routing_weight": 0.0,
+            "task_count": 8
+          }
+        ],
+        "interpretation": "Local observed contrasts; routing weights are not significance tests."
+      },
+      "outcomes": [
+        {
+          "task_id": "synthetic-task-0",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-1",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-2",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-3",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-4",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-5",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-6",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        },
+        {
+          "task_id": "synthetic-task-7",
+          "success": false,
+          "raw_reward": 0,
+          "usage_kind": "synthetic",
+          "model": "no-model-synthetic-objective",
+          "actual_cost_usd": 0,
+          "estimated_cost_usd": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "wall_time_seconds": 0,
+          "simulated_cost_units": 0,
+          "simulated_time_seconds": 0,
+          "measurement_error": null
+        }
+      ],
+      "evidence_kind": "controlled_synthetic_not_benchmark"
+    }
+  ],
+  "trace_audit": {
+    "evidence_kind": "offline_fixture",
+    "method": "igbs",
+    "search_seed": 31,
+    "rows": 41,
+    "asks": 10,
+    "completed_panels": 10,
+    "pending_config_id": null,
+    "uncertain_mutation": false,
+    "head_sha256": "906d8da50f291fee50a4bb5831344f7248ab70c1120961874f4b4e563edeaea5"
+  },
+  "trace": "run-output/flat_no_interaction/igbs/optimizer-trace.jsonl"
+}
