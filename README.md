@@ -20,7 +20,7 @@ This EP6203 project compares **Default, Random Search, SMAC Bayesian Optimizatio
 | Budget allocation | Default: USD 3; each search method: USD 16; held-out: USD 9; total cap: USD 60 |
 | Selection | All four configurations frozen before held-out execution |
 
-The three parameters are `defaultThinkingLevel` (`low`, `medium`, `high`), `compaction.reserveTokens` (16,384; 360,000; 375,000), and `compaction.keepRecentTokens` (4,000; 10,000; 20,000). These are configured settings; actual runtime effects require execution evidence. See the [recorded experiment configuration](results/final-20261030-1203/experiment-config.json) and [live search space](configs/hpo_space.live-v2.json).
+The three parameters are `defaultThinkingLevel` (`low`, `medium`, `high`), `compaction.reserveTokens` (16,384; 360,000; 375,000), and `compaction.keepRecentTokens` (4,000; 10,000; 20,000). These are configured settings; actual runtime effects require execution evidence. See the [recorded experiment configuration](results/Final Results/experiment-config.json) and [live search space](configs/hpo_space.live-v2.json).
 
 ## Results
 
