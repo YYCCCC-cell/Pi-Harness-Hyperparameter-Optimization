@@ -28,9 +28,9 @@ The three parameters are `defaultThinkingLevel` (`low`, `medium`, `high`), `comp
 
 Each column below represents the configuration selected by one method, evaluated on the eight validation tasks. It is a selected-panel result; the full search includes 139 attempts across multiple configurations.
 
-![Validation outcome matrix for Default, Random, BO and IGBS across eight tasks; PASS, FAIL and measurement exception are shown separately.](results/final-20261030-1203/figures/frozen-validation-outcomes.png)
+![Validation outcome matrix for Default, Random, BO and IGBS across eight tasks; PASS, FAIL and measurement exception are shown separately.](results/Final Results/figures/frozen-validation-outcomes.png)
 
-**Figure 1.** `PASS` and `FAIL` are measurement-valid native verifier outcomes. `EXC` preserves a measurement exception, which receives an explicit zero penalty under the recorded operational policy. The Default bike-rebalance exception remains visible as a separate category. [Figure data](results/final-20261030-1203/figure-input.json) · [PDF](results/final-20261030-1203/figures/frozen-validation-outcomes.pdf)
+**Figure 1.** `PASS` and `FAIL` are measurement-valid native verifier outcomes. `EXC` preserves a measurement exception, which receives an explicit zero penalty under the recorded operational policy. The Default bike-rebalance exception remains visible as a separate category. [Figure data](results/Final Results/figure-input.json) · [PDF](results/Final Results/figures/frozen-validation-outcomes.pdf)
 
 | Selected by | Reasoning | Reserve tokens | Keep-recent tokens | Operational validation score |
 |---|---|---:|---:|---:|
@@ -39,7 +39,7 @@ Each column below represents the configuration selected by one method, evaluated
 | BO | medium | 16,384 | 4,000 | 3/8 · 37.5% |
 | IGBS | medium | 16,384 | 4,000 | 5/8 · 62.5% |
 
-¹ Default includes one measurement exception in the fixed eight-task denominator. Sources: [frozen configurations and scores](results/final-20261030-1203/aggregate-tables/frozen-winners.json), [metric definitions](docs/result_interpretation.md).
+¹ Default includes one measurement exception in the fixed eight-task denominator. Sources: [frozen configurations and scores](results/Final Results/aggregate-tables/frozen-winners.json), [metric definitions](docs/result_interpretation.md).
 
 **Interpretation:** BO and IGBS selected **exactly the same configuration**. Their 3/8 and 5/8 scores came from separate executions with uncontrolled provider randomness. These observations do not establish that IGBS found better parameters or outperformed BO. All six recorded IGBS proposals were initialization screening; its interaction-guided adaptive phase was not exercised.
 
