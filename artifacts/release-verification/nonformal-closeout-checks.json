@@ -1,0 +1,209 @@
+{
+  "recorded_date": "2026-10-28",
+  "status": "offline_closeout_passed_real_acceptance_pending",
+  "formal_search_launched_by_this_work": false,
+  "heldout_dispatched_by_this_work": false,
+  "real_model_calls_by_this_work": 0,
+  "real_api_spend_usd_by_this_work": 0,
+  "source_tests": {
+    "total": 224,
+    "passed": 198,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0,
+    "log_sha256": "a0b257e8bbe6522f408237c86c1658cde9a15dfccb1031e344509e997fdaf415"
+  },
+  "fresh_environment_clean_package_tests": {
+    "total": 224,
+    "passed": 197,
+    "skipped": 27,
+    "failures": 0,
+    "errors": 0,
+    "log_sha256": "ae035c5e7de34c518be3ccbbb739cfda1020c86de35d819fb3a40339e2104be2"
+  },
+  "runtime_and_loopback_tests": {
+    "tests": 30,
+    "passed": 30,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "real_model_calls": 0
+  },
+  "fresh_environment": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "machine": "arm64",
+    "isolated_new_virtualenv": true,
+    "reviewed_wheels_hash_verified": 37,
+    "install_exit_code": 0,
+    "pip_check_passed": true,
+    "network_download_tested": false,
+    "source_rebuild_tested": false,
+    "other_machine_or_platform_tested": false,
+    "derived_wheel_lock_sha256": "0059048479e67a014975e8d7a094b72f9dfd6d538f166f07f7d3bdefdef18f33"
+  },
+  "offline_protocol": {
+    "checks": {
+      "all_declared_winners_frozen": true,
+      "duplicate_heldout_dispatches": 0,
+      "families_disjoint": true,
+      "fixture_heldout_attempts": 32,
+      "fixture_validation_attempts": {
+        "bo": 80,
+        "default": 8,
+        "igbs": 80,
+        "random": 80
+      },
+      "fixture_validation_total": 248,
+      "grid_points": 27,
+      "heldout_denominator_checked": 8,
+      "igbs_actions": {
+        "igbs": {
+          "adaptive_routing_reasons": [
+            "unidentified_or_unreliable_uniform",
+            "unidentified_or_unreliable_uniform",
+            "scheduled_global"
+          ],
+          "counts": {
+            "global": 1,
+            "pair": 1,
+            "screen": 7,
+            "single": 1
+          },
+          "sequence": [
+            "screen",
+            "screen",
+            "screen",
+            "screen",
+            "screen",
+            "screen",
+            "screen",
+            "pair",
+            "single",
+            "global"
+          ]
+        }
+      },
+      "incomplete_campaign_freeze_rejected": true,
+      "panels_disjoint": true,
+      "real_report_entry_checked_with_fixture_data": true,
+      "schema_valid": true,
+      "source_hashes_checked": 140,
+      "unknown_cost_stops_all_after_one_attempt": true
+    },
+    "data_kind": "offline_fixtures",
+    "external_execution_attempts": 0,
+    "formal_search_launched": false,
+    "protocol_sha256": "f6a29c3319af57d16ddd8554bf87dc12d073f867cf1343e87d6687304089fd58",
+    "real_api_spend_usd": 0,
+    "real_heldout_launched": false,
+    "real_model_calls": 0,
+    "recorded_at": "2026-10-28T09:59:03.041934+00:00",
+    "status": "passed",
+    "temporary_fixture_runs_removed": true,
+    "verification_only": true,
+    "verifier_sha256": "6dc1cdf495001a0183551794d1abfbaa2f633b9294c205c1bb24e90f71a0f8d9"
+  },
+  "mock_cli_audit": {
+    "dispatches": 1372,
+    "results": 1372,
+    "unresolved_dispatches": [],
+    "attempts_by_method": {
+      "igbs": 336,
+      "random": 336,
+      "bo": 336,
+      "pair_blind": 336,
+      "default": 28
+    },
+    "validation_task_count": 28,
+    "reconciled_costs": {
+      "bo": {
+        "actual_usd_known_sum": 0.0,
+        "estimated_usd_used_sum": 0.0,
+        "accounted_usd": 0.0,
+        "simulated_cost_units": 0.75628,
+        "unknown_cost_attempts": 0
+      },
+      "default": {
+        "actual_usd_known_sum": 0.0,
+        "estimated_usd_used_sum": 0.0,
+        "accounted_usd": 0.0,
+        "simulated_cost_units": 0.059354,
+        "unknown_cost_attempts": 0
+      },
+      "igbs": {
+        "actual_usd_known_sum": 0.0,
+        "estimated_usd_used_sum": 0.0,
+        "accounted_usd": 0.0,
+        "simulated_cost_units": 0.671745,
+        "unknown_cost_attempts": 0
+      },
+      "pair_blind": {
+        "actual_usd_known_sum": 0.0,
+        "estimated_usd_used_sum": 0.0,
+        "accounted_usd": 0.0,
+        "simulated_cost_units": 0.671745,
+        "unknown_cost_attempts": 0
+      },
+      "random": {
+        "actual_usd_known_sum": 0.0,
+        "estimated_usd_used_sum": 0.0,
+        "accounted_usd": 0.0,
+        "simulated_cost_units": 0.705862,
+        "unknown_cost_attempts": 0
+      }
+    }
+  },
+  "upstream_sources": [
+    {
+      "repository": "benchflow",
+      "clean": true
+    },
+    {
+      "repository": "pi-acp",
+      "clean": true
+    },
+    {
+      "repository": "pi-mono",
+      "clean": true
+    },
+    {
+      "repository": "skillsbench",
+      "clean": true
+    }
+  ],
+  "live_preflight": {
+    "ready": true,
+    "validation_tasks": 8,
+    "model_calls": 0
+  },
+  "automatic_receipt_acceptance": {
+    "prepare_status": "prepared_no_dispatch",
+    "real_dispatches": 0,
+    "real_end_to_end_delayed_polling_verified": false,
+    "credential_present_in_this_process": false,
+    "original_allocation_usd": "5",
+    "known_cost_usd": "1.53209730",
+    "historical_unknown_reserve_usd": "1",
+    "first_controlled_remaining_unknown_reserve_usd": "0.98644300",
+    "remaining_dispatchable_usd": "1.48145970"
+  },
+  "presentation": {
+    "slides": 10,
+    "native_tables": 3,
+    "speaker_notes": "Chinese with sources and timing",
+    "planned_duration_seconds": 600,
+    "formal_results": "pending",
+    "structure_and_layout_passed": true,
+    "all_slides_visually_inspected": true,
+    "native_powerpoint_execution_tested": false,
+    "sha256": "ed0b9f36afa296011776d58db9ebd02af1d839bac0be96f0d8fc2eee100f2da5"
+  },
+  "scope_limits": [
+    "No formal experiment or provider inference was launched.",
+    "Loopback HTTP tests are fixtures, not real provider settlement.",
+    "The source release is a v8 snapshot; later distributed execution work requires a new review.",
+    "GitHub upload belongs to the user; project license not chosen.",
+    "Raw trajectories, receipts, credentials and local environments are excluded."
+  ]
+}

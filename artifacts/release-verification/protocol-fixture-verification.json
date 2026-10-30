@@ -1,0 +1,100 @@
+{
+  "checks": {
+    "all_declared_winners_frozen": true,
+    "duplicate_heldout_dispatches": 0,
+    "families_disjoint": true,
+    "fixture_heldout_attempts": 80,
+    "fixture_validation_attempts": {
+      "bo": 104,
+      "default": 8,
+      "igbs": 104,
+      "pair_blind": 104,
+      "random": 104
+    },
+    "fixture_validation_total": 424,
+    "grid_points": 27,
+    "heldout_denominator_checked": 16,
+    "igbs_actions": {
+      "igbs": {
+        "adaptive_routing_reasons": [
+          "unidentified_or_unreliable_uniform",
+          "unidentified_or_unreliable_uniform",
+          "scheduled_global",
+          "unidentified_or_unreliable_uniform",
+          "unidentified_or_unreliable_uniform",
+          "scheduled_global"
+        ],
+        "counts": {
+          "global": 2,
+          "pair": 2,
+          "screen": 7,
+          "single": 2
+        },
+        "sequence": [
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "pair",
+          "single",
+          "global",
+          "pair",
+          "single",
+          "global"
+        ]
+      },
+      "pair_blind": {
+        "adaptive_routing_reasons": [
+          "pair_blind_uniform",
+          "unidentified_or_unreliable_uniform",
+          "scheduled_global",
+          "pair_blind_uniform",
+          "unidentified_or_unreliable_uniform",
+          "scheduled_global"
+        ],
+        "counts": {
+          "global": 2,
+          "pair": 2,
+          "screen": 7,
+          "single": 2
+        },
+        "sequence": [
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "screen",
+          "pair",
+          "single",
+          "global",
+          "pair",
+          "single",
+          "global"
+        ]
+      }
+    },
+    "incomplete_campaign_freeze_rejected": true,
+    "panels_disjoint": true,
+    "real_report_entry_checked_with_fixture_data": true,
+    "schema_valid": true,
+    "source_hashes_checked": 140,
+    "unknown_cost_stops_all_after_one_attempt": true
+  },
+  "data_kind": "offline_fixtures",
+  "external_execution_attempts": 0,
+  "formal_search_launched": false,
+  "protocol_sha256": "af1f9e3e910c7207a8bb52c041e59e3acdfd3b50321fbf3d44b30d28a4b07830",
+  "real_api_spend_usd": 0,
+  "real_heldout_launched": false,
+  "real_model_calls": 0,
+  "recorded_at": "2026-10-28T09:28:55.163669+00:00",
+  "status": "passed",
+  "temporary_fixture_runs_removed": true,
+  "verification_only": true,
+  "verifier_sha256": "6dc1cdf495001a0183551794d1abfbaa2f633b9294c205c1bb24e90f71a0f8d9"
+}
