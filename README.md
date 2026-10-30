@@ -4,10 +4,6 @@
 
 This EP6203 project compares **Default, Random Search, SMAC Bayesian Optimization (BO), and Interaction-Guided Block Search (IGBS)** on SkillsBench 1.1. The model and Pi Agent runtime are fixed; the search changes three harness settings. The repository includes the search algorithms, task-native evaluation, accounting checks, public result aggregates, and reproducible figures.
 
-[Paper PDF](reports/EP6203_Paper.pdf) · [Editable paper](reports/EP6203_Paper.docx) · [Presentation](reports/EP6203_Presentation.pptx) · [Result data](results/Final%20Results/) · [Reproduction](docs/reproduction.md)
-
-> **Evidence snapshot — 30 October 2026, 12:03 UTC+8.** The recorded campaign contains **139 ended validation attempts** and **12 ended held-out attempts**. Held-out evaluation is incomplete, and IGBS did not reach its adaptive search stage. The figures below describe this partial campaign; final eight-task held-out pass@1 is unavailable.
-
 ## Experiment at a glance
 
 | Component | Recorded setup |
