@@ -1,0 +1,974 @@
+{
+  "front": [
+    {
+      "kind": "paragraph",
+      "style": "Title",
+      "text": "Harness Hyperparameter Optimization"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Subtitle",
+      "text": "Experiment Report"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Subtitle",
+      "text": "EP6203 Project Team  |  Pi Agent and SkillsBench 1.1  |  30 October 2026"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Evidence cutoff: 12:03:07 Hong Kong time on 30 October 2026. The controller stopped with FileNotFoundError. This report presents the completed validation evidence and partial held-out evaluation; neither the full eight-task test nor the original formal protocol is complete. [S1–S3]"
+    }
+  ],
+  "Executive findings": [
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "We implemented a reproducible pipeline over three exposed Pi settings and compared Default, Random, standard Bayesian optimization, and a developed Interaction-Guided Block Search policy. The stopped run contains 139 ended validation attempts and 12 ended held-out attempts, including three reused historical BO attempts. Of the 151 ended attempts, 136 have valid measurement and 15 retain accounting exceptions."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Four configurations were frozen at 11:14:04, before held-out outcomes were observed. Their validation operational scores are Default 3/8, Random 2/8, BO 3/8 and IGBS 5/8. Default includes one declared exception penalty. BO and IGBS selected identical settings, so their different scores do not establish discovery of different or superior configurations."
+    },
+    {
+      "kind": "table",
+      "id": 0,
+      "rows": [
+        [
+          "Method",
+          "Validation ended",
+          "Measurement valid",
+          "Full candidates",
+          "Fully valid candidates"
+        ],
+        [
+          "Default",
+          "8",
+          "7",
+          "1",
+          "0"
+        ],
+        [
+          "Random",
+          "44",
+          "40",
+          "5",
+          "3"
+        ],
+        [
+          "BO",
+          "44",
+          "41",
+          "5",
+          "4"
+        ],
+        [
+          "IGBS",
+          "43",
+          "37",
+          "5",
+          "1"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Only three of eight held-out tasks ended for every method. Valid successes are Default 2, Random 1, BO 2 and IGBS 3, with one additional Default accounting exception. A fourth Default task was dispatched but is unresolved. We do not report any of these partial fractions as final eight-task pass@1."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Ended attempts record $20.42484480 in known token-price estimates and $17.00 in unknown-request reserves, totaling $37.42484480 in recorded commitment. The unresolved dispatch is outside those settled totals. These numbers are not invoice charges or a reconciled account balance."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "IGBS executed screening only: five complete panels and a partial sixth. Its seven-point initialization and adaptive routing were not completed. The strongest supported result is a working native evaluation and accounting pipeline with informative, bounded observations; the evidence does not establish an algorithm ranking or full held-out generalization."
+    }
+  ],
+  "1 Experiment design and exposed configuration": [
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The objective is to improve a fixed agent harness through supported configuration interfaces. Pi Agent was selected because it exposes the three settings below, permits source and runtime pinning, and can be evaluated through task-native execution. The optimizer does not rewrite the harness, prompts, or tools. [S2]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "SkillsBench 1.1 was selected for its Skills-based tasks and native verifiers, allowing the configured agent to be assessed in the intended task environment. All methods use one with-skill condition and the project’s predeclared eight-task validation and eight-task held-out subsets."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "OpenAI gpt-5.4-mini was available through the project account and adopted as a fixed model under the $60 total budget. Holding it constant isolates the declared harness settings. This was an availability and budget decision; no cross-model experiment establishes that it is superior to alternative models."
+    },
+    {
+      "kind": "table",
+      "id": 1,
+      "rows": [
+        [
+          "Exposed parameter",
+          "Declared values",
+          "Role"
+        ],
+        [
+          "defaultThinkingLevel",
+          "low, medium, high",
+          "Requested reasoning level"
+        ],
+        [
+          "compaction.reserveTokens",
+          "16384, 360000, 375000",
+          "Context reserve governing the compaction threshold"
+        ],
+        [
+          "compaction.keepRecentTokens",
+          "4000, 10000, 20000",
+          "Recent-token retention during compaction"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The search space contains 27 configurations. The native Default is medium reasoning, 16384 reserve tokens, and 20000 recent tokens. Correctly written settings do not show that compaction occurred; runtime mechanism evidence is reported separately in Section 8."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Validation and test separation"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The project declares eight validation tasks and a separate eight-task held-out panel. This is a reproducible project subset, not a full evaluation of SkillsBench or a claim that the benchmark supplies this exact split. Test outcomes must not guide configuration selection."
+    },
+    {
+      "kind": "table",
+      "id": 2,
+      "rows": [
+        [
+          "Validation task IDs",
+          "Validation task IDs"
+        ],
+        [
+          "financial-modeling-qa",
+          "powerlifting-coef-calc"
+        ],
+        [
+          "llm-prefix-cache-replay",
+          "bike-rebalance"
+        ],
+        [
+          "3d-scan-calc",
+          "crystallographic-wyckoff-position-analysis"
+        ],
+        [
+          "mario-coin-counting",
+          "dapt-intrusion-detection"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Native execution and reproducibility"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "A single controller runs attempts sequentially with task-native dependencies, Skills, time limits, official verifiers, and cleanup. The protocol records source pins, a runtime image digest, the task roster, search and evaluation seeds, budget limits, and source hashes. The provider-side random seed is not controlled, so an evaluation seed does not guarantee deterministic model output."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Source hashes, attempt evidence and independent audit records are retained with this report. This supports inspection of the recorded run; fresh-machine reproduction and provider invoice reconciliation were not performed. [S1–S3]"
+    }
+  ],
+  "2 Baselines and measurement policy": [
+    {
+      "kind": "table",
+      "id": 3,
+      "rows": [
+        [
+          "Method",
+          "Configuration generation and observed scope"
+        ],
+        [
+          "Default",
+          "One native default configuration with no tuning."
+        ],
+        [
+          "Random",
+          "Seeded uniform sampling without replacement from the same 27-point space."
+        ],
+        [
+          "BO",
+          "Standard SMAC 2.4.0 Bayesian optimization, with three initial design candidates and subsequent optimizer proposals."
+        ],
+        [
+          "IGBS",
+          "Student-developed Interaction-Guided Block Search using local matched contrasts and conservative block selection."
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Default provides an untuned reference. Random tests whether systematic adaptation improves on sampling, while standard BO supplies a surrogate-based baseline. IGBS supplies the student-developed method. All three search methods receive the same exposed configuration space, candidate-count ceiling, and dollar cap; their realized spending differs. The detailed IGBS procedure and its actual execution boundary follow in Section 3."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Random shuffles the finite grid with a fixed seed and draws without replacement. BO encodes the three domains as ordinal variables in ConfigSpace and uses the pinned SMAC HyperparameterOptimizationFacade in sequential ask–tell mode. Three initial-design candidates precede subsequent proposals. Each covered panel returns objective loss 1 minus its operational score and task duration; SMAC’s cost field means objective loss, while dollar accounting is maintained separately. The optimizer’s deterministic scenario flag does not control provider randomness. Repeated BO proposals are rejected rather than silently replaced."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Failure handling and score definition"
+    },
+    {
+      "kind": "table",
+      "id": 4,
+      "rows": [
+        [
+          "Observation",
+          "Treatment in this continuation"
+        ],
+        [
+          "Valid measurement and reward 1",
+          "One operational success."
+        ],
+        [
+          "Valid measurement and reward below 1",
+          "A measured failure; retain partial reward separately."
+        ],
+        [
+          "Executed attempt with incomplete measurement",
+          "Retain raw reward, error, known usage, and unknown-cost reserve; apply an explicit zero selection penalty."
+        ],
+        [
+          "Task not yet executed or settled",
+          "Missing. Do not replace it with zero or score a partial panel."
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "A candidate receives an operational score only after all eight tasks have been attempted. Its score is the number of valid successes divided by eight. A fully measurement-valid panel additionally has a reported validation pass fraction. A panel containing exceptions is not relabeled as fully valid."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "This is a separately recorded revision after the earlier formal run stopped on incomplete accounting. It preserves the earlier evidence and counts its costs once. Completion of the original frozen formal protocol is not claimed. Tied operational scores are resolved by committed panel cost, elapsed task time, and configuration ID. [S2]"
+    }
+  ],
+  "3 IGBS algorithm and execution status": [
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Interaction-Guided Block Search uses observed local contrasts to choose which exposed parameters to change together. The source code defines the following policy. BO can also represent interactions; the contribution is this specific interpretable routing policy. [S5]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Seven point screening and matched contrasts"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "A seeded initialization stream chooses one nondefault alternative for each parameter. The seven screening points are Default, the three individual changes, and the three corresponding pair changes. They provide observed edges and two-by-two rectangles around a fixed background; they do not exhaust the 27-point space."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "An edge contrast subtracts each task’s baseline success from success after one parameter changes. A pair contrast is joint-change success minus each single-change success plus baseline success. Contrasts require all relevant configurations and the same validation tasks. Missing corners remain unknown. Adaptive analysis uses the incumbent’s settings for parameters outside the block and only that method’s own completed history."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Bootstrap uncertainty and stability weights"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The analyzer averages task-paired contrasts and resamples validation groups with replacement 2,000 times. Its uncertainty radius is the 95th percentile of the absolute difference between a bootstrap estimate and the observed mean contrast. Stability is the fraction of leave-one-group estimates that retain the original sign and an absolute magnitude above 0.025."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "A contrast receives the positive part of its absolute mean minus the uncertainty radius minus 0.05. Its weight is forced to zero with fewer than eight groups or leave-one-group stability below 0.8. A parameter block’s weight is the root-mean-square of its identified contrast weights; no identified contrast means zero weight. These are routing heuristics, not significance tests. Cost contrasts are auxiliary diagnostics and remain unknown when required costs are missing."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Adaptive proposals and conservative fallback"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "After seven observed screening panels, proposals cycle through pair, single-parameter, and global moves. A local move considers unseen configurations differing from the incumbent in exactly the selected block. Positive block weights select a highest-weight eligible block, with uniform tie-breaking, then a uniform candidate within it. If all eligible weights are zero, the block is chosen uniformly. A scheduled global move, or absence of eligible local neighbors, draws uniformly from all unseen configurations. Repeated configurations are rejected."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Under this continuation, full-coverage operational outcomes, including declared exception penalties, enter the method’s private history without relabeling measurement validity. At the validation cutoff, five screening panels were fully covered and the sixth remained partial. Every logged IGBS action was screen: no eighth candidate or adaptive proposal had been executed. The reported results cannot validate interaction-guided routing. [S1–S2, S5]"
+    }
+  ],
+  "4 Frozen validation configurations": [
+    {
+      "kind": "table",
+      "id": 5,
+      "rows": [
+        [
+          "Method and candidate",
+          "Thinking",
+          "Reserve",
+          "Recent",
+          "Operational",
+          "Valid only"
+        ],
+        [
+          "Default\ndefault-000",
+          "medium",
+          "16384",
+          "20000",
+          "3/8",
+          "3/7"
+        ],
+        [
+          "Random\nrandom-001",
+          "low",
+          "16384",
+          "10000",
+          "2/8",
+          "2/8"
+        ],
+        [
+          "BO\nbo-002",
+          "medium",
+          "16384",
+          "4000",
+          "3/8",
+          "3/8"
+        ],
+        [
+          "IGBS\nigbs-003",
+          "medium",
+          "16384",
+          "4000",
+          "5/8",
+          "5/8"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Operational scores use the fixed eight-task denominator and explicit exception penalties. The valid-only column excludes invalid measurements and is descriptive; its denominator differs for Default. It must not replace the declared selection metric. Random, BO and IGBS each have fully valid selected panels; Default does not. [S1]"
+    },
+    {
+      "kind": "figure",
+      "name": "frozen-validation-outcomes"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "Figure 1. Native validation outcomes for the frozen selections. EXC remains an accounting exception, distinct from a measured task failure."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "BO and IGBS selected the identical medium / 16384 / 4000 configuration. Separate executions differed on Wyckoff analysis and Mario coin counting, giving 3/8 and 5/8. No completed compaction was recorded in either selected panel. Thus the gap cannot be attributed to a different discovered configuration, adaptive IGBS routing, or a demonstrated keepRecentTokens effect."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Each search method proposed six candidates, covered five fully, and left its sixth incomplete: Random 4/8, BO 4/8 and IGBS 3/8 tasks. Partial candidates have no operational score and cannot win. The declared ten-candidate maximum was not reached. Selection was finalized from observed validation evidence, and no further search used test outcomes."
+    }
+  ],
+  "5 Incumbent curves under comparable budgets": [
+    {
+      "kind": "figure",
+      "name": "common-support-curves"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "Figure 2. Step curves use only fully covered validation candidates. Left: known token-cost estimates. Right: accounting commitment including reserves. Both show only the observed budget interval shared by Random, BO and IGBS; Default is a fixed baseline reference."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The shared support is $2.1515–$4.0376 on recorded known cost and $7.1515–$7.5359 on commitment. Each interval begins when all three search methods have a first scored panel and ends at the smallest last fully covered panel cost. No scores are extrapolated beyond observed support. Exact points are provided in report-curve-data.csv."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The axes answer different questions. Known cost omits unresolved request charges, while commitment includes a conservative reservation rather than a measured bill. Equal declared caps therefore do not establish equal actual spending. The narrow commitment overlap and unresolved costs prevent a robust equal-invoice-cost ranking."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "At the right boundary of the shared known-cost interval, the available incumbents are Random 2/8, BO 3/8 and IGBS 2/8; Default remains 3/8. IGBS’s later 5/8 point lies outside that interval. On the shared commitment interval, all three search incumbents remain 2/8. This differs from comparing each method at its own final expenditure."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "All search methods were allocated a $16 cap and ten-candidate ceiling. Default was one untuned configuration under a $3 cap, and held-out evaluation had a separate $9 cap. Partial-panel costs remain in the spending ledger even though those panels add no scored point. These curves include the revised operational penalties; they do not certify completion of the original protocol."
+    }
+  ],
+  "6 Partial heldout evaluation": [
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The selection artifact records all four winners at 11:14:04. Independent evaluation then used the same model, native task environment and official verifier, with one primary attempt per dispatched task. At 12:03 the controller had stopped: only the first three tasks had ended for each method. [S1–S3]"
+    },
+    {
+      "kind": "table",
+      "id": 6,
+      "rows": [
+        [
+          "Method",
+          "Ended of 8",
+          "Valid",
+          "Valid passes",
+          "Operational on ended",
+          "Valid only"
+        ],
+        [
+          "Default",
+          "3/8",
+          "2",
+          "2",
+          "2/3",
+          "2/2"
+        ],
+        [
+          "Random",
+          "3/8",
+          "3",
+          "1",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "BO",
+          "3/8",
+          "3",
+          "2",
+          "2/3",
+          "2/3"
+        ],
+        [
+          "IGBS",
+          "3/8",
+          "3",
+          "3",
+          "3/3",
+          "3/3"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The two rightmost columns describe the ended subset. Default’s 2/3 includes one explicit accounting-exception penalty; its valid-only 2/2 excludes that exception. Neither denominator equals the planned test size. Final pass@1 and the full validation-to-test generalization gap remain unavailable."
+    },
+    {
+      "kind": "table",
+      "id": 7,
+      "rows": [
+        [
+          "Heldout task",
+          "Default",
+          "Random",
+          "BO",
+          "IGBS"
+        ],
+        [
+          "econ-detrending-correlation",
+          "PASS",
+          "FAIL",
+          "FAIL",
+          "PASS"
+        ],
+        [
+          "fix-erlang-ssh-cve",
+          "EXC",
+          "PASS",
+          "PASS",
+          "PASS"
+        ],
+        [
+          "jax-computing-basics",
+          "PASS",
+          "FAIL",
+          "PASS",
+          "PASS"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Unresolved and unexecuted coverage"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "organize-messy-files was dispatched as heldout-default-003 at 11:52:58 but has no ended ledger row. The controller stopped at 12:03:07 with controller_error_FileNotFoundError. Independent artifact review found a raw not_dispatched record with zero model calls and zero recorded cost, no provider-setup marker or request journal, and verified cleanup. BenchFlow recorded a timeout of about 600 seconds. The task remains scientifically unresolved because no verified benchmark result entered the ledger; clearing current_attempt does not establish success or failure."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The remaining five planned tasks per method are organize-messy-files, pptx-reference-formatting, python-scala-translation, syzkaller-ppdev-syzlang and travel-planning. Of these 20 method–task evaluations, one is unresolved and 19 were not dispatched. Missing evaluations are not converted to zero or imputed from other methods."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "What the partial test can show"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "On the common three-task subset, IGBS passed all three, BO passed two and Random one; Default has two valid passes and one exception. These outcomes are useful task-level observations. The small, ordered prefix and incomplete cost evidence do not support a final generalization claim. BO and IGBS again differ on an identical configuration, reinforcing the need to separate run variation from parameter effects."
+    }
+  ],
+  "7 Search cost and selected runtime cost": [
+    {
+      "kind": "table",
+      "id": 8,
+      "rows": [
+        [
+          "Stage",
+          "Known estimate USD",
+          "Unknown reserve USD",
+          "Recorded commitment USD",
+          "Cap USD"
+        ],
+        [
+          "Default",
+          "1.088507",
+          "1.00",
+          "2.088507",
+          "3"
+        ],
+        [
+          "Random",
+          "5.999979",
+          "4.00",
+          "9.999979",
+          "16"
+        ],
+        [
+          "BO",
+          "4.178511",
+          "5.00",
+          "9.178511",
+          "16"
+        ],
+        [
+          "IGBS",
+          "8.429647",
+          "6.00",
+          "14.429647",
+          "16"
+        ],
+        [
+          "Heldout ended",
+          "0.728200",
+          "1.00",
+          "1.728200",
+          "9"
+        ],
+        [
+          "Recorded total",
+          "20.424845",
+          "17.00",
+          "37.424845",
+          "60"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Known costs are estimates derived from provider-reported token usage under the frozen price rules, including cached-input treatment. They are not provider invoices. The 15 ended measurement exceptions contain 17 unresolved requests; each carries the declared $1 holdback. Raw partial usage is retained and unknown portions are not priced at zero."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The recorded $22.57515520 difference from the $60 cap is arithmetic headroom, not verified available credit or a reconciled invoice. The unresolved fourth Default dispatch has a raw not_dispatched record, zero model calls and zero recorded cost; the audit found no additional inventoried provider exposure. It remains outside ended outcome counts. Historical BO evidence and cost are reused once, without duplicating payment or counting reuse as a new experiment."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Cost of executing frozen configurations"
+    },
+    {
+      "kind": "table",
+      "id": 9,
+      "rows": [
+        [
+          "Method",
+          "3 ended heldout task estimates",
+          "Reserve",
+          "Valid passes",
+          "Known USD per ended task"
+        ],
+        [
+          "Default",
+          "$0.059882",
+          "$1.00",
+          "2",
+          "$0.019961"
+        ],
+        [
+          "Random",
+          "$0.187349",
+          "$0.00",
+          "1",
+          "$0.062449"
+        ],
+        [
+          "BO",
+          "$0.308955",
+          "$0.00",
+          "2",
+          "$0.102985"
+        ],
+        [
+          "IGBS",
+          "$0.172014",
+          "$0.00",
+          "3",
+          "$0.057338"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The averages describe only the three ended tasks. Default is not fully metered, so its low known estimate is not a confirmed efficiency advantage. Among fully metered three-task subsets, IGBS recorded $0.1720, Random $0.1873 and BO $0.3090, but the samples are too small to support a stable deployment cost ranking."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "One-time search estimates are separate from the cost of running a selected configuration on new tasks. A defensible break-even analysis requires complete held-out accuracy and comparable settled runtime costs. Those inputs are missing, so the report does not invent a deployment volume at which search pays for itself."
+    }
+  ],
+  "8 Parameter sensitivity and runtime mechanisms": [
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Reasoning level comparison"
+    },
+    {
+      "kind": "table",
+      "id": 10,
+      "rows": [
+        [
+          "Candidate",
+          "Thinking",
+          "Validation passes",
+          "Panel estimate",
+          "Sum of task wall time"
+        ],
+        [
+          "bo-002",
+          "medium",
+          "3/8",
+          "$1.0629",
+          "32.22 minutes"
+        ],
+        [
+          "bo-003",
+          "low",
+          "2/8",
+          "$0.2538",
+          "12.06 minutes"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Both panels hold reserveTokens at 16384 and keepRecentTokens at 4000 and have valid measurement on all eight tasks. Medium produced one additional pass at approximately 4.19 times the estimated cost. This is an exploratory matched-setting comparison, not a causal estimate: each setting was evaluated once and provider randomness was uncontrolled."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Compaction and inactive settings"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Execution attestations confirm the applied model/settings and requested reasoning effort for all 151 ended attempts. This does not supply missing raw model or usage evidence for the 17 unresolved requests. Runtime evidence records six completed compactions across five attempts, of which three are measurement-valid and two are invalid. Every selected validation task and every ended held-out task recorded zero completed compactions. This distinguishes global mechanism activity from the settings of the chosen configurations. [S3]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The four selected validation panels contain no completed compaction event. Configuring keepRecentTokens therefore does not show that its retention mechanism was exercised in those evaluations. The IGBS screening comparison from 20000 to 4000 recent tokens changed the operational score from 2/8 to 5/8, but neither panel compacted and the former includes one exception. A direct retention benefit is not established."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "random-000 and random-001 hold low reasoning and 10000 recent tokens constant while changing reserveTokens from 360000 to 16384. Both score 2/8 with valid measurement and no completed compaction. Their $0.4206 versus $0.2490 estimates are descriptive cost observations, not proven savings from the compaction mechanism."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Interaction claims and experimental reach"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "IGBS’s source supports matched local interaction analysis and conservative routing, but its seventh screening panel and adaptive eighth proposal were not reached. Missing contrast corners are unknown. No measured benefit of adaptive block selection, harmful interaction, or stable parameter importance ranking is claimed."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "BO and IGBS selected the same settings yet differed in validation and on the held-out economic task. This variation is direct evidence that settings alone do not determine observed outcomes. Future evaluation should prioritize complete measurement, matched active-mechanism contrasts, repeated seeds and full test coverage before attributing differences to the optimizer."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The assignment asks which parameters most influence success or cost. Reasoning level has the clearest measured tradeoff in this run, while compaction parameters lack an exercised selected-panel mechanism. That is a statement about the present evidence, not a global ranking of parameter importance. [S3–S5]"
+    }
+  ],
+  "9 Failure cases and evidence limits": [
+    {
+      "kind": "table",
+      "id": 11,
+      "rows": [
+        [
+          "Validation task",
+          "Default",
+          "IGBS selection",
+          "BO selection"
+        ],
+        [
+          "3D scan calculation",
+          "FAIL",
+          "PASS",
+          "PASS"
+        ],
+        [
+          "Mario coin counting",
+          "FAIL",
+          "PASS",
+          "FAIL"
+        ],
+        [
+          "Wyckoff analysis",
+          "PASS",
+          "PASS",
+          "FAIL"
+        ],
+        [
+          "Bike rebalance",
+          "EXC",
+          "FAIL",
+          "FAIL"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "3D scan and Mario provide the requested direction in which the selected IGBS configuration passes and Default fails. Wyckoff provides the reverse for BO: Default passes while BO receives raw reward 0.82, below the pass threshold. There is no valid Default-pass/IGBS-fail case in the selected validation panels; that category remains empty rather than borrowing BO’s failure."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "In the shared held-out subset, Default passes econ-detrending-correlation while Random and BO fail. The selected IGBS execution passes. These are independent task-level contrasts after freezing, but no complete test panel exists. Bike rebalance and Default’s Erlang held-out case retain accounting exceptions and are not presented as fully verified failure comparisons."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Infrastructure failure and validity threats"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The controller’s FileNotFoundError is recorded separately from benchmark task failure. The final dispatched task remains unresolved and is excluded from ended counts and reported pass fractions. There was no automatic restart or fabricated result used to complete the table."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Repeated selection on eight validation tasks creates selection bias. One search seed, uncontrolled model randomness, partial sixth candidates, unequal realized costs, accounting exceptions and only three ended held-out tasks per method limit inference. Overfitting and harmful interactions are hypotheses, not established explanations for the observed differences."
+    }
+  ],
+  "10 Verified trajectory cases": [
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Economic filtering and numerical tolerance"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "On econ-detrending-correlation, the Random trajectory successfully opened the spreadsheets, constructed real logged series, and wrote an answer, so the failure was not an output-file or format failure. Its final computation used hpfilter(...)[1] for both series, whereas the passing Default computation unpacked cycle, trend and correlated cycle. Random submitted 0.99250; the native verifier expected 0.68885 within 0.001, and three of four tests passed. BO used the cycle component but selected only rows explicitly containing '2024:' when constructing its annual value; it submitted 0.68986 and missed the same tolerance by an absolute difference of 0.00101. The passing Default trajectory averaged the three available quarterly rows and submitted 0.68885. These recorded implementation differences explain concrete numerical failure modes; a single run does not establish that thinking level caused them. [S6]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "JAX recurrence orientation and verification"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "On jax-computing-basics, Random produced all required files with valid shapes and no duplicate task IDs, but the native allclose test failed specifically on scan_rnn (four of five tests passed). Its recorded recurrence used tanh(x @ Wx + h @ Wh + b). BO initially used the same orientation, inspected numerical differences, compared transposed alternatives, and then edited the recurrence to tanh(x @ Wx.T + h @ Wh.T + b). After rerunning its solver, all five native tests passed. The observable distinction is an actual correction and verification loop in this attempt, not a general causal claim about BO. [S6]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Environment timeout before provider setup"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The unresolved organize-messy-files attempt is a separate environment-stage event. Its worker returned normally (exit code 0; interrupted=false), cleanup was verified, and the provider-setup-started marker, request journal, callbacks, and seal were absent. The source writes that marker at entry to ensure_litellm_runtime, before starting the provider runtime. The native result reported timeout with 600.4 seconds total, zero tool calls and unavailable provider usage; the normalized result therefore records not_dispatched and zero model calls. There is no inventoried additional provider exposure to add to the known estimate, but there is no heldout outcome either. The controller logged only controller_error_FileNotFoundError, without identifying a filename. We keep this attempt unresolved and retain all existing $17 unknown-call holdbacks. [S6]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "These examples identify actions and verifier discrepancies actually present in the inspected records. They do not establish a general effect of reasoning level, prove that the optimizer caused a repair, or turn the unresolved environment attempt into a measured task failure."
+    }
+  ],
+  "11 Course requirements and reproducibility": [
+    {
+      "kind": "table",
+      "id": 12,
+      "rows": [
+        [
+          "Instructor requirement",
+          "Evidence supplied",
+          "Completion boundary"
+        ],
+        [
+          "Fixed harness and exposed space",
+          "Pi and 27-point supported settings grid",
+          "Implementation kept fixed during evaluation"
+        ],
+        [
+          "Developed method and three baselines",
+          "Default, Random, SMAC BO and IGBS source and native runs",
+          "IGBS screening only; adaptive stage untested"
+        ],
+        [
+          "Equal-budget incumbent curves",
+          "Known-cost and commitment curves on common support",
+          "Equal caps; actual invoice-cost ranking unavailable"
+        ],
+        [
+          "Final test pass@1 and generalization gap",
+          "Frozen selections and 3 ended tasks per method",
+          "Full 8-task pass@1 and gap unavailable"
+        ],
+        [
+          "Search versus runtime cost",
+          "Separate stage and selected-runtime tables",
+          "Unknown reserves and unresolved dispatch remain"
+        ],
+        [
+          "Parameter sensitivity",
+          "Matched reasoning and compaction settings",
+          "Exploratory; selected panels did not compact"
+        ],
+        [
+          "Bidirectional failure comparison",
+          "Positive IGBS cases and reverse BO/Random cases",
+          "No Default-pass/IGBS-fail case observed"
+        ],
+        [
+          "Reproducible GitHub codebase",
+          "Source, protocol, split and evidence index",
+          "Repository delivery is separate from run completeness"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The project delivers a runnable pipeline and a transparent account of actual measurements. It does not satisfy every final experimental requirement: the planned test coverage, generalization gap, settled total cost, adaptive IGBS evidence and original formal-protocol completion remain outstanding. A submission should retain these limits explicitly. [S4]"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Reproducing the analysis"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The report directory contains copied summary, protocol, progress, events and frozen-selection records; report-source-hashes.json pins their bytes. derive_report_data.py generates report-data.json and report-curve-data.csv. build_figures.py generates the two charts, and build_report_en.py plus its helpers generate this document. These steps are read-only with respect to experiment evidence and make no model calls."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "Experiment reproduction additionally requires the pinned runtime, task dependencies, source hashes, declared split, local provider credential and budget authorization. A report build is not a benchmark rerun. Private keys and full raw trajectories are excluded from public artifacts. No fresh-machine reproduction is claimed."
+    }
+  ],
+  "Evidence index and conclusions": [
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The experiment demonstrates how to search a fixed agent harness through supported configuration interfaces while retaining native task outcomes, runtime evidence and cost uncertainty. It also shows why a higher observed validation score is insufficient: BO and IGBS selected identical settings, accounting was sometimes incomplete, and IGBS had not reached its adaptive stage."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "The frozen IGBS execution performed best among the ended three-task held-out subsets, but a final method ranking requires the missing coverage and repeated measurements. The defensible conclusion is that the pipeline produced useful, auditable partial evidence under the declared resource limits; its unfinished requirements remain part of the result."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Local sources"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S1] evidence/summary.json, evidence/events.jsonl, report-data.json and report-curve-data.csv: attempt ledger, validation and held-out coverage, operational scores and cost arithmetic."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S2] evidence/protocol.json, evidence/report-source-hashes.json and evidence/selection/frozen-selection.json: revised failure policy, budgets, stopping rules, source pins and pre-test selection. The selection artifact preserves original_formal_protocol_complete as false."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S3] audit.json and aggregate-tables/: independent coverage and budget recomputation, frozen winner checks, source and evidence hash verification, and unresolved-dispatch review. The audit checked 160 protocol source hashes and 1,267 frozen evidence hashes without mismatches."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S4] Instructor assignment Group Project 3 Harness Hyperparameter Optimization, body paragraphs P017–P034 and P038–P064; the supplied text is retained as evidence/teacher-requirements.txt."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S5] hpo/methods.py, hpo/interaction_search.py and hpo/contrasts.py define the baseline and IGBS algorithms. scripts/restart_20261029/deadline_run.py defines the continuation and its explicit operational-policy adapter. Source descriptions are distinguished from runtime evidence that a stage actually ran."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "text": "[S6] trajectory-report-paragraphs.json and its relative source references: inspected native trajectories and verifier outputs for economic detrending, JAX recurrence repair and the unresolved environment timeout. Full private traces are not embedded in this document."
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading 2",
+      "text": "Preservation note"
+    },
+    {
+      "kind": "paragraph",
+      "style": "Normal",
+      "text": "This report is a separate 12:03 version. The earlier 10:39 report and snapshot remain intact. No experiment was rerun, no missing result was filled, and no unknown cost was converted to zero during preparation. All numerical claims refer to the copied stopped-run evidence unless explicitly labeled as source-level method design."
+    }
+  ]
+}
